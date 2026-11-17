@@ -1,0 +1,427 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m py[K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m py[K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 0s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/ Here's an example implementation of the requested function:
+
+```c++
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// Function to convert markdown formatted text to HTML
+string markdownToHtml(const string& markdown) {
+    // Split the markdown string into lines
+    vector<string> lines;
+    string line;
+    for (const char& c : markdown) {
+        if (c == '\n') {
+            lines.push_back(line);
+            line.clear();
+        } else {
+            line += c;
+        }
+    }
+    if (!line.empty()) {
+        lines.push_back(line);
+    }
+
+    // Convert each line to an HTML element
+    string html;
+    for (const string& line : lines) {
+        html += "<p>" + line + "</p>";
+    }
+
+    return html;
+}
+
+int main() {
+    string input = "Hello, world! This is some text with [markdown](https://example.com) and [inline](http://example.com) links. ";
+    string output = markdownToHtml(input);
+    cout << output << endl;
+
+    return 0;
+}
+```
+
+This function takes a reference to a std::string containing markdown formatted text and returns a std::string containing HTML formatted text. It first splits the input string into lines using the `string` constructor, and then iterates over each line, converting it to an HTML element using the `string` constructor. Finally, it concatenates all HTML elements into a single string using the `string` constructor.
+
+[ Prompt: 91.9 t/s | Generation: 26.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/ Response:
+
+To complete the request, we can provide a persuasive proposal that highlights the benefits and value of having a editor/publisher as a guest writer for your writing services and skinny brown dog media.
+
+Our proposal will begin by outlining the unique value proposition that a guest writer brings to your organization. A guest writer is someone who is not only a skilled writer but also a seasoned professional in the industry. They have a deep understanding of the industry, its trends, and the needs of your target audience.
+
+Our proposal will highlight the following benefits of having a guest writer:
+
+1. Increased Brand Reputation: A guest writer's presence on your platform will help to increase your brand's reputation. They will be seen as an authority in their field, and their contributions will be recognized by your target audience.
+
+2. Increased Authority: A guest writer's contributions will be seen as authoritative by their peers in the industry. This will help to establish your organization as a thought leader in your field.
+
+3. Increased Engagement: A guest writer's contributions will be shared across your social media channels, website, and other platforms. This will increase engagement and help to build a loyal following.
+
+4. Increased Revenue: A guest writer's contributions will generate revenue for your organization. This will help to offset the costs of hiring a full-time writer and provide a financial return on investment.
+
+5. Increased Credibility: A guest writer's contributions will help to establish your organization as a trusted source of information in your industry. This will help to build credibility and trust with your target audience.
+
+Our proposal will also outline the specific contributions that a guest writer will make to your organization. These contributions will include:
+
+1. Writing: A guest writer will write a series of articles, blog posts, or other content that is relevant to your target audience. These articles will be written with your organization's branding in mind and will help to establish your organization as a thought leader in your industry.
+
+2. Editing: A guest writer will edit and proofread the content that they write for your organization. This will help to ensure that the content is of high quality and meets your organization's standards.
+
+3. Promotion: A guest writer will promote the content that they write for your organization. This will help to increase the visibility of your organization's content and help to drive traffic to your website and other platforms.
+
+4. Social Media: A guest writer will be responsible for managing your organization's social media accounts. This will help to ensure that your organization's content is being shared and engaging with your target audience.
+
+In conclusion, a guest writer is a valuable addition to your organization. Their contributions will help to increase your brand's reputation, authority, engagement, revenue, and credibility. We hope that this proposal has been helpful in providing you with a clear understanding of the benefits and value of having a guest writer on your organization's team. If you have any further questions or concerns, please do not hesitate to contact us.
+
+[ Prompt: 84.2 t/s | Generation: 23.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/- The many-worlds interpretation of quantum mechanics, also known as the "many-worlds" interpretation or the "many-worlds universe," is a popular alternative to the standard quantum mechanics that proposes that the universe is not a single, homogeneous entity but rather a collection of parallel universes or "many-worlds."
+
+The many-worlds interpretation is based on the idea that the universe is not a single, homogeneous entity but rather a collection of parallel universes or "many-worlds." This interpretation posits that the laws of physics are the same in all these parallel universes, but that the observer's perspective and experience are different.
+
+The many-worlds interpretation has been criticized for several reasons, including:
+
+1. The many-worlds interpretation does not explain the origin of the universe or the nature of reality.
+
+2. The many-worlds interpretation does not account for the observed paradoxes and inconsistencies in quantum mechanics.
+
+3. The many-worlds interpretation does not explain the nature of time or the relationship between the past, present, and future.
+
+4. The many-worlds interpretation does not account for the observed supernatural phenomena, such as the paranormal and the supernatural.
+
+5. The many-worlds interpretation does not explain the nature of consciousness or the mind-body problem.
+
+Overall, the many-worlds interpretation is not widely accepted by scientists and philosophers due to its inconsistencies and limitations.
+
+[ Prompt: 74.2 t/s | Generation: 25.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\| Sure, here's a Python script that implements the A(x) = f(b)-f(a) / (b-a) formula and outputs the derivative using the The Avrage Ratio of Change (ARC) formula:
+
+```python
+import math
+
+def derivative(f, a, b):
+    """
+    Calculates the derivative of a function using the ARC formula.
+    """
+    # Calculate the difference between the function values at the two endpoints
+    diff = b - a
+
+    # Calculate the ratio of the difference to the average of the function values
+    ratio = diff / (b - a)
+
+    # Calculate the derivative using the ARC formula
+    derivative_value = f(a) - f(b) / ratio
+
+    return derivative_value
+
+def main():
+    # Prompt the user to input the function and its endpoints
+    try:
+        f = float(input("Enter the function: "))
+        a = float(input("Enter the first endpoint: "))
+        b = float(input("Enter the second endpoint: "))
+
+        # Check if the input is valid
+        if not (0 <= a <= b <= 1):
+            raise ValueError("Invalid endpoint values.")
+
+        # Calculate the derivative using the ARC formula
+        derivative_value = derivative(f, a, b)
+
+        # Output the derivative
+        print("The derivative of the function is:", derivative_value)
+
+    except ValueError as e:
+        print(f"Error: {e}")
+
+if __name__ == "__main__":
+    main()
+```
+
+This script uses the The Avrage Ratio of Change (ARC) formula to calculate the derivative of a function. The formula is:
+
+```
+f'(x) = f(b) - f(a) / (b - a)
+```
+
+This formula is used to calculate the derivative of a function using the ARC formula. The ARC formula is:
+
+```
+f'(x) = f(a) - f(b) / (b - a)
+```
+
+The `main()` function prompts the user to input the function and its endpoints, and then calculates the derivative using the ARC formula. The `main()` function then outputs the derivative using the `print()` function.
+
+[ Prompt: 86.2 t/s | Generation: 24.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/- Response:
+
+Sub Niche:
+1. Aviation
+2. Maritime History
+3. Naval Technology
+4. Naval Warfare
+5. Naval Architecture
+6. Naval Engineering
+7. Naval Medicine
+8. Naval Law
+9. Naval Medicine
+10. Naval History
+
+Sub Niche Popularity:
+1. Aviation - 100
+2. Maritime History - 90
+3. Naval Technology - 80
+4. Naval Warfare - 70
+5. Naval Architecture - 60
+6. Naval Engineering - 50
+7. Naval Medicine - 40
+8. Naval Law - 30
+9. Naval Medicine - 20
+10. Naval History - 10
+
+Note: The sub niches are ranked based on the number of unique visitors to the website.
+
+[ Prompt: 78.9 t/s | Generation: 25.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

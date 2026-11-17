@@ -1,0 +1,405 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m screen -Lrm screenlog.0 [6Pscreen -Lrm screenlog.0 [2@nano[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Knano screenlog.0 [8Pscreen -Lnano run_benchmark.py ls[Kcd llama.cpp/build-cpu/ls[Kcd llama.cpp/build-cpu/ls[Knano run_benchmark.py [13Pscreen -Lnano screenlog.0 ls[Knano screenlog.0 [2Prm[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pscreen -Lrm screenlog.0 [6Pscreen -L[Kpython run_a[Ksamsum.py 
+[?2004lLoading SAMSum dataset: train.csv...
+Starting staggered SAMSum benchmark on 7 prompts...
+
+--- Processing Prompt 1/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Carolyn: hey!!
+Carolyn: I ran into your mum earlier today and she told me you'd moved out of town?? I had no idea!
+Sean: hi
+Sean: I guess we haven't talked in a while lol
+Sean: my fault too, sometimes I don't notice a month has passed
+Carolyn: I feel that
+Sean: so yeah, I have... I couldn't really find a new job and then bam! I found an interesting offer elsewhere
+Carolyn: ohhh
+Sean: at first I was reluctant but then I though ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here’s a concise summary of the conversation:
+
+Carolyn and Sean reconnected after a long time, with Carolyn surprised to learn Sean had moved out of town. Sean shared that he initially struggled to find a new job but accepted an opportunity elsewhere, which turned out to be a positive change. He’s now happy with his new role, praising the supportive team.
+
+[ Prompt: 13.5 t/s | Generation: 2.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Sean moved out of town. He is satisfied with his new job.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 2/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+James: good horror to watch?
+Kit: Japanese, US, Spain?
+James: Spanish could be cool. any good?
+Nick: I like Rec. not new thou. Seen it?
+James: no not yet. Really good?
+Ridley: I liked it too. Its more psycho than gore tho so depends what you into really
+James: psychological are cool so yeah, I'll watch that
+Nick: but makes sure it’s the first one not 2 or 0 or anything, they were realy shit
+Ridley: amen
+James: ok thx
+
+Summa ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here’s a concise summary of the conversation:
+
+James asks for horror recommendations, and Kit suggests films from Japan, the US, and Spain. James is particularly interested in Spanish horror, and Nick confirms *Rec* (a Spanish film) as a classic but warns against newer sequels or reboots, which he says are poorly received. Ridley agrees, noting the original is more atmospheric than gory, and James, drawn to psychological horror, decides to watch *Rec* (likely *The Orphanage*).
+
+[ Prompt: 13.7 t/s | Generation: 2.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+James wants to watch a good horror movie. Nick and Ridley recommended watching Rec.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 3/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Jake: forgot keys. U home?
+Noah: nope. at 4. 
+Jake: ok
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here’s a concise summary of the conversation:
+
+Jake asks if Noah is home because he forgot his keys. Noah replies he isn’t—he’s at 4 (likely referring to a location or time, though the context is unclear). Jake accepts the answer.
+
+[ Prompt: 13.6 t/s | Generation: 2.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Jake forgot the keys. Noah will be back home at 4.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+[THERMAL CONTROL] Batch of 3 complete.
+Pausing for 60 seconds to allow passive heat dissipation...
+Resuming inference...
+
+--- Processing Prompt 4/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on "how could I forget about Black Friday".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more exci ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here’s a concise summary of the conversation:
+
+Kim and Frank discuss Black Friday and Cyber Monday deals, with Kim highlighting the latter’s bundles from studios like BioWare and indie producers. Kim, a PlayStation (PS) user, praises the platform’s comfort and minimal differences from PC—focusing on gameplay and story over graphics. She notes PS is more affordable than high-end PCs but acknowledges games are pricier. Frank, a casual gamer, questions the value of Cyber Monday for occasional players, especially without a smart TV.
+
+[ Prompt: 13.0 t/s | Generation: 2.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 5/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Adriana: Sorry, I guess I can't make it. I'm feeling sick again.
+Adriana: I planned so many things for today...
+Adriana: Hate it.
+Elisa: What a pity...
+Elisa: Next time!
+Elisa: Hope you'll get better soon!
+Adriana: Hope so too.
+Adriana: How was at the pool?
+Elisa: The best ❤️
+Elisa: 1 hour of swimming and 1 hour of sauna
+Elisa: Love it!
+Adriana:❤️
+Adriana: I'm such a bad swimmer that you couldn't stand me xD
+Elisa: Ah ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Here’s a concise summary of the conversation:
+
+Adriana cancels plans due to feeling unwell, joking about her poor swimming skills and her annoyance at a similarly frustrating person at the pool. Elisa shares her enjoyable day at the pool—swimming and sauna—expressing love for the experience, while Adriana humorously echoes her frustrations. Both express well-being and goodwill for each other’s health.
+
+[ Prompt: 13.5 t/s | Generation: 2.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Adriana is feeling sick, so she needs to give up her plans for today. Elisa went to the pool, she did 1 hour of swimming and 1 hour of sauna.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 6/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+David: Hi Honey, did you have a good day?
+Sandy: Hi my love, oh ... i had meeting  all day. What about you? 
+David: great. . I went to Brooklyn and visit some really interesting museums
+Sandy: i'm sure you also had time for shopping?
+David: Yes of course.
+Sandy: what did you buy?
+David: a new pair of sneakers. Very nice, red and pink...
+Sandy: why did you buy them. You've got plenty of them!
+David: i need to keep fit during m ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Here’s a concise summary of the conversation:
+
+David and Sandy discuss their recent activities. David enjoyed exploring Brooklyn, visiting museums and shopping, including buying a stylish red and pink sneaker to stay active. He also purchased a jacket for Sandy from Ralph Lauren. Sandy appreciates his gesture but reminds him they’re on a business trip. They end with affectionate goodbyes.
+
+[ Prompt: 13.1 t/s | Generation: 2.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+David has bought a pair of sneakers because he wants to stay fit. He also bought a Ralph Lauren jacket as a present for Sandy.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+[THERMAL CONTROL] Batch of 3 complete.
+Pausing for 60 seconds to allow passive heat dissipation...
+Resuming inference...
+
+--- Processing Prompt 7/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Faheem : Hi Afhaam how are you?
+Afhaam : Hello Faheem i am a little bit busy i will call you soon.
+Faheem : OK ! Give my regards to family.
+Afhaam : Sure.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here’s a concise summary of the conversation:
+
+Faheem and Afhaam exchanged casual greetings, with Afhaam briefly mentioning she was busy and would call back later. Faheem sent his regards to Afhaam’s family, and the interaction ended politely.
+
+[ Prompt: 13.8 t/s | Generation: 2.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Afhaam is a little busy and will cal Faheem soon.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit

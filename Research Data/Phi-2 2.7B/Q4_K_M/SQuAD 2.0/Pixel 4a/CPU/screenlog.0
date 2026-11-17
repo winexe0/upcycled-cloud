@@ -1,0 +1,261 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_squad.py 
+[?2004lStarting SQuAD 2.0 Comprehension Benchmark on 5 prompts...
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- The Normans were famed for their martial spirit and eventually for their Christian piety.
+
+[ Prompt: 15.7 t/s | Generation: 4.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated.
+
+QUESTION: What were the Normans famed for?
+EXPECTED: Their martial spirit and Christian piety.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+Pausing for 180 seconds...
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+In 1999, the BBC broadcast a six-part series documenting the Apollo missions. The series was highly acclaimed and won several documentary awards. Neil Armstrong and Buzz Aldrin were heavily featured in the archival footage.
+
+Question:
+What award did Neil Armstrong win in 1999? ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Unanswerable
+
+[ Prompt: 15.8 t/s | Generation: 6.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+In 1999, the BBC broadcast a six-part series documenting the Apollo missions. The series was highly acclaimed and won several documentary awards. Neil Armstrong and Buzz Aldrin were heavily featured in the archival footage.
+
+QUESTION: What award did Neil Armstrong win in 1999?
+EXPECTED: UNANSWERABLE
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+Pausing for 180 seconds...
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Amazon rainforest deforestation is primarily driven by cattle ranching, which accounts for up to 80% of current deforestation. Secondary causes include agriculture for soy, logging, and infrastructure expansion such as highways.
+
+Question:
+What is the secondary cause of defore ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The secondary cause of deforestation in the Amazon is agriculture for soy.
+
+[ Prompt: 15.8 t/s | Generation: 5.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+Amazon rainforest deforestation is primarily driven by cattle ranching, which accounts for up to 80% of current deforestation. Secondary causes include agriculture for soy, logging, and infrastructure expansion such as highways.
+
+QUESTION: What is the secondary cause of deforestation in the Amazon?
+EXPECTED: Agriculture for soy, logging, and infrastructure expansion.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+Pausing for 180 seconds...
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Nikola Tesla was an inventor, electrical engineer, and mechanical engineer best known for his contributions to the design of the modern alternating current (AC) electricity supply system. He was born in Smiljan, in the Austrian Empire.
+
+Question:
+What university did Nikola Tes ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Unanswerable
+
+[ Prompt: 15.7 t/s | Generation: 6.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+Nikola Tesla was an inventor, electrical engineer, and mechanical engineer best known for his contributions to the design of the modern alternating current (AC) electricity supply system. He was born in Smiljan, in the Austrian Empire.
+
+QUESTION: What university did Nikola Tesla graduate from?
+EXPECTED: UNANSWERABLE
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+Pausing for 180 seconds...
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The speed of light in vacuum, commonly denoted c, is a universal physical constant important in many areas of physics. Its exact value is defined as 299,792,458 metres per second (approximately 300,000 km/s, or 186,000 mi/s).
+
+Question:
+What is the exact defined value of the s ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ The exact defined value of the speed of light in metres per second is 299,792,458.
+
+[ Prompt: 15.5 t/s | Generation: 4.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+The speed of light in vacuum, commonly denoted c, is a universal physical constant important in many areas of physics. Its exact value is defined as 299,792,458 metres per second (approximately 300,000 km/s, or 186,000 mi/s).
+
+QUESTION: What is the exact defined value of the speed of light in metres per second?
+EXPECTED: 299,792,458 metres per second.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+SQuAD Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

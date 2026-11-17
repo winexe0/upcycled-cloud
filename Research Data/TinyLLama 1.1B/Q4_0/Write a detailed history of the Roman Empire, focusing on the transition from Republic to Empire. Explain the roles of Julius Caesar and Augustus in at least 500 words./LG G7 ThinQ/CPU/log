@@ -1,0 +1,1797 @@
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 486            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 487, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 511, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+'srv  update_chat_: Parsing chat message: The Roman Empi
+re was founded in 27 BC by Julius Caesar and lasted unti
+l 476 AD under various emperors. The Roman Empire began 
+as a small republic that became a powerful empire with a
+ centralized government and a large territory. The origi
+ns of the Roman Empire can be traced back to the Republi
+c, which was founded in 509 BC. The republic was a democ
+ratic government that was based on the principle of equa
+lity before the law.                                    
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome'                            
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome'                            
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 487, n_r
+emaining = 13, next token: 29879 's'                    
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 487            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 488, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 512, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's                           
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's                           
+sres          send: sending result for task id = 0      
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 488, n_r
+emaining = 12, next token:  9121 ' military'            
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 488            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 489, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 513, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military                  
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military                  
+ militaryres          send: sending result for task id =
+ 0                                                      
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 489, n_r
+emaining = 11, next token:  2551 ' success'             
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 489            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 490, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 514, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military success          
+ successParsing input with format Content-only: The Roma
+n Empire was founded in 27 BC by Julius Caesar and laste
+d until 476 AD under various emperors. The Roman Empire 
+began as a small republic that became a powerful empire 
+with a centralized government and a large territory. The
+ origins of the Roman Empire can be traced back to the R
+epublic, which was founded in 509 BC. The republic was a
+ democratic government that was based on the principle o
+f equality before the law.                              
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military success          
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 490, n_r
+emaining = 10, next token:   267 'es'                   
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 490            
+que    start_loop: update slots                         
+essrv  update_chat_: Parsing chat message: The Roman Emp
+ire was founded in 27 BC by Julius Caesar and lasted unt
+il 476 AD under various emperors. The Roman Empire began
+ as a small republic that became a powerful empire with 
+a centralized government and a large territory. The orig
+ins of the Roman Empire can be traced back to the Republ
+ic, which was founded in 509 BC. The republic was a demo
+cratic government that was based on the principle of equ
+ality before the law.                                   
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes        
+srv  update_slots: posting NEXT_RESPONSE                
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes        
+que          post: new task, id = 491, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 515, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 491, n_r
+emaining = 9, next token:   892 ' were'                 
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 491            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 492, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 516, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were   
+ wereParsing input with format Content-only: The Roman E
+mpire was founded in 27 BC by Julius Caesar and lasted u
+ntil 476 AD under various emperors. The Roman Empire beg
+an as a small republic that became a powerful empire wit
+h a centralized government and a large territory. The or
+igins of the Roman Empire can be traced back to the Repu
+blic, which was founded in 509 BC. The republic was a de
+mocratic government that was based on the principle of e
+quality before the law.                                 
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were   
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 492, n_r
+emaining = 8, next token:  3576 ' fue'                  
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 492            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 493, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 517, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+ fuesrv  update_chat_: Parsing chat message: The Roman E
+mpire was founded in 27 BC by Julius Caesar and lasted u
+ntil 476 AD under various emperors. The Roman Empire beg
+an as a small republic that became a powerful empire wit
+h a centralized government and a large territory. The or
+igins of the Roman Empire can be traced back to the Repu
+blic, which was founded in 509 BC. The republic was a de
+mocratic government that was based on the principle of e
+quality before the law.                                 
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+e                                                       
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+e                                                       
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+ledslot process_toke: id  0 | task 0 | n_decoded = 493, 
+n_remaining = 7, next token:   839 'led'                
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 493            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled                                                    
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled                                                    
+que          post: new task, id = 494, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 518, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 494, n_r
+emaining = 6, next token:   491 ' by'                   
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+ bysrv  update_chat_: Parsing chat message: The Roman Em
+pire was founded in 27 BC by Julius Caesar and lasted un
+til 476 AD under various emperors. The Roman Empire bega
+n as a small republic that became a powerful empire with
+ a centralized government and a large territory. The ori
+gins of the Roman Empire can be traced back to the Repub
+lic, which was founded in 509 BC. The republic was a dem
+ocratic government that was based on the principle of eq
+uality before the law.                                  
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by                                                 
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by                                                 
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 494            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 495, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 519, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+ ares          send: sending result for task id = 0     
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 495, n_r
+emaining = 5, next token:   263 ' a'                    
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 495            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 496, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 520, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a                                               
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a                                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 496, n_r
+emaining = 4, next token: 10296 ' combination'          
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 496            
+que    start_loop: update slots                         
+ combinationsrv  update_chat_: Parsing chat message: The
+ Roman Empire was founded in 27 BC by Julius Caesar and 
+lasted until 476 AD under various emperors. The Roman Em
+pire began as a small republic that became a powerful em
+pire with a centralized government and a large territory
+. The origins of the Roman Empire can be traced back to 
+the Republic, which was founded in 509 BC. The republic 
+was a democratic government that was based on the princi
+ple of equality before the law.                         
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination                                   
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 497, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 521, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination                                   
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 497, n_r
+emaining = 3, next token:   310 ' of'                   
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 497            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 498, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 522, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of                                
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of                                
+ ofres          send: sending result for task id = 0    
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 498, n_r
+emaining = 2, next token:  9121 ' military'             
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 498            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 499, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 523, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of military                       
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of military                       
+ militaryres          send: sending result for task id =
+ 0                                                      
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 499, n_r
+emaining = 1, next token: 28476 ' tact'                 
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 499            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 500, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 524, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of military tact                  
+ tactParsing input with format Content-only: The Roman E
+mpire was founded in 27 BC by Julius Caesar and lasted u
+ntil 476 AD under various emperors. The Roman Empire beg
+an as a small republic that became a powerful empire wit
+h a centralized government and a large territory. The or
+igins of the Roman Empire can be traced back to the Repu
+blic, which was founded in 509 BC. The republic was a de
+mocratic government that was based on the principle of e
+quality before the law.                                 
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of military tact                  
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | stopped by limit, n_
+decoded = 500, n_predict = 500                          
+slot process_toke: id  0 | task 0 | n_decoded = 500, n_r
+emaining = 0, next token:  1199 'ics'                   
+slot print_timing: id  0 | task 0 |                     
+prompt eval time =    2022.63 ms /    25 tokens (   80.9
+1 ms per token,    12.36 tokens per second)             
+       eval time =   61858.63 ms /   500 tokens (  123.7
+2 ms per token,     8.08 tokens per second)             
+      total time =   63881.26 ms /   525 tokens         
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot      release: id  0 | task 0 | stop processing: n_t
+okens = 524, truncated = 0                              
+slot        reset: id  0 | task 0 |                     
+ics                                                     
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 500            
+que    start_loop: update slots                         
+srv  update_slots: all slots are idle                   
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of military tactics               
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of military tactics               
+que    start_loop: waiting for new tasks                
+srv  update_chat_: Parsing chat message: The Roman Empir
+e was founded in 27 BC by Julius Caesar and lasted until
+ 476 AD under various emperors. The Roman Empire began a
+s a small republic that became a powerful empire with a 
+centralized government and a large territory. The origin
+s of the Roman Empire can be traced back to the Republic
+, which was founded in 509 BC. The republic was a democr
+atic government that was based on the principle of equal
+ity before the law.                                     
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of military tactics               
+Parsing input with format Content-only: The Roman Empire
+ was founded in 27 BC by Julius Caesar and lasted until 
+476 AD under various emperors. The Roman Empire began as
+ a small republic that became a powerful empire with a c
+entralized government and a large territory. The origins
+ of the Roman Empire can be traced back to the Republic,
+ which was founded in 509 BC. The republic was a democra
+tic government that was based on the principle of equali
+ty before the law.                                      
+                                                        
+The Republic was ruled by an elected assembly known as t
+he Senate. The Senate was made up of 100 members who wer
+e elected for four years. The Senate had the power to de
+clare war, impose taxes, and appoint officials. The Sena
+te was also responsible for determining who would be app
+ointed to high positions in the Roman Empire, such as co
+nsuls and emperors.                                     
+                                                        
+In the early years of the Republic, Rome's economy was b
+ased largely on agriculture and commerce. The Romans wer
+e skilled craftsmen and artisans, and they had establish
+ed a well-developed transportation system that included 
+roads, bridges, and aqueducts.                          
+                                                        
+Over time, Rome's economy grew, and the empire became in
+creasingly powerful. Rome's military was legendary, and 
+its army was made up of a mix of Roman soldiers, auxilia
+ry troops, and mercenaries. The Roman Army was a well-tr
+ained and well-equipped army that was capable of defeati
+ng any enemy.                                           
+                                                        
+Rome's military successes led to the consolidation of po
+wer and the establishment of a centralized government. T
+he first Roman emperor was Marcus Aurelius, who ruled fr
+om 178 to 180 AD. After his death, his son Commodus took
+ over as Emperor and ruled until 192 AD.                
+                                                        
+During the reign of Commodus, Rome's economy suffered a 
+decline. The government was unable to pay its debts, and
+ inflation began to rise. In 192 AD, the Roman Empire wa
+s divided into three parts: Western Empire, Eastern Empi
+re, and Mediterranean Empire.                           
+                                                        
+Under the Western Empire, Rome's military dominated the 
+Mediterranean world, and the empire was successful in ex
+panding its territory. Rome's military successes were fu
+eled by a combination of military tactics               
+Parsed message: {"role":"assistant","content":"The Roman
+ Empire was founded in 27 BC by Julius Caesar and lasted
+ until 476 AD under various emperors. The Roman Empire b
+egan as a small republic that became a powerful empire w
+ith a centralized government and a large territory. The 
+origins of the Roman Empire can be traced back to the Re
+public, which was founded in 509 BC. The republic was a 
+democratic government that was based on the principle of
+ equality before the law.\n\nThe Republic was ruled by a
+n elected assembly known as the Senate. The Senate was m
+ade up of 100 members who were elected for four years. T
+he Senate had the power to declare war, impose taxes, an
+d appoint officials. The Senate was also responsible for
+ determining who would be appointed to high positions in
+ the Roman Empire, such as consuls and emperors.\n\nIn t
+he early years of the Republic, Rome's economy was based
+ largely on agriculture and commerce. The Romans were sk
+illed craftsmen and artisans, and they had established a
+ well-developed transportation system that included road
+s, bridges, and aqueducts.\n\nOver time, Rome's economy 
+grew, and the empire became increasingly powerful. Rome'
+s military was legendary, and its army was made up of a 
+mix of Roman soldiers, auxiliary troops, and mercenaries
+. The Roman Army was a well-trained and well-equipped ar
+my that was capable of defeating any enemy.\n\nRome's mi
+litary successes led to the consolidation of power and t
+he establishment of a centralized government. The first 
+Roman emperor was Marcus Aurelius, who ruled from 178 to
+ 180 AD. After his death, his son Commodus took over as 
+Emperor and ruled until 192 AD.\n\nDuring the reign of C
+ommodus, Rome's economy suffered a decline. The governme
+nt was unable to pay its debts, and inflation began to r
+ise. In 192 AD, the Roman Empire was divided into three 
+parts: Western Empire, Eastern Empire, and Mediterranean
+ Empire.\n\nUnder the Western Empire, Rome's military do
+minated the Mediterranean world, and the empire was succ
+essful in expanding its territory. Rome's military succe
+sses were fueled by a combination of military tactics"} 
+res  remove_waiti: remove task 0 from waiting list. curr
+ent waiting = 1 (before remove)                         
+srv          stop: all tasks already finished, no need t
+o cancel                                                
+                                                        
+[ Prompt: 12.4 t/s | Generation: 8.1 t/s ]              
+                                                        
+>

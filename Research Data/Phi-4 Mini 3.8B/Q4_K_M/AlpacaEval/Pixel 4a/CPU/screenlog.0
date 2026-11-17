@@ -1,0 +1,375 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_l[Kalpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 180s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Sure, here's a simple C++ function that converts markdown formatted text to HTML formatted text. This function uses a basic conversion for a few common markdown features like headings, bold text, and links. For a more comprehensive conversion, you would need to handle more markdown features and possibly use a library like `markdowncpp`.
+
+```cpp
+#include <string>
+#include <sstream>
+#include <regex>
+
+std::string markdownToHtml(const std::string& markdown) {
+    std::string html = markdown;
+
+    // Convert headings (#)
+    std::regex headingRegex("#+(.*)");
+    html = std::regex_replace(html, headingRegex, "<h1>$1</h1>");
+
+    // Convert bold text (**)
+    std::regex boldRegex("\\*\*(.*?)\\*\*");
+    html = std::regex_replace(html, boldRegex, "<strong>$1</strong>");
+
+    // Convert links ([link](http://example.com))
+    std::regex linkRegex("\\[(.*?)\\]\\((.*?)\\)");
+    html = std::regex_replace(html, linkRegex, "<a href=\"$2\">$1</a>");
+
+    // Convert unordered lists ( * item 1 * item 2 * )
+    std::regex listRegex("\\* (.*)");
+    html = std::regex_replace(html, listRegex, "<ul><li>$1</li></ul>");
+
+    // Convert ordered lists (1. item 1 * item 2 * )
+    std::regex orderedListRegex("\\d+\\. (.*)");
+    html = std::regex_replace(html, orderedListRegex, "<ol><li>$1</li></ol>");
+
+    return html;
+}
+```
+
+This function uses regular expressions to search for markdown patterns and replace them with their HTML equivalents. Note that this is a very basic implementation and may not handle all markdown features or edge cases. For a more robust solution, consider using a dedicated library for markdown to HTML conversion.
+
+[ Prompt: 12.8 t/s | Generation: 3.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Subject: Transforming "Unbreakable Confidence" into a Bestseller with Expert Editing and Publishing
+
+Dear [Client's Name],
+
+I hope this message finds you well. I am thrilled to have the opportunity to collaborate with you on your upcoming book, "Unbreakable Confidence." As a seasoned writer and editor with a passion for storytelling, I am excited about the prospect of bringing your vision to life and helping it reach its full potential.
+
+As a ghost writer, my primary role is to ensure that your voice shines through every page, while also providing expert editing and publishing services to elevate your book to new heights. Here are some of the key benefits and value that I bring to the table:
+
+1. Expert Editing: My extensive experience in editing allows me to refine your manuscript, ensuring that it is polished, cohesive, and engaging. I will meticulously review every chapter, sentence, and paragraph to enhance clarity, flow, and readability.
+
+2. Professional Publishing: I have a strong understanding of the publishing industry and can guide you through the process of selecting the right publishing house, negotiating contracts, and navigating the complexities of the publishing world. My goal is to secure the best possible deal for you, ensuring that your book reaches its target audience effectively.
+
+3. Market Research: I will conduct thorough market research to identify your target audience and develop a comprehensive marketing strategy. This will include identifying potential book clubs, influencers, and media outlets that can help promote your book and increase its visibility.
+
+4. Cover Design and Layout: A visually appealing cover and layout are crucial for attracting readers. I will work closely with you to create a captivating cover design that reflects the essence of your book, while also ensuring that the interior layout is visually appealing and easy to navigate.
+
+5. Continuous Support: Even after the book is published, I will continue to provide support and guidance to help you navigate the world of self-publishing. This includes managing social media accounts, conducting book signings, and organizing promotional events.
+
+I am confident that my expertise in editing, publishing, and marketing will help "Unbreakable Confidence" become a bestseller. I am excited about the opportunity to work with you and am committed to making this project a success.
+
+Please let me know if you would like to discuss this proposal further. I am available for a meeting at your convenience and look forward to hearing from you soon.
+
+Warm regards,
+
+[Your Name]
+[Your Contact Information]
+
+[ Prompt: 12.8 t/s | Generation: 3.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ People may have reservations about the many-worlds interpretation of quantum mechanics for several reasons. Firstly, it is inherently counterintuitive and challenges our conventional understanding of reality. The idea that every quantum event spawns an infinite number of parallel universes can be difficult to grasp and accept. Additionally, the interpretation lacks direct empirical evidence, making it a topic of philosophical debate rather than a scientifically proven theory. Some critics also argue that it introduces unnecessary complexity into quantum mechanics without providing a clearer understanding of the underlying phenomena. Overall, the many-worlds interpretation remains a fascinating yet controversial concept within the field of quantum mechanics.
+
+[ Prompt: 12.3 t/s | Generation: 3.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Certainly! Below is a Python script that calculates the derivative of a function using the Average Rate of Change Formula. The user can input the function, the interval `[a, b]`, and the point `x` at which they want to evaluate the derivative.
+
+```python
+import sympy as sp
+
+def average_rate_of_change(f, a, b, x):
+    return (f(b) - f(a)) / (b - a)
+
+def main():
+    # Define the variable
+    x = sp.symbols('x')
+    
+    # Ask the user for the function
+    f = input("Enter the function f(x): ")
+    
+    # Ask the user for the interval [a, b]
+    a = float(input("Enter the value of a: "))
+    b = float(input("Enter the value of b: "))
+    
+    # Ask the user for the point x
+    x_value = float(input("Enter the value of x: "))
+    
+    # Calculate the derivative using the Average Rate of Change Formula
+    derivative = average_rate_of_change(lambda x_val: eval(f), a, b, x_value)
+    
+    print(f"The derivative of f(x) at x = {x_value} is approximately: {derivative}")
+
+if __name__ == "__main__":
+    main()
+```
+
+To run this script, you need to have Python installed along with the `sympy` library. You can install `sympy` using pip if you haven't already:
+
+```bash
+pip install sympy
+```
+
+When you run the script, it will prompt you to enter the function, the interval `[a, b]`, and the point `x`. The script will then calculate and display the derivative using the Average Rate of Change Formula.
+
+[ Prompt: 12.7 t/s | Generation: 3.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Sure, here are some potential subniches related to merchant navy studies along with a hypothetical popularity score out of 100:
+
+| Sub-Niche | Popularity Score (1-100) |
+|-----------|---------------------------|
+| Maritime Law | 85 |
+| Shipbuilding Technology | 75 |
+| Maritime Safety and Security | 80 |
+| Port Operations and Management | 70 |
+| Marine Environmental Protection | 65 |
+| Maritime Logistics and Supply Chain | 60 |
+| Maritime Insurance | 55 |
+| Maritime Education and Training | 50 |
+| Historical Maritime Trade Routes | 45 |
+| Maritime Tourism | 40 |
+| Maritime Cultural Heritage | 35 |
+| Maritime Sports (e.g., Sailing, Yachting) | 30 |
+| Maritime Art and Literature | 25 |
+| Maritime Archaeology | 20 |
+| Maritime Policy and Governance | 15 |
+| Maritime Technology Innovations | 10 |
+
+Please note that these popularity scores are hypothetical and can vary based on current trends and interests. You may want to conduct market research or use analytics tools to get more accurate data for your specific audience.
+
+[ Prompt: 12.6 t/s | Generation: 3.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

@@ -1,0 +1,61 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m pythpm[K[Kon ri[Ku[Krun_aa[K[Ksamsum.py 
+[?2004lLoading SAMSum dataset: train_single.csv...
+Starting staggered SAMSum benchmark on 1 prompts...
+
+--- Processing Prompt 1/1 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-1B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on "how could I forget about Black Friday".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more exci ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The conversation is between Kim and Frank, who are discussing Black Friday and Cyber Monday sales. Kim is excited about the upcoming sales, particularly for BioWare and indie game producers, and is planning to use her PlayStation (PS) console instead of her PC. Frank is skeptical about the differences between PC and PS, but is willing to give Kim's opinion.
+
+[ Prompt: 43.7 t/s | Generation: 9.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

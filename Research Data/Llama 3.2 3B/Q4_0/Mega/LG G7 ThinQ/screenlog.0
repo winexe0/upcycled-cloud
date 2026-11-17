@@ -1,0 +1,3075 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m sudo python run_mega.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m sudo python run_mega.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m sudo python run_mega.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m sudo python run_mega.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m sudo python run_mega.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m sudo python run_mega.py 
+[?2004lLoading Mega dataset: mega.csv...
+Starting Mega benchmark on 50 randomized prompts...
+
+--- Processing Prompt 1/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a bash script to backup a directory to a tar.gz file with today's date.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Here's a bash script that backs up a directory to a tar.gz file with today's date:
+
+```bash
+#!/bin/bash
+
+# Set the directory to backup and the backup file name
+BACKUP_DIR=/path/to/your/directory
+BACKUP_FILE=$(date +"%Y-%m-%d-%H-%M-%S").tar.gz
+
+# Create the backup directory if it doesn't exist
+mkdir -p /path/to/your/backup/directory
+
+# Backup the directory to the tar.gz file
+tar -czf "$BACKUP_FILE" "$BACKUP_DIR"
+
+# Print a success message
+echo "Backup completed successfully"
+```
+
+**How to use this script:**
+
+1. Replace `/path/to/your/directory` with the actual path to the directory you want to backup.
+2. Save this script to a file, for example, `backup.sh`.
+3. Make the script executable by running `chmod +x backup.sh`.
+4. Run the script by executing `./backup.sh` in the terminal.
+
+**Note:** This script assumes that the directory to be backed up is in the same directory as the script. If the directory is located elsewhere, you need to modify the script accordingly.
+
+[ Prompt: 4.7 t/s | Generation: 2.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+```bash
+#!/bin/bash
+SOURCE_DIR="/path/to/source"
+DEST_DIR="/path/to/backup"
+DATE=$(date +%Y-%m-%d)
+tar -czvf "$DEST_DIR/backup-$DATE.tar.gz" "$SOURCE_DIR"
+echo "Backup completed."
+```
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (281). Resuming inference...
+
+--- Processing Prompt 2/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Here's a Python script that takes user input for 'a' and 'b', calculates the derivative using the Average Rate of Change Formula, and then outputs the result.
+
+```python
+def average_rate_of_change(a, b, f):
+    """
+    Calculate the derivative using the Average Rate of Change Formula.
+
+    Args:
+        a (float): The starting point.
+        b (float): The ending point.
+        f (function): The function for which the derivative is to be calculated.
+
+    Returns:
+        float: The derivative of the function at point x.
+    """
+    return (f(b) - f(a)) / (b - a)
+
+
+def main():
+    # Get user input for 'a' and 'b'
+    a = float(input("Enter the starting point (x=a): "))
+    b = float(input("Enter the ending point (x=b): "))
+
+    # Define a function for which the derivative is to be calculated
+    def f(x):
+        return x ** 2  # Example function: f(x) = x^2
+
+    # Calculate the derivative
+    derivative = average_rate_of_change(a, b, f)
+
+    # Output the result
+    print(f"The derivative of f(x) = {f.__name__} at x = {a} is {derivative}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+In this script, we first define a function `average_rate_of_change` that takes the starting point `a`, ending point `b`, and a function `f` as input. It then calculates the derivative using the Average Rate of Change Formula.
+
+In the `main` function, we get user input for 'a' and 'b', define a function `f(x) = x^2` for which the derivative is to be calculated, and then calculate the derivative using the `average_rate_of_change` function. Finally, we output the result.
+
+Note that this script assumes that the user will input valid numbers for 'a' and 'b'. You may want to add error handling to handle cases where the user inputs invalid input.
+
+[ Prompt: 4.6 t/s | Generation: 2.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+```python
+import sympy as sp
+
+def main():
+    func_str = input("Enter a function of x (e.g., x**2): ")
+    a = float(input("Enter starting point a: "))
+    b = float(input("Enter ending point b: "))
+    
+    x = sp.Symbol('x')
+    f = sp.sympify(func_str)
+    
+    f_a = f.subs(x, a)
+    f_b = f.subs(x, b)
+    
+    arc = (f_b - f_a) / (b - a)
+    print(f"The average rate of change is: {arc}")
+
+if __name__ == "__main__":
+    main()
+```
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 3/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Nina: Want to grab coffee later?
+Oscar: I'm swamped today, maybe tomorrow?
+Nina: Tomorrow works!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Nina invites Oscar to grab coffee, but he declines due to being swamped. However, he agrees to reschedule for the next day, which Nina accepts.
+
+[ Prompt: 4.7 t/s | Generation: 2.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Nina and Oscar agreed to get coffee tomorrow because Oscar is busy today.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 4/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Chris: The server is down again.
+Pat: I know, IT is looking into it.
+Chris: Any ETA?
+Pat: Not yet, I'll let you know.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Chris reports that the server is down again. Pat confirms that IT is investigating the issue and will provide an update. The current status is that there is no estimated time of resolution.
+
+[ Prompt: 4.8 t/s | Generation: 2.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+The server is down and IT is investigating. Pat will update Chris when there is an ETA.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 5/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Adriana: Sorry, I guess I can't make it. I'm feeling sick again.
+Adriana: I planned so many things for today...
+Adriana: Hate it.
+Elisa: What a pity...
+Elisa: Next time!
+Elisa: Hope you'll get better soon!
+Adriana: Hope so too.
+Adriana: How was at the pool?
+Elisa: The best ❤️
+Elisa: 1 hour of swimming and 1 hour of sauna
+Elisa: Love it!
+Adriana:❤️
+Adriana: I'm such a bad swimmer that you couldn't stand me xD
+Elisa: Ah ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Adriana had to cancel plans due to illness, which was disappointing for her and her friend Elisa. Elisa expressed her hope for Adriana's recovery and suggested they plan another outing together, specifically to the pool where Elisa had a great time swimming and using the sauna.
+
+[ Prompt: 4.8 t/s | Generation: 2.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Adriana is feeling sick, so she needs to give up her plans for today. Elisa went to the pool, she did 1 hour of swimming and 1 hour of sauna.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 6/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechan ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| The theory of relativity.
+
+[ Prompt: 4.8 t/s | Generation: 0.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+The theory of relativity.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 7/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Explain the difference between TCP and UDP.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two fundamental protocols used for data communication over the internet. While both protocols are used for transferring data, they have distinct differences in terms of their approach, reliability, and performance.
+
+**TCP:**
+
+TCP is a connection-oriented protocol, which means that a connection is established between the sender and receiver before data is sent. This connection is maintained throughout the data transfer process. TCP ensures that data is delivered in the correct order and reassembles it at the receiving end.
+
+Key characteristics of TCP:
+
+* Connection-oriented
+* Reliable (guarantees delivery of data)
+* Ordered (data is delivered in the correct order)
+* Error-checked (errors are detected and corrected)
+* Flow-controlled (data is sent in manageable chunks)
+
+**UDP:**
+
+UDP is a connectionless protocol, which means that no connection is established before data is sent. UDP does not guarantee delivery of data, and it does not provide error-checking or reassembly of data at the receiving end.
+
+Key characteristics of UDP:
+
+* Connectionless
+* Unreliable (does not guarantee delivery of data)
+* Unordered (data is delivered in any order)
+* Error-tolerant (errors are not detected or corrected)
+* Best-effort delivery (data is delivered as best as possible)
+
+**Comparison:**
+
+|  | TCP | UDP |
+| --- | --- | --- |
+| Connection | Connection-oriented | Connectionless |
+| Reliability | Guaranteed | Unreliable |
+| Order | Ordered | Unordered |
+| Error-checking | Error-checked | Error-tolerant |
+| Flow control | Flow-controlled | Best-effort delivery |
+
+In summary, TCP is a reliable protocol that ensures data is delivered in the correct order, while UDP is a fast and efficient protocol that prioritizes speed over reliability. The choice between TCP and UDP depends on the specific application and requirements.
+
+[ Prompt: 4.7 t/s | Generation: 2.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+TCP (Transmission Control Protocol) is connection-oriented, meaning it establishes a reliable connection and ensures all packets are delivered in order without errors. UDP (User Datagram Protocol) is connectionless; it sends packets without checking for successful delivery, making it faster but less reliable. TCP is used for web browsing and file transfers, while UDP is used for live streaming and gaming.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 8/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Alice: I can't find my notes for the meeting.
+Bob: I have a copy, I'll print them for you.
+Alice: Lifesaver! Thanks.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here is a summary of the conversation:
+
+Alice couldn't find her notes for a meeting. Bob offered to print a copy for her, which she gratefully accepted.
+
+[ Prompt: 4.8 t/s | Generation: 2.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Bob will print a copy of the meeting notes for Alice.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 9/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a SQL query to find the second highest salary from an Employee table.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- SELECT DISTINCT Salary FROM Employee ORDER BY Salary DESC LIMIT 1 OFFSET 1
+
+[ Prompt: 4.8 t/s | Generation: 1.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+```sql
+SELECT MAX(Salary) AS SecondHighestSalary 
+FROM Employee 
+WHERE Salary < (SELECT MAX(Salary) FROM Employee);
+```
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 10/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Greg: Happy birthday! Have a great day.
+Helen: Thanks Greg! Having dinner with my family tonight.
+Greg: Enjoy!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Greg wishes Helen a happy birthday and expresses his well-wishes. Helen responds that she's having dinner with her family tonight, and Greg offers his enjoyment.
+
+[ Prompt: 4.8 t/s | Generation: 2.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Greg wished Helen a happy birthday. Helen is celebrating with a family dinner.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 11/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Create a recipe for a simple chocolate cake.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here's a recipe for a simple chocolate cake that serves 8-10 people:
+
+**Ingredients:**
+
+- 2 1/4 cups all-purpose flour
+- 1 1/2 cups granulated sugar
+- 2 teaspoons baking powder
+- 1 teaspoon salt
+- 1 cup unsweetened cocoa powder
+- 1 cup whole milk, at room temperature
+- 2 large eggs, at room temperature
+- 1 teaspoon vanilla extract
+
+**Instructions:**
+
+1. Preheat your oven to 350°F (180°C). Grease two 9-inch (23cm) round cake pans and line the bottoms with parchment paper.
+2. In a medium bowl, whisk together the flour, sugar, baking powder, and salt.
+3. In a large mixing bowl, combine the cocoa powder and milk. Stir until the cocoa powder is well combined with the milk.
+4. Add the eggs one at a time, stirring well after each addition. Stir in the vanilla extract.
+5. Gradually add the dry ingredients to the chocolate mixture, stirring until just combined.
+6. Divide the batter evenly between the prepared pans and smooth the tops.
+7. Bake for 30-35 minutes, or until a toothpick inserted into the center of each cake comes out clean.
+8. Remove the cakes from the oven and let them cool in the pans for 10 minutes.
+9. Transfer the cakes to a wire rack to cool completely.
+
+**Optional Frosting:**
+
+If you'd like to frost your cake, you can make a simple chocolate frosting by melting 1 cup of unsalted butter and 2 cups of powdered sugar in a saucepan over low heat. Stir in 2 tablespoons of unsweetened cocoa powder and 2 tablespoons of milk until smooth. Spread or pipe the frosting onto the cooled cake.
+
+**Tips:**
+
+- Make sure to use high-quality cocoa powder for the best flavor.
+- Don't overmix the batter, as this can result in a dense cake.
+- If you want a moist and tender crumb, don't overbake the cake.
+
+[ Prompt: 4.8 t/s | Generation: 2.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+Ingredients:
+- 1 cup flour
+- 1 cup sugar
+- 1/2 cup cocoa powder
+- 1 tsp baking powder
+- 1/2 cup milk
+- 1/2 cup vegetable oil
+- 2 eggs
+- 1 tsp vanilla extract
+
+Instructions:
+1. Preheat oven to 350°F (175°C).
+2. Mix dry ingredients in a bowl.
+3. Add wet ingredients and whisk until smooth.
+4. Pour batter into a greased pan.
+5. Bake for 30 minutes. Let cool before serving.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 12/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Here's a persuasive proposal that highlights the benefits and value of having a ghostwriter for the book "Unbreakable Confidence":
+
+Dear [Client's Name],
+
+I am thrilled to submit a proposal for ghostwriting services to help bring your vision for "Unbreakable Confidence" to life. As a seasoned writer with a passion for storytelling, I am confident that I can help you create a compelling and engaging book that resonates with your target audience.
+
+About Me:
+With [number] years of experience in writing and editing, I possess a unique blend of creative flair and technical expertise. My writing style is engaging, informative, and accessible, making me an ideal partner for your project. I have a proven track record of producing high-quality content that meets and exceeds client expectations.
+
+Benefits of Working with Me:
+
+1. **Expertise in Content Creation**: As a ghostwriter, I will take the time to understand your vision, goals, and target audience, ensuring that your book is tailored to meet your needs.
+2. **High-Quality Content**: I will craft engaging, well-researched, and error-free content that will make your book a valuable resource for your readers.
+3. **Time-Saving**: By outsourcing the writing process, you will save time and effort, allowing you to focus on other aspects of your business.
+4. **Increased Credibility**: A well-written book can establish you as an authority in your industry, enhancing your reputation and credibility.
+5. **Cost-Effective**: Ghostwriting services can be more cost-effective than hiring a full-time writer or investing in expensive editing services.
+
+My Approach:
+
+1. **Initial Consultation**: We will schedule a call to discuss your project, goals, and expectations.
+2. **Research and Outline**: I will conduct research and create an outline to ensure that your book meets your vision and goals.
+3. **Content Creation**: I will write and edit the content, ensuring that it is engaging, informative, and error-free.
+4. **Revisions and Edits**: I will work with you to revise and edit the content, ensuring that it meets your standards.
+5. **Final Delivery**: I will deliver the final manuscript, ready for publication.
+
+Deliverables:
+
+* A comprehensive outline and research plan
+* A first draft of the manuscript
+* Revisions and edits based on your feedback
+* A final, polished manuscript
+
+Timeline:
+
+* Initial consultation: [insert timeframe]
+* Research and outline: [insert timeframe]
+* Content creation: [insert timeframe]
+* Revisions and edits: [insert timeframe]
+* Final delivery: [insert timeframe]
+
+Pricing:
+
+* [Insert pricing structure, e.g., per word, per chapter, etc.]
+
+Conclusion:
+I am excited about the opportunity to work with you to create a compelling and engaging book that showcases your expertise and builds your brand. I am confident that my writing skills, combined with my passion for storytelling, make me an ideal partner for your project. I look forward to the opportunity to discuss this proposal in further detail.
+
+Thank you for considering my proposal.
+
+Best regards,
+
+[Your Name]
+
+[ Prompt: 4.8 t/s | Generation: 2.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+Dear [Client Name],
+
+I am thrilled to submit my proposal on behalf of Skinny Brown Dog Media to serve as your ghostwriter for *Unbreakable Confidence*. Having a professional editor and publishing partner ensures your voice remains authentic while elevating the prose to industry standards. We will handle the heavy lifting of structure, pacing, and grammatical perfection, allowing you to focus on sharing your powerful message. Let's build your unbreakable confidence on the page together.
+
+Best,
+[Your Name]
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 13/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Jenny: Do you know what time the movie starts?
+Mike: I think 8:30.
+Jenny: Let's meet at 8 to buy popcorn.
+Mike: Sounds good.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Jenny and Mike discussed the movie schedule and decided to meet at 8:00 PM to buy popcorn before the 8:30 PM movie start time.
+
+[ Prompt: 4.8 t/s | Generation: 1.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Jenny and Mike will meet at 8 to buy popcorn before their 8:30 movie.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 14/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on "how could I forget about Black Friday".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more exci ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Kim and Frank are discussing Black Friday and Cyber Monday deals. Kim reminds Frank to remember the sales by setting up reminders, and Frank jokes that she's trying to spare herself from his potential whining. Frank is actually excited for Cyber Monday, where he plans to take advantage of Playstation bundles.
+
+[ Prompt: 4.9 t/s | Generation: 2.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 15/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The speed of light in vacuum, commonly denoted c, is a universal physical constant important in many areas of physics. Its exact value is defined as 299,792,458 metres per second (approximately 300,000 km/s, or 186,000 mi/s).
+
+Question:
+What is the exact defined value of the s ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 299,792,458
+
+[ Prompt: 4.9 t/s | Generation: 1.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+299,792,458 metres per second.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 16/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Nikola Tesla was an inventor, electrical engineer, and mechanical engineer best known for his contributions to the design of the modern alternating current (AC) electricity supply system. He was born in Smiljan, in the Austrian Empire.
+
+Question:
+What university did Nikola Tes ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Unanswerable
+
+[ Prompt: 4.8 t/s | Generation: 0.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 17/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Sam: We need to buy milk and bread.
+Emma: I'm at the store right now, I'll grab them.
+Sam: Great, get some eggs too please.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Sam and Emma discuss their grocery needs. Emma is at the store and agrees to pick up milk, bread, and eggs for them.
+
+[ Prompt: 4.8 t/s | Generation: 1.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Emma is at the store and will buy milk, bread, and eggs.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 18/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Based on the merchant navy studies niche, here are some subniches that you may want to consider tackling with your content, along with a popularity score out of 100:
+
+| Subniche | Popularity Score |
+| --- | --- |
+| 1. **Offshore Engineering** (40) | A subniche focused on the design, construction, and maintenance of offshore structures, such as oil rigs and wind farms. |
+| 2. **Marine Safety and Security** (35) | A subniche that covers the measures taken to prevent and respond to maritime accidents, as well as the security threats faced by the merchant navy. |
+| 3. **Ship Design and Operations** (30) | A subniche that delves into the design, construction, and operation of various types of ships, including cargo vessels, tankers, and passenger ships. |
+| 4. **Marine Environmental Protection** (28) | A subniche that focuses on the prevention of pollution and the protection of marine ecosystems, including the use of sustainable fuels and waste management. |
+| 5. **Merchant Navy Careers and Training** (25) | A subniche that provides information and resources for individuals interested in pursuing a career in the merchant navy, including training programs and job opportunities. |
+| 6. **Marine Technology and Innovation** (22) | A subniche that explores the latest technologies and innovations in the merchant navy, including autonomous vessels, digitalization, and renewable energy. |
+| 7. **Shipping Law and Regulations** (20) | A subniche that covers the laws and regulations governing the shipping industry, including international conventions and national laws. |
+| 8. **Marine Navigation and Route Planning** (18) | A subniche that focuses on the techniques and tools used for navigation, including GPS, charting, and route optimization. |
+| 9. **Marine Engineering and Maintenance** (15) | A subniche that covers the maintenance, repair, and overhaul of ships, including the use of advanced materials and technologies. |
+| 10. **Marine Business and Economics** (12) | A subniche that explores the economic and business aspects of the shipping industry, including market trends, trade agreements, and logistics. |
+
+Note: The popularity scores are subjective and based on my analysis of online trends and search volume data. They may vary depending on your target audience and the specific content you create.
+
+[ Prompt: 4.9 t/s | Generation: 2.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+| Sub Niche | Popularity (1-100) |
+|---|---|
+| Deck Officer Cadet Training | 95 |
+| Marine Engineering Basics | 90 |
+| Maritime Law & Regulations | 75 |
+| Ship Navigation Techniques | 85 |
+| Merchant Navy Salary Guides | 98 |
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 19/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Their martial spirit and Christian piety.
+
+[ Prompt: 4.9 t/s | Generation: 0.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+Their martial spirit and Christian piety.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 20/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Jake: forgot keys. U home?
+Noah: nope. at 4.
+Jake: ok
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Here is a summary of the conversation:
+
+Jake asks if he is at home, and the response is that he is not, but rather at 4. Jake responds with "ok", indicating acceptance of the situation.
+
+[ Prompt: 4.9 t/s | Generation: 2.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Jake forgot the keys. Noah will be back home at 4.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 21/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms.
+
+Question:
+What is the boiling point of water?
+
+Answer:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Unanswerable
+
+[ Prompt: 4.8 t/s | Generation: 0.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 22/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kelly: Don't forget to pay the electric bill!
+Liam: Just did it online.
+Kelly: Perfect.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Kelly reminds Liam to pay the electric bill. Liam confirms that he has already paid it online. Kelly is satisfied with the situation.
+
+[ Prompt: 4.8 t/s | Generation: 2.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Liam has paid the electric bill online.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 23/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Explain the concept of 'technical debt' in software engineering to a non-technical stakeholder, using a relatable real-world analogy.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Imagine you're a homeowner who's just finished renovating your house. You've spent a lot of money and time on the project, but now you're facing a few issues. The kitchen cabinets are outdated, the flooring is worn out, and the electrical system is outdated.
+
+In this scenario, the "renovation" represents a software development project. The "cabinets," "flooring," and "electrical system" represent different components of the software, such as user interfaces, data storage, and algorithms.
+
+Now, imagine that you've taken a shortcut to finish the renovation quickly, so you've used cheaper materials for the cabinets and flooring. You've also skipped updating the electrical system to make it more efficient. This might have saved you money upfront, but it will cost you more in the long run.
+
+In software engineering, "technical debt" refers to the shortcuts or workarounds that developers take to meet a deadline or complete a project quickly. These shortcuts might be cheap to implement upfront, but they can lead to problems down the line, such as:
+
+* Increased maintenance costs: The outdated materials and systems will need to be replaced or updated, which can be costly.
+* Reduced performance: The shortcuts can lead to slower performance, decreased reliability, and a poorer user experience.
+* Security risks: Outdated systems can leave your software vulnerable to security threats.
+
+Just like the homeowner who needs to fix the outdated kitchen, the software developer needs to address the technical debt to ensure the software is stable, efficient, and secure. This might involve refactoring the code, updating the systems, and investing time and resources to fix the problems that were shortcuts taken to meet the initial deadline.
+
+[ Prompt: 4.8 t/s | Generation: 2.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+Technical debt is like taking out a loan to buy a house. If you need a place to live immediately, you might take out a mortgage (a quick software fix or shortcut) rather than waiting years to save up the full cash amount (building the perfect, most robust software solution). While this gets you into the house faster, you now have to pay interest. In software, that 'interest' is the extra time and effort it takes to add new features or fix bugs later because the code is messy or poorly structured. If you don't periodically pay down the principal by refactoring and cleaning up the code, the interest becomes so overwhelming that development grinds to a halt, just like going bankrupt from too much financial debt.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (294). Resuming inference...
+
+--- Processing Prompt 24/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as the best known, the most visited, the most written about, the most sung about, the most parodied work ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The Louvre Museum in Paris, France.
+
+[ Prompt: 4.9 t/s | Generation: 0.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (305). Resuming inference...
+
+--- Processing Prompt 25/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Marie Curie was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize, the first person to win a Nobel Prize twice, and the only person to win a Nobel Prize in two scientific field ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Unanswerable
+
+[ Prompt: 4.6 t/s | Generation: 0.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 26/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+How do vaccines work?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Vaccines work by introducing a small, harmless piece of a pathogen, such as a virus or bacteria, or a weakened or inactivated form of the pathogen, to the body. This triggers the immune system to recognize the pathogen and mount a response, producing antibodies and immune cells that can recognize and fight the pathogen if it enters the body in the future.
+
+The immune system then stores this information, allowing it to quickly respond if the pathogen enters the body again. This process is called immunization, and it provides long-term protection against future infections.
+
+There are several types of vaccines, including:
+
+1. Inactivated vaccines, which contain a killed pathogen
+2. Live, attenuated vaccines, which contain a weakened pathogen
+3. Subunit vaccines, which contain only a small part of the pathogen
+4. Conjugate vaccines, which combine a weakened pathogen with a carrier protein
+
+Overall, vaccines work by helping the immune system learn to recognize and fight pathogens, providing protection against infection and disease.
+
+[ Prompt: 4.6 t/s | Generation: 2.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+Vaccines work by introducing a weakened or inactive part of a pathogen (like a virus or bacteria) into the body. This triggers the immune system to produce antibodies and memory cells without causing the disease. If the person is exposed to the actual pathogen later, their immune system recognizes it and fights it off quickly.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 27/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+What are the primary colors in the RGB color model?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ The primary colors in the RGB (Red, Green, Blue) color model are Red, Green, and Blue.
+
+[ Prompt: 4.8 t/s | Generation: 1.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+The primary colors in the RGB color model are Red, Green, and Blue. These colors are added together in various ways to reproduce a broad array of colors on electronic displays.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 28/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here's a C++ function that uses the markdown library to convert markdown text to HTML:
+
+```cpp
+#include <iostream>
+#include <string>
+#include <markdown.h>
+
+/**
+ * Converts markdown text to HTML.
+ *
+ * @param markdownText The markdown text to convert.
+ * @return The HTML text.
+ */
+std::string markdownToHtml(const std::string& markdownText) {
+    markdown::MarkdownIn markdown(markdownText);
+    markdown::MarkdownOut htmlOut;
+
+    markdown.markdown(&markdownIn, &htmlOut);
+
+    return htmlOut.c_str();
+}
+
+int main() {
+    std::string markdownText = "# Hello, World!";
+    std::string htmlText = markdownToHtml(markdownText);
+
+    std::cout << "Markdown: " << markdownText << std::endl;
+    std::cout << "HTML: " << htmlText << std::endl;
+
+    return 0;
+}
+```
+
+This code uses the markdown library to convert markdown text to HTML. The `markdownToHtml` function takes a reference to a `std::string` containing markdown text, converts it to HTML, and returns the HTML text as a `std::string`. The `main` function demonstrates how to use this function.
+
+Please note that you need to install the markdown library to compile this code. You can install it using your package manager or by downloading it from the official website.
+
+Also, this code assumes that the markdown text is well-formed and does not contain any invalid markdown syntax. If you need to handle invalid markdown syntax, you may need to add error checking code.
+
+[ Prompt: 4.9 t/s | Generation: 2.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+```cpp
+#include <string>
+#include <regex>
+
+std::string markdownToHtml(const std::string& md) {
+    std::string html = md;
+    html = std::regex_replace(html, std::regex("\\*\\*(.*?)\\*\\*"), "<b>$1</b>");
+    html = std::regex_replace(html, std::regex("\\*(.*?)\\"), "<i>$1</i>");
+    html = std::regex_replace(html, std::regex("#(.*?)\\n"), "<h1>$1</h1>\n");
+    return html;
+}
+```
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 29/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ The many-worlds interpretation (MWI) of quantum mechanics is a highly debated and contentious theory in the scientific community. While some physicists and philosophers find it intriguing, others have several concerns that contribute to the widespread criticism. Here are some reasons why people may not like the many-worlds interpretation:
+
+1. **Lack of empirical evidence**: Despite decades of research, there is currently no direct empirical evidence to support the MWI. Most experiments that test the theory have been inconclusive or have failed to replicate the predictions.
+2. **Philosophical concerns**: The MWI raises fundamental questions about the nature of reality, free will, and the concept of probability. Some argue that it leads to an infinite proliferation of parallel universes, making it difficult to make predictions or test hypotheses.
+3. **Mathematical complexity**: The MWI requires the use of advanced mathematical tools, such as quantum field theory and topology. This complexity can make it challenging to understand and work with the theory.
+4. **Lack of predictive power**: The MWI does not provide a clear mechanism for making predictions about the behavior of particles or systems. This makes it difficult to test or falsify the theory.
+5. **Perceived absurdity**: Some critics argue that the MWI is absurd or unphysical, as it implies that every possible outcome of a measurement occurs in a separate universe. This can be seen as a form of "multiverse" that is difficult to reconcile with our everyday experience of reality.
+
+Overall, while the many-worlds interpretation is an interesting and thought-provoking theory, its lack of empirical evidence, philosophical concerns, and mathematical complexity have contributed to its widespread criticism and skepticism.
+
+[ Prompt: 4.7 t/s | Generation: 2.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+Many physicists and philosophers criticize the Many-Worlds Interpretation (MWI) because it seems overly complex and unfalsifiable. Critics argue that postulating an infinite number of unobservable parallel universes violates Occam's Razor. Additionally, it struggles to satisfactorily explain the origin of the Born rule (quantum probabilities) within a deterministic multiverse framework.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 30/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The French Revolution was a period of fundamental political and societal change in France that began with the Estates General of 1789 and ended in November 1799 with the formation of the French Consulate. Many of its ideas are considered fundamental principles of Western liber ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- November 1799
+
+[ Prompt: 4.8 t/s | Generation: 0.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+November 1799.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 31/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit point. Its elevation of 8,848.86 m was most recently established in 2020 by the Nepali and Chinese authorities ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Unanswerable
+
+[ Prompt: 4.8 t/s | Generation: 0.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 32/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+In 1999, the BBC broadcast a six-part series documenting the Apollo missions. The series was highly acclaimed and won several documentary awards. Neil Armstrong and Buzz Aldrin were heavily featured in the archival footage.
+
+Question:
+What award did Neil Armstrong win in 1999? ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Unanswerable
+
+[ Prompt: 4.8 t/s | Generation: 0.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 33/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+List 5 benefits of meditation.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here are 5 benefits of meditation:
+
+1. **Reduces Stress and Anxiety**: Meditation has been shown to decrease the production of stress hormones like cortisol, leading to a sense of calm and relaxation.
+
+2. **Improves Mental Clarity and Focus**: Regular meditation practice can improve attention, concentration, and mental clarity, helping individuals stay focused and productive.
+
+3. **Boosts Mood and Emotional Well-being**: Meditation can increase the production of neurotransmitters like serotonin, dopamine, and endorphins, which can help alleviate symptoms of depression and anxiety.
+
+4. **Enhances Self-Awareness and Emotional Regulation**: Through meditation, individuals can gain a deeper understanding of themselves, their thoughts, and their emotions, allowing for better emotional regulation and decision-making.
+
+5. **Supports Physical Health and Well-being**: Meditation has been linked to lower blood pressure, reduced chronic pain, and a stronger immune system, contributing to overall physical health and well-being.
+
+[ Prompt: 4.8 t/s | Generation: 2.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+1. Reduces stress and anxiety.
+2. Improves focus and concentration.
+3. Promotes emotional well-being and self-awareness.
+4. Can help lower blood pressure.
+5. Improves sleep quality.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (305). Resuming inference...
+
+--- Processing Prompt 34/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.
+
+Question:
+Why was the Great Wall of China built?
+
+A ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Protection against various nomadic groups from the Eurasian Steppe.
+
+[ Prompt: 3.5 t/s | Generation: 0.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+As protection against various nomadic groups from the Eurasian Steppe.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (259). Resuming inference...
+
+--- Processing Prompt 35/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Sarah: Are you going to the gym today?
+Leo: No, my back hurts. Taking a rest day.
+Sarah: Oh no! Rest up.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here is a summary of the conversation:
+
+Sarah asks Leo if he is going to the gym, and he responds that he is taking a rest day due to back pain. Sarah offers her sympathy and wishes him a speedy recovery.
+
+[ Prompt: 5.0 t/s | Generation: 1.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Leo is skipping the gym today because his back hurts.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (268). Resuming inference...
+
+--- Processing Prompt 36/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+William Shakespeare was an English playwright, poet, and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. He is often called England's national poet and the "Bard of Avon".
+
+Question:
+What is William Shakespeare often ca ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ England's national poet and the "Bard of Avon"
+
+[ Prompt: 4.8 t/s | Generation: 1.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+England's national poet and the "Bard of Avon".
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (282). Resuming inference...
+
+--- Processing Prompt 37/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities.
+
+Question:
+What process releases the chemical energy created by photosynthes ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Cellular respiration
+
+[ Prompt: 4.7 t/s | Generation: 0.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+Cellular respiration.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (296). Resuming inference...
+
+--- Processing Prompt 38/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+James: good horror to watch?
+Kit: Japanese, US, Spain?
+James: Spanish could be cool. any good?
+Nick: I like Rec. not new thou. Seen it?
+James: no not yet. Really good?
+Ridley: I liked it too. Its more psycho than gore tho so depends what you into really
+James: psychological are cool so yeah, I'll watch that
+Nick: but makes sure it’s the first one not 2 or 0 or anything, they were realy shit
+Ridley: amen
+James: ok thx
+
+Summa ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- James is looking for a good horror movie to watch and is considering Spanish options. Nick recommends the Spanish film "Rec", which is more psychological than gory, but warns that the sequels are not as good. Ridley agrees and James decides to watch the first one.
+
+[ Prompt: 4.8 t/s | Generation: 2.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+James wants to watch a good horror movie. Nick and Ridley recommended watching Rec.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 39/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Draft a polite email declining a job offer because the salary is too low.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Dear [Hiring Manager's Name],
+
+I wanted to express my gratitude for extending the job offer to me for the [Job Title] position at [Company Name]. I was truly impressed by the company culture and the team's passion for their work, and I am honored to have been considered for this role.
+
+However, after careful consideration, I regret to inform you that I have decided to decline the offer. While I am excited about the opportunity to join the team, the salary offered is below my expectations, and I have decided to pursue other opportunities that better align with my compensation requirements.
+
+Please know that my decision is not a reflection on the company or the role, but rather a personal decision that aligns with my career goals and financial needs. I appreciate the time and effort you and your team invested in the hiring process, and I wish the company all the best in finding a suitable candidate for the
+[WARNING] Active prompt killed due to low battery.
+
+[BATTERY NOTICE] The phone needs to be charged (40% or below).
+Is the phone charged? (Yes/no): yes
+Battery is at 89%. Resuming script...
+Retrying the interrupted prompt...
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Draft a polite email declining a job offer because the salary is too low.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Dear [Hiring Manager's Name],
+
+I wanted to express my gratitude for extending the job offer to me for the [Job Title] position at [Company Name]. I was truly impressed by the company culture and the team's passion for their work, and I am honored to have been considered for this role.
+
+However, after careful consideration, I regret to inform you that I have decided to decline the offer. While I am excited about the opportunity to join the team, the salary offered is below my expectations, and I have decided to pursue other opportunities that better align with my compensation requirements.
+
+Please know that my decision is not a reflection on the company or the role, but rather a personal decision that aligns with my career goals and financial needs. I appreciate the time and effort you and your team invested in the hiring process, and I wish the company all the best in finding a suitable candidate for the position.
+
+Thank you again for the opportunity, and I wish you continued success in the future.
+
+Best regards,
+[Your Name]
+
+[ Prompt: 4.7 t/s | Generation: 2.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+Dear [Name],
+
+Thank you for offering me the [Job Title] position. I greatly appreciate the opportunity. However, after careful consideration, I must decline the offer as the proposed salary does not align with my current financial requirements and market expectations. I wish you and the team the best.
+
+Sincerely,
+[Your Name]
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 40/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Amazon rainforest deforestation is primarily driven by cattle ranching, which accounts for up to 80% of current deforestation. Secondary causes include agriculture for soy, logging, and infrastructure expansion such as highways.
+
+Question:
+What is the secondary cause of defore ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Agriculture for soy, logging, and infrastructure expansion such as highways.
+
+[ Prompt: 4.9 t/s | Generation: 1.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+Agriculture for soy, logging, and infrastructure expansion.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 41/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+David: Hi Honey, did you have a good day?
+Sandy: Hi my love, oh ... i had meeting  all day. What about you? 
+David: great. . I went to Brooklyn and visit some really interesting museums
+Sandy: i'm sure you also had time for shopping?
+David: Yes of course.
+Sandy: what did you buy?
+David: a new pair of sneakers. Very nice, red and pink...
+Sandy: why did you buy them. You've got plenty of them!
+David: i need to keep fit during m ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ David returns home from a business trip to Brooklyn, where he visited museums and shopped for a new pair of sneakers to keep fit during his trips. Sandy, his partner, is surprised by the purchase, but David explains that he also bought a Ralph Lauren jacket for her.
+
+[ Prompt: 4.9 t/s | Generation: 2.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+David has bought a pair of sneakers because he wants to stay fit. He also bought a Ralph Lauren jacket as a present for Sandy.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 42/50 [AlpacaEval] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a short poem about autumn.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- As leaves begin to fall and fade,
+Golden hues and crimson shades,
+Autumn's chill begins to bite,
+A season of change, a wondrous sight.
+
+The air is crisp, the winds do blow,
+A time for cozy nights to know,
+The scent of woodsmoke fills the air,
+As nature's final dance begins to share.
+
+The trees stand tall, their branches bare,
+A fleeting beauty, beyond compare,
+A season of transition, a time to see,
+The beauty of autumn, wild and free.
+
+[ Prompt: 4.9 t/s | Generation: 2.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (AlpacaEval):
+Golden leaves begin to fall,
+Crisp winds echo through the hall.
+Harvest moons and amber skies,
+Summer whispers her goodbyes.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 43/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Faheem : Hi Afhaam how are you?
+Afhaam : Hello Faheem i am a little bit busy i will call you soon.
+Faheem : OK ! Give my regards to family.
+Afhaam : Sure.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Faheem greets Afhaam and asks how he's doing. Afhaam responds that he's a bit busy and will call Faheem soon. Faheem offers his regards to Afhaam's family.
+
+[ Prompt: 4.9 t/s | Generation: 1.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Afhaam is a little busy and will call Faheem soon.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 44/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Tom: Did you send the report?
+Jerry: Working on it now, will send in 10 mins.
+Tom: Thanks!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Tom asked Jerry if he had sent the report. Jerry replied that he was working on it and would send it in 10 minutes. Tom thanked Jerry for his response.
+
+[ Prompt: 4.7 t/s | Generation: 1.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Jerry is finishing the report and will send it to Tom in 10 minutes.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 45/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Mia: Have you seen my blue jacket?
+Chloe: You left it in my car yesterday. I'll bring it tomorrow.
+Mia: Thank you so much!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Mia asks Chloe if she has seen her blue jacket. Chloe confirms that Mia left it in her car and offers to bring it to Mia the next day. Mia expresses gratitude for Chloe's help.
+
+[ Prompt: 4.9 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Chloe has Mia's blue jacket in her car and will bring it to her tomorrow.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 46/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Evan: Can we reschedule our meeting? I have a conflict at 2 PM.
+Fiona: Sure, how about 4 PM?
+Evan: 4 works for me.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Evan requests to reschedule their meeting due to a conflict at 2 PM. Fiona offers an alternative time of 4 PM, which Evan accepts.
+
+[ Prompt: 4.8 t/s | Generation: 2.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Evan and Fiona rescheduled their meeting from 2 PM to 4 PM.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 47/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Ian: Did the package arrive?
+Jane: Yes, it's on your desk.
+Ian: Awesome, thanks.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Ian inquired about the arrival of a package, and Jane confirmed that it had been delivered to his desk. Ian expressed gratitude for the news, thanking Jane for the information.
+
+[ Prompt: 4.8 t/s | Generation: 1.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Jane confirms that Ian's package has arrived and is on his desk.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 48/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Carolyn: hey!!
+Carolyn: I ran into your mum earlier today and she told me you'd moved out of town?? I had no idea!
+Sean: hi
+Sean: I guess we haven't talked in a while lol
+Sean: my fault too, sometimes I don't notice a month has passed
+Carolyn: I feel that
+Sean: so yeah, I have... I couldn't really find a new job and then bam! I found an interesting offer elsewhere
+Carolyn: ohhh
+Sean: at first I was reluctant but then I though ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here is a summary of the conversation:
+
+Carolyn and Sean catch up after a while, with Carolyn expressing surprise that Sean had moved out of town. Sean explains that he didn't notice the time passing and was initially reluctant to leave his current job, but ultimately decided to take an opportunity elsewhere.
+
+[ Prompt: 4.8 t/s | Generation: 1.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Sean moved out of town. He is satisfied with his new job.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 49/50 [SAMSum] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Lily: Are we still on for dinner tonight?
+Mark: Yes! 7 PM at the Italian place downtown?
+Lily: Perfect. See you then.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Lily and Mark confirm their dinner plans for 7 PM at an Italian restaurant downtown.
+
+[ Prompt: 5.0 t/s | Generation: 1.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SAMSum):
+Lily and Mark are meeting for dinner at 7 PM at the Italian place.
+
+MODEL GENERATED OUTPUT (SAMSum):
+
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (309). Resuming inference...
+
+--- Processing Prompt 50/50 [SQuAD_2.0] ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The mitochondria is a double-membrane-bound organelle found in most eukaryotic organisms. Mitochondria use aerobic respiration to generate most of the cell's supply of adenosine triphosphate (ATP), which is subsequently used throughout the cell as a source of chemical energy.
+ ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Aerobic respiration
+
+[ Prompt: 4.8 t/s | Generation: 0.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED OUTPUT (SQuAD_2.0):
+Aerobic respiration.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+
+==================================================
+
+Mega Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit

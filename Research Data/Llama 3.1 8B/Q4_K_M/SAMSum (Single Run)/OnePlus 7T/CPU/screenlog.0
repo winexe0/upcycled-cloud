@@ -1,0 +1,61 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m pytjo[K[Khon run_samsum.py 
+[?2004lLoading SAMSum dataset: train_single.csv...
+Starting staggered SAMSum benchmark on 1 prompts...
+
+--- Processing Prompt 1/1 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on "how could I forget about Black Friday".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more exci ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Kim reminded Frank about Black Friday and Cyber Monday, mentioning that several studios will be releasing bundles. Frank asked about Kim's gaming preferences and was surprised to learn that Kim prefers playing on the PlayStation (PS) over PC, citing comfort and minimal difference in graphics. Kim also mentioned that Cyber Monday deals can make games more affordable, and suggested that Frank consider purchasing a game if he enjoys watching Netflix without a smart TV.
+
+[ Prompt: 12.5 t/s | Generation: 3.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

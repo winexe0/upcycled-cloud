@@ -1,0 +1,61 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m pytjom[K[K[Khon eu[K[K run_samsum.py 
+[?2004lLoading SAMSum dataset: train_single.csv...
+Starting staggered SAMSum benchmark on 1 prompts...
+
+--- Processing Prompt 1/1 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on "how could I forget about Black Friday".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more exci ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- The conversation involves two people discussing their preferences for gaming consoles and PCs, with Kim emphasizing the benefits of playing games on a PC and Frank expressing his preference for more affordable gaming options. They also discuss the differences in graphics between PC and PS, with Kim noting that the differences are minimal and that PS is more affordable. Frank mentions that he enjoys the plot and mechanics of games, and Kim notes that watching videos on YouTube comparing PC and PS can be helpful. Overall, the conversation is focused on discussing the benefits of playing games on PCs and the differences between PC and
+
+[ Prompt: 40.7 t/s | Generation: 10.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

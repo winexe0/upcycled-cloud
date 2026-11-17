@@ -1,0 +1,1796 @@
+an Empire is a long-standing and extensive historical en
+tity. Roman history and mythology have given rise to the
+ long-standing tradition of the Roman Empire. The Roman 
+Empire was a dominant world power, which was founded by 
+the Greek tribes. Rome's long history of rule and author
+ity over its territories and colonies stretches over a l
+ong span of time.                                       
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century                              
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century                              
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 485            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 486, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 510, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+ Bsrv  update_chat_: Parsing chat message: The Roman Emp
+ire is a long-standing and extensive historical entity. 
+Roman history and mythology have given rise to the long-
+standing tradition of the Roman Empire. The Roman Empire
+ was a dominant world power, which was founded by the Gr
+eek tribes. Rome's long history of rule and authority ov
+er its territories and colonies stretches over a long sp
+an of time.                                             
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B                            
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B                            
+slot process_toke: id  0 | task 0 | n_decoded = 486, n_r
+emaining = 14, next token:   350 ' B'                   
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 486            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 487, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 511, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+.srv  update_chat_: Parsing chat message: The Roman Empi
+re is a long-standing and extensive historical entity. R
+oman history and mythology have given rise to the long-s
+tanding tradition of the Roman Empire. The Roman Empire 
+was a dominant world power, which was founded by the Gre
+ek tribes. Rome's long history of rule and authority ove
+r its territories and colonies stretches over a long spa
+n of time.                                              
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.                           
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.                           
+slot process_toke: id  0 | task 0 | n_decoded = 487, n_r
+emaining = 13, next token: 29889 '.'                    
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 487            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 488, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 512, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+Cres          send: task id = 0 pushed to result queue  
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C                          
+slot process_toke: id  0 | task 0 | n_decoded = 488, n_r
+emaining = 12, next token: 29907 'C'                    
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 488            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 489, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 513, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C                          
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 489, n_r
+emaining = 11, next token: 29889 '.'                    
+srv  update_slots: run slots completed                  
+.que    start_loop: waiting for new tasks               
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 489            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 490, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 514, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C.                         
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C.                         
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 490, n_r
+emaining = 10, next token:   450 ' The'                 
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+ Theque    start_loop: processing new tasks             
+que    start_loop: processing task, id = 490            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 491, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 515, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The                     
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The                     
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+ citysrv  update_chat_: Parsing chat message: The Roman 
+Empire is a long-standing and extensive historical entit
+y. Roman history and mythology have given rise to the lo
+ng-standing tradition of the Roman Empire. The Roman Emp
+ire was a dominant world power, which was founded by the
+ Greek tribes. Rome's long history of rule and authority
+ over its territories and colonies stretches over a long
+ span of time.                                          
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city                
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city                
+slot process_toke: id  0 | task 0 | n_decoded = 491, n_r
+emaining = 9, next token:  4272 ' city'                 
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 491            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 492, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 516, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 492, n_r
+emaining = 8, next token:   310 ' of'                   
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 492            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 493, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 517, truncated = 0              
+ ofsrv  update_slots: decoding batch, n_tokens = 1      
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of             
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of             
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 493, n_r
+emaining = 7, next token:  9184 ' Rome'                 
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 493            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 494, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 518, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+ Romesrv  update_chat_: Parsing chat message: The Roman 
+Empire is a long-standing and extensive historical entit
+y. Roman history and mythology have given rise to the lo
+ng-standing tradition of the Roman Empire. The Roman Emp
+ire was a dominant world power, which was founded by the
+ Greek tribes. Rome's long history of rule and authority
+ over its territories and colonies stretches over a long
+ span of time.                                          
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome        
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome        
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+ wassrv  update_chat_: Parsing chat message: The Roman E
+mpire is a long-standing and extensive historical entity
+. Roman history and mythology have given rise to the lon
+g-standing tradition of the Roman Empire. The Roman Empi
+re was a dominant world power, which was founded by the 
+Greek tribes. Rome's long history of rule and authority 
+over its territories and colonies stretches over a long 
+span of time.                                           
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was    
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was    
+slot process_toke: id  0 | task 0 | n_decoded = 494, n_r
+emaining = 6, next token:   471 ' was'                  
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 494            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 495, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 519, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 495, n_r
+emaining = 5, next token: 11091 ' founded'              
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 495            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 496, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 520, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded                                                    
+ foundedParsing input with format Content-only: The Roma
+n Empire is a long-standing and extensive historical ent
+ity. Roman history and mythology have given rise to the 
+long-standing tradition of the Roman Empire. The Roman E
+mpire was a dominant world power, which was founded by t
+he Greek tribes. Rome's long history of rule and authori
+ty over its territories and colonies stretches over a lo
+ng span of time.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded                                                    
+res          send: sending result for task id = 0       
+ inres          send: task id = 0 pushed to result queue
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in                                                 
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in                                                 
+slot process_toke: id  0 | task 0 | n_decoded = 496, n_r
+emaining = 4, next token:   297 ' in'                   
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 496            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 497, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 521, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+ thesrv  update_chat_: Parsing chat message: The Roman E
+mpire is a long-standing and extensive historical entity
+. Roman history and mythology have given rise to the lon
+g-standing tradition of the Roman Empire. The Roman Empi
+re was a dominant world power, which was founded by the 
+Greek tribes. Rome's long history of rule and authority 
+over its territories and colonies stretches over a long 
+span of time.                                           
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the                                             
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the                                             
+slot process_toke: id  0 | task 0 | n_decoded = 497, n_r
+emaining = 3, next token:   278 ' the'                  
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 497            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 498, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 522, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot process_toke: id  0 | task 0 | n_decoded = 498, n_r
+emaining = 2, next token: 29871 ' '                     
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 498            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 499, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 523, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+ set_adapters_lora: adapters = 0x0                      
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the                                             
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the                                             
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the 9                                           
+slot process_toke: id  0 | task 0 | n_decoded = 499, n_r
+emaining = 1, next token: 29929 '9'                     
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 499            
+que    start_loop: update slots                         
+srv  update_slots: posting NEXT_RESPONSE                
+que          post: new task, id = 500, front = 0        
+slot update_slots: id  0 | task 0 | slot decode token, n
+_ctx = 2048, n_tokens = 524, truncated = 0              
+srv  update_slots: decoding batch, n_tokens = 1         
+set_adapters_lora: adapters = 0x0                       
+adapters_lora_are_same: adapters = 0x0                  
+set_embeddings: value = 0                               
+9Parsing input with format Content-only: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the 9                                           
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+thsrv  update_chat_: Parsing chat message: The Roman Emp
+ire is a long-standing and extensive historical entity. 
+Roman history and mythology have given rise to the long-
+standing tradition of the Roman Empire. The Roman Empire
+ was a dominant world power, which was founded by the Gr
+eek tribes. Rome's long history of rule and authority ov
+er its territories and colonies stretches over a long sp
+an of time.                                             
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the 9th                                         
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the 9th                                         
+slot process_toke: id  0 | task 0 | stopped by limit, n_
+decoded = 500, n_predict = 500                          
+slot process_toke: id  0 | task 0 | n_decoded = 500, n_r
+emaining = 0, next token:   386 'th'                    
+slot print_timing: id  0 | task 0 |                     
+prompt eval time =    1105.00 ms /    25 tokens (   44.2
+0 ms per token,    22.62 tokens per second)             
+       eval time =  298598.85 ms /   500 tokens (  597.2
+0 ms per token,     1.67 tokens per second)             
+      total time =  299703.86 ms /   525 tokens         
+res          send: sending result for task id = 0       
+res          send: task id = 0 pushed to result queue   
+slot      release: id  0 | task 0 | stop processing: n_t
+okens = 524, truncated = 0                              
+slot        reset: id  0 | task 0 |                     
+srv  update_slots: run slots completed                  
+que    start_loop: waiting for new tasks                
+que    start_loop: processing new tasks                 
+que    start_loop: processing task, id = 500            
+que    start_loop: update slots                         
+srv  update_slots: all slots are idle                   
+que    start_loop: waiting for new tasks                
+srv  update_chat_: Parsing chat message: The Roman Empir
+e is a long-standing and extensive historical entity. Ro
+man history and mythology have given rise to the long-st
+anding tradition of the Roman Empire. The Roman Empire w
+as a dominant world power, which was founded by the Gree
+k tribes. Rome's long history of rule and authority over
+ its territories and colonies stretches over a long span
+ of time.                                               
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the 9th                                         
+Parsing input with format Content-only: The Roman Empire
+ is a long-standing and extensive historical entity. Rom
+an history and mythology have given rise to the long-sta
+nding tradition of the Roman Empire. The Roman Empire wa
+s a dominant world power, which was founded by the Greek
+ tribes. Rome's long history of rule and authority over 
+its territories and colonies stretches over a long span 
+of time.                                                
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The Roman Empire spanned over a long 
+time and the history of the Roman Empire is a history of
+ long lasting legacies and challenging political and soc
+ial realities. The Roman Empire, in turn, had a rich his
+tory that was established by the Greek tribes in the 9th
+ century B.C. The Roman Empire was founded by the Greek 
+tribes in the 9th century B.C. The city of Rome was esta
+blished in the 8th century B.C. The city of Rome was the
+ capital of the Roman Empire in the 4th century B.C.    
+                                                        
+The Roman Empire's history is a history of long lasting 
+legacies and challenging political and social realities.
+ The Roman Empire started with the establishment of the 
+city of Rome, which was founded in the 9th century B.C. 
+The city of Rome was the capital of the Roman Empire in 
+the 4th century B.C. The Romans' history is the history 
+of long lasting legacies and challenging political and s
+ocial realities.                                        
+                                                        
+The Roman Empire started with the establishment of the c
+ity of Rome and its alliance with the Greek tribes in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies, which has b
+een in existence since the city of Rome was founded in t
+he 9th century B.C. In the 4th century B.C. The Roman Em
+pire expanded its territory to the colonies that were fo
+unded by the Greek tribes in the 9th century B.C.       
+                                                        
+The Roman Empire's long history began with the establish
+ment of the city of Rome and the founding of the Greek c
+olonies in the 9th century B.C. The city of Rome was fou
+nded in the 9th                                         
+Parsed message: {"role":"assistant","content":"The Roman
+ Empire is a long-standing and extensive historical enti
+ty. Roman history and mythology have given rise to the l
+ong-standing tradition of the Roman Empire. The Roman Em
+pire was a dominant world power, which was founded by th
+e Greek tribes. Rome's long history of rule and authorit
+y over its territories and colonies stretches over a lon
+g span of time.\n\nThe Roman Empire started with the est
+ablishment of the city of Rome and its alliance with the
+ Greek tribes in the 9th century B.C. The Roman Empire s
+panned over a long time and the history of the Roman Emp
+ire is a history of long lasting legacies and challengin
+g political and social realities. The Roman Empire, in t
+urn, had a rich history that was established by the Gree
+k tribes in the 9th century B.C. The Roman Empire was fo
+unded by the Greek tribes in the 9th century B.C. The ci
+ty of Rome was established in the 8th century B.C. The c
+ity of Rome was the capital of the Roman Empire in the 4
+th century B.C.\n\nThe Roman Empire's history is a histo
+ry of long lasting legacies and challenging political an
+d social realities. The Roman Empire started with the es
+tablishment of the city of Rome, which was founded in th
+e 9th century B.C. The city of Rome was the capital of t
+he Roman Empire in the 4th century B.C. The Romans' hist
+ory is the history of long lasting legacies and challeng
+ing political and social realities.\n\nThe Roman Empire 
+started with the establishment of the city of Rome and i
+ts alliance with the Greek tribes in the 9th century B.C
+. The city of Rome was the capital of the Roman Empire i
+n the 4th century B.C. The Romans' history is the histor
+y of long lasting legacies, which has been in existence 
+since the city of Rome was founded in the 9th century B.
+C. In the 4th century B.C. The Roman Empire expanded its
+ territory to the colonies that were founded by the Gree
+k tribes in the 9th century B.C.\n\nThe Roman Empire's l
+ong history began with the establishment of the city of 
+Rome and the founding of the Greek colonies in the 9th c
+entury B.C. The city of Rome was founded in the 9th"}   
+res  remove_waiti: remove task 0 from waiting list. curr
+ent waiting = 1 (before remove)                         
+srv          stop: all tasks already finished, no need t
+o cancel                                                
+                                                        
+                                                        
+[ Prompt: 22.6 t/s | Generation: 1.7 t/s ]              
+                                                        
+>                                                       
+~/llama.cpp/build-android-opencl $

@@ -1,0 +1,1 @@
+./bin/llama-cli -m ./Qwen2.5-1.5B-Instruct.Q4_0.gguf\?download\=true -v -p "Write a detailed history of the Roman Empire, focusing on the transition from Republic to Empire. Explain the roles of Julius Caesar and Augustus in at least 500 words." -n 512 -t 4

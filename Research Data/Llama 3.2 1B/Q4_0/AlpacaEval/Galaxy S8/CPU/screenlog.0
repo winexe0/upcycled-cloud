@@ -1,0 +1,423 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 300s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true.1
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| ```cpp
+#include <iostream>
+#include <string>
+
+std::string markdown_to_html(const std::string& markdown_text) {
+    // Define the HTML tags and their corresponding markdown equivalents
+    std::string html_tags[] = {
+        "<b>", "</b>", "<i>", "</i>", "<strong>", "</strong>", "<em>", "</em>", "<u>", "</u>", "<font>", "</font>", "<center>", "</center>", "<p>", "</p>", "<h1>", "</h1>", "<h2>", "</h2>", "<h3>", "</h3>", "<h4>", "</h4>", "<h5>", "</h5>", "<h6>", "</h6>", "<h7>", "</h7>", "<h8>", "</h8>", "<h9>", "</h9>", "<h10>", "</h10>", "<h11>", "</h11>", "<h12>", "</h12>", "<h13>", "</h13>", "<h14>", "</h14>", "<h15>", "</h15>", "<h16>", "</h16>", "<h17>", "</h17>", "<h18>", "</h18>", "<h19>", "</h19>", "<h20>", "</h20>", "<h21>", "</h21>", "<h22>", "</h22>", "<h23>", "</h23>", "<h24>", "</h24>", "<h25>", "</h25>", "<h26>", "</h26>", "<h27>", "</h27>", "<h28>", "</h28>", "<h29>", "</h29>", "<h30>", "</h30>", "<h31>", "</h31>", "<h32>", "</h32>", "<h33>", "</h33>", "<h34>", "</h34>", "<h35>", "</h35>", "<h36>", "</h36>", "<h37>", "</h37>", "<h38>", "</h38>", "<h39>", "</h39>", "<h40>", "</h40>", "<h41>", "</h41>", "<h42>", "</h42>", "<h43>", "</h43>", "<h44>", "</h44>", "<h45>", "</h45>", "<h46>", "</h46>", "<h47>", "</h47>", "<h48>", "</h48>", "<h49>", "</h49>", "<h50>", "</h50>", "<h51>", "</h51>", "<h52>", "</h52>", "<h53>", "</h53>", "<h54>", "</h54>", "<h55>", "</h55>", "<h56>", "</h56>", "<h57>", "</h57>", "<h58>", "</h58>", "<h59>", "</h59>", "<h60>", "</h60>", "<h61>", "</h61>", "<h62>", "</h62>", "<h63>", "</h63>", "<h64>", "</h64>", "<h65>", "</h65>", "<h66>", "</h66>", "<h67>", "</h67>", "<h68>", "</h68>", "<h69>", "</h69>", "<h70>", "</h70>", "<h71>", "</h71>", "<h72>", "</h72>", "<h73>", "</h73>", "<h74>", "</h74>", "<h75>", "</h75>", "<h76>", "</h76>", "<h77>", "</h77>", "<h78>", "</h78>", "<h79>", "</h79>", "<h80>", "</h80>", "<h81>", "</h81>", "<h82>", "</h82>", "<h83>", "</h83>", "<h84>", "</h84>", "<h85>", "</h85>", "<h86>", "</h86>", "<h87>", "</h87>", "<h88>", "</h88>", "<h89>", "</h89>", "<h90>", "</h90>", "<h91>", "</h91>", "<h92>", "</h92>", "<h93>", "</h93>", "<h94>", "</h94>", "<h95>", "</h95>", "<h96>", "</h96>", "<h97>", "</h97>", "<h98>", "</h98>", "<h99>", "</h99>", "<h100>", "</h100>"};
+    
+    // Check if the input string is empty
+    if (markdown_text.empty()) {
+        return "";
+    }
+
+    // Find the index of the first '>' character, which marks the start of the HTML tags
+    size_t start_index = markdown_text.find('>');
+
+    // Find the index of the first '<' character, which marks the end of the HTML tags
+    size_t end_index = markdown_text.find('<');
+
+    // Extract the HTML tags from the input string
+    std::string html_text = markdown_text.substr(0, start_index) + std::string(html_tags.begin(), html_tags.end()) +
+
+[ Prompt: 14.4 t/s | Generation: 4.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true.1
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| To craft a persuasive proposal for the new client, I've outlined a comprehensive plan that highlights the benefits and value of having a professional editor/publisher like Skinny Brown Dog Media for their book Unbreakable Confidence.
+
+**Proposal Title:** Unlocking Unbreakable Confidence: A Comprehensive Proposal for [Client Name]
+
+**Executive Summary:**
+As a seasoned ghostwriter with a proven track record of delivering high-quality content, I am excited to offer my services as an editor/publisher for [Client Name]'s book, Unbreakable Confidence. With my expertise in crafting compelling narratives and refining polished prose, I am confident that I can help [Client Name] achieve their writing goals and deliver a book that exceeds their expectations.
+
+**Benefits of Working with Me:**
+
+1. **Expert Guidance:** With [number] years of experience in ghostwriting and editing, I possess the expertise to guide [Client Name] through the writing process, ensuring that their book is polished, engaging, and error-free.
+2. **Time-Saving:** By outsourcing the editing and publishing process, [Client Name] can focus on their core business, allowing them to allocate more time to strategic planning, marketing, and growth initiatives.
+3. **Increased Credibility:** A professionally edited and published book can significantly enhance [Client Name]'s credibility and reputation in their industry, establishing them as a thought leader and authority in their field.
+4. **Improved Sales:** A well-crafted book can lead to increased sales, as readers are more likely to engage with a book that has been carefully edited and polished.
+5. **Enhanced Branding:** A professionally published book can help [Client Name] establish a strong brand identity, setting them apart from competitors and positioning them for long-term success.
+
+**Services Offered:**
+
+1. **Content Review and Editing:** I will review [Client Name]'s manuscript, providing feedback on structure, tone, and style, and making recommendations for improvement.
+2. **Line Editing:** I will refine the manuscript, ensuring that it is free of errors, flows smoothly, and engages the reader.
+3. **Copy Editing:** I will review the manuscript for grammar, punctuation, and spelling accuracy, ensuring that it is error-free and polished.
+4. **Proofreading:** I will conduct a final proofread to ensure that the manuscript is error-free and ready for publication.
+
+**Deliverables:**
+
+1. A professionally edited and polished manuscript
+2. A formatted manuscript for print-on-demand and e-book distribution
+3. A marketing plan and distribution strategy to promote the book
+
+**Timeline:**
+
+* Manuscript review and editing: [number] days
+* Line editing and copy editing: [number] days
+* Proofreading: [number] days
+* Final manuscript delivery: [number] days
+
+**Conclusion:**
+By partnering with me as an editor/publisher, [Client Name] can unlock the full potential of their book, Unbreakable Confidence, and achieve their writing goals. I am confident that my expertise, guidance, and services will help [Client Name] deliver a high-quality book that exceeds their expectations and sets them up for long-term success.
+
+Please let me know if this proposal meets your requirements, and I'll be happy to discuss the details further.
+
+[ Prompt: 14.6 t/s | Generation: 4.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true.1
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- The many-worlds interpretation (MWI) of quantum mechanics, proposed by Hugh Everett in 1957, has been a topic of debate among physicists and philosophers. While it has its theoretical advantages, the MWI has also been criticized for several reasons that may contribute to its unpopularity.
+
+One of the primary concerns is the problem of quantum decoherence, which refers to the loss of quantum coherence due to interactions with the environment. In the MWI, every time a quantum system collapses, it creates a new universe, effectively "decoupling" from the original universe. This raises questions about the nature of reality and the concept of a single, unified universe.
+
+Another issue is the problem of quantum non-locality, which suggests that information can be transmitted instantaneously across vast distances. The MWI attempts to resolve this issue by proposing that every time a quantum system interacts with the environment, it creates a new universe, effectively creating a "multiverse" of parallel universes.
+
+Additionally, the MWI has been criticized for its lack of predictive power. While it provides a framework for understanding the behavior of quantum systems, it does not make specific predictions about the behavior of particles or the outcome of experiments.
+
+Finally, the MWI has been criticized for its implications on the concept of free will. If every time a quantum system collapses, it creates a new universe, it raises questions about the nature of free will and the ability of individuals to make choices that are not predetermined by the MWI.
+
+In conclusion, while the many-worlds interpretation of quantum mechanics has its theoretical advantages, its criticisms and limitations have contributed to its unpopularity. The MWI's inability to make specific predictions, its lack of predictive power, and its implications on the concept of free will have raised concerns among physicists and philosophers, making it a topic of ongoing debate and discussion.
+
+[ Prompt: 14.4 t/s | Generation: 4.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true.1
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here's a Python script that uses the `numpy` library to calculate the derivative of a function using the Average Rate of Change Formula:
+
+```python
+import numpy as np
+
+def calculate_derivative():
+    # Get user input for the function and its derivative
+    func_name = input("Enter the name of the function: ")
+    a = float(input("Enter the value of a: "))
+    b = float(input("Enter the value of b: "))
+
+    # Calculate the function value at a and b
+    f_a = eval(func_name + "(" + str(a) + ")")
+    f_b = eval(func_name + "(" + str(b) + ")")
+
+    # Calculate the derivative using the Average Rate of Change Formula
+    derivative = (f_b - f_a) / (b - a)
+
+    # Print the result
+    print(f"The derivative of {func_name} at x = {a} is {derivative}")
+
+# Run the script
+calculate_derivative()
+```
+
+This script prompts the user to enter the name of the function and its derivative. It then calculates the function value at `a` and `b` using the `eval` function, which parses the input string as a Python expression. Finally, it calculates the derivative using the Average Rate of Change Formula and prints the result.
+
+Please note that this script assumes that the user input is a valid Python expression. If the input is not valid, the script may raise an error. Additionally, this script uses the `eval` function, which can be a security risk if the input is not validated properly. In a real-world application, you should use a safer method to evaluate the user input, such as using a parsing library or a safer evaluation function.
+
+[ Prompt: 14.6 t/s | Generation: 4.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true.1
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Based on the merchant navy studies website, here are some subniches that could be explored with content, along with a popularity score out of 100:
+
+| Subniche | Popularity Score |
+| --- | --- |
+| 1. Maritime Law and Regulations | 80 |
+| 2. Shipbuilding and Construction | 70 |
+| 3. Maritime Safety and Security | 60 |
+| 4. Shipping Industry Trends and News | 50 |
+| 5. Maritime Education and Training | 40 |
+| 6. Maritime History and Heritage | 30 |
+| 7. Maritime Technology and Innovation | 20 |
+| 8. Maritime Business and Finance | 10 |
+| 9. Maritime Ethics and Social Responsibility | 5 |
+| 10. Maritime Culture and Society | 0 |
+
+These subniches cater to various interests and areas of focus, allowing you to create content that resonates with your target audience. The popularity scores are subjective and based on general trends in the maritime industry.
+
+Some potential content ideas for these subniches include:
+
+- Maritime Law and Regulations:
+  - Articles on maritime law and its impact on the shipping industry
+  - Analysis of recent maritime law developments and their implications
+  - Interviews with experts on maritime law and its applications
+
+- Shipbuilding and Construction:
+  - In-depth guides to shipbuilding processes and technologies
+  - Case studies of successful shipbuilding projects and their impact on the industry
+  - Industry trends and forecasts for the future of shipbuilding
+
+- Maritime Safety and Security:
+  - Articles on maritime safety regulations and best practices
+  - Analysis of recent maritime security threats and their impact on the industry
+  - Interviews with experts on maritime safety and security
+
+- Shipping Industry Trends and News:
+  - Analysis of recent shipping industry trends and their impact on the market
+  - Interviews with industry experts on the future of the shipping industry
+  - News updates on shipping industry events and developments
+
+- Maritime Education and Training:
+  - Articles on maritime education programs and their benefits
+  - Analysis of the effectiveness of maritime education and training programs
+  - Interviews with industry experts on the importance of maritime education
+
+- Maritime History and Heritage:
+  - In-depth articles on maritime history and its impact on the industry
+  - Analysis of the significance of maritime heritage sites and their preservation
+  - Interviews with historians and experts on maritime history
+
+- Maritime Technology and Innovation:
+  - Articles on the latest maritime technology and its applications
+  - Analysis of the impact of technology on the shipping industry
+  - Interviews with industry experts on the future of maritime technology
+
+- Maritime Business and Finance:
+  - Articles on maritime business and finance trends and their impact on the industry
+  - Analysis of the financial aspects of the shipping industry
+  - Interviews with industry experts on the importance of maritime finance
+
+- Maritime Ethics and Social Responsibility:
+  - Articles on the ethics of maritime activities and their impact on society
+  - Analysis of the social responsibility of the shipping industry
+  - Interviews with experts on the importance of maritime ethics and social responsibility
+
+- Maritime Culture and Society:
+  - Articles on the cultural significance of maritime activities and their impact on society
+  - Analysis of the role of maritime culture in shaping society
+  - Interviews with experts on the importance of maritime culture and society
+
+These are just a few ideas to get you started. Remember to tailor your content to your target audience and focus on providing valuable information and insights that resonate with them.
+
+[ Prompt: 13.9 t/s | Generation: 4.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

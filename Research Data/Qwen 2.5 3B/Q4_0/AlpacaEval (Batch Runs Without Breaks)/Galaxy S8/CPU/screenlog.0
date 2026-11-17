@@ -1,0 +1,522 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 0s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : qwen2.5-3b-instruct-q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Certainly! Below is a C++ function that takes a reference to a `std::string` containing markdown formatted text and returns a `std::string` containing HTML formatted text. This function uses a simple mapping of markdown to HTML tags. For simplicity, we'll assume a basic set of markdown to HTML mappings:
+
+```cpp
+#include <string>
+#include <iostream>
+
+// Function to convert markdown to HTML
+std::string markdownToHtml(const std::string& markdownText) {
+    // Simple mapping of markdown to HTML
+    std::map<std::string, std::string> markdownToHtmlMap = {
+        {"# ", "<h1>"},
+        {"## ", "<h2>"},
+        {"### ", "<h3>"},
+        {"#### ", "<h4>"},
+        {"##### ", "<h5>"},
+        {"###### ", "<h6>"},
+        {"<p>", "<p>"},
+        {"<ul>", "<ul>"},
+        {"<li>", "<li>"},
+        {"<ol>", "<ol>"},
+        {"<br>", "<br/>"},
+        {"<a href=", "<a href="},
+        {"</a>", "</a>"},
+        {"<img src=", "<img src="},
+        {"</img>", "</img>"},
+        {"<code>", "<code>"},
+        {"</code>", "</code>"},
+        // Add more mappings as needed
+    };
+
+    std::string htmlText;
+    std::string temp;
+    std::string currentTag;
+
+    for (size_t i = 0; i < markdownText.length(); ++i) {
+        char ch = markdownText[i];
+        if (ch == '<') {
+            // Check if the next character is a closing tag
+            if (i + 1 < markdownText.length() && markdownText[i + 1] == '/') {
+                // Find the corresponding opening tag
+                for (const auto& [key, value] : markdownToHtmlMap) {
+                    if (value.substr(1) == std::string(1, ch)) {
+                        currentTag = key;
+                        break;
+                    }
+                }
+                // Append the closing tag to the HTML text
+                htmlText += "</" + currentTag + ">";
+                i += 2; // Skip the closing tag
+            } else {
+                // Append the opening tag to the HTML text
+                htmlText += "<" + std::string(1, ch);
+                i++; // Skip the opening tag
+            }
+        } else if (ch == '>') {
+            // Append the closing tag to the HTML text
+            htmlText += "</" + currentTag + ">";
+            currentTag.clear();
+        } else {
+            // Append the character to the temporary string
+            temp += ch;
+            // Check if the temporary string matches any markdown to HTML mapping
+            for (const auto& [key, value] : markdownToHtmlMap) {
+                if (temp == key) {
+                    htmlText += value;
+                    temp.clear();
+                    break;
+                }
+            }
+        }
+    }
+
+    // Append any remaining characters in the temporary string
+    if (!temp.empty()) {
+        htmlText += temp;
+    }
+
+    return htmlText;
+}
+
+int main() {
+    std::string markdownText = "# Hello, World!\n\n## Subheading\n\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n<ol>\n
+
+[ Prompt: 5.0 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : qwen2.5-3b-instruct-q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Certainly! Below is a persuasive proposal that highlights the benefits and value of having a ghost writer and editor/publisher for the book "Unbreakable Confidence":
+
+---
+
+**Proposal for Ghost Writing and Publishing Services**
+
+Dear [Client's Name],
+
+I hope this message finds you well. My name is [Your Name], and I am thrilled to introduce myself as the ghost writer and publisher for your upcoming book, "Unbreakable Confidence."
+
+**Introduction to Skinny Brown Dog Media**
+
+Skinny Brown Dog Media is a boutique publishing company dedicated to helping authors bring their ideas to life. We specialize in crafting compelling narratives that resonate with readers and help them achieve their goals. Our team of experienced writers, editors, and publishers is committed to delivering high-quality content that not only meets but exceeds your expectations.
+
+**Why Choose Skinny Brown Dog Media?**
+
+1. **Expertise in Ghost Writing:**
+   - Our team of ghost writers are skilled in crafting compelling narratives that engage readers and convey your message effectively. We understand the importance of a well-written manuscript and will ensure that your book is polished and ready for publication.
+   
+2. **Professional Editing and Publishing Services:**
+   - We offer comprehensive editing services to ensure your manuscript is error-free and meets the highest standards of quality. Our editors will help you refine your writing, improve clarity, and enhance the overall readability of your book.
+   - Once your manuscript is polished, we will work with you to choose the right publishing platform and ensure your book is marketed effectively to reach its target audience.
+   
+3. **Customized Solutions:**
+   - We understand that every author and book is unique. That's why we offer customized solutions tailored to your specific needs. Whether you need a full ghost writing service or just editing and publishing assistance, we have the expertise to deliver.
+   
+4. **Track Record of Success:**
+   - Skinny Brown Dog Media has a proven track record of success. Our clients have seen significant growth in their readership and have achieved their publishing goals. We have a strong reputation for delivering high-quality content and have worked with authors from various backgrounds and genres.
+   
+5. **Transparent Pricing:**
+   - We believe in transparency and offer clear pricing structures. We will provide you with a detailed proposal outlining the services we will provide, the cost, and the timeline. We are committed to working with you to ensure that the project is completed within your budget and timeline.
+   
+6. **Flexible Contract Options:**
+   - We offer flexible contract options to accommodate your needs. Whether you prefer a fixed-price contract or a project-based arrangement, we can tailor our services to meet your requirements.
+   
+7. **Support and Collaboration:**
+   - We believe in building strong relationships with our clients. We will work closely with you throughout the process, providing guidance and support to ensure that your book is a success. We are committed to your success and will be available to answer any questions or concerns you may have.
+
+**Conclusion**
+
+I am confident that Skinny Brown Dog Media can help you achieve your goals with the book "Unbreakable Confidence." Our team of ghost writers, editors, and publishers are dedicated to helping you bring your vision to life. I would be delighted to discuss your project in more detail and provide a detailed proposal outlining the services we can offer.
+
+Thank you for considering Skinny Brown Dog Media. I look forward to the opportunity to work with you.
+
+Warm regards,
+
+[Your Name]
+[Your Title]
+Skinny Brown Dog Media
+
+---
+
+Feel free to adjust the proposal to better fit your specific needs and the client's preferences.
+
+[ Prompt: 5.0 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : qwen2.5-3b-instruct-q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- The many-worlds interpretation of quantum mechanics, proposed by physicist Hugh Everett III in 1957, suggests that every time a quantum measurement is made, the universe splits into multiple parallel universes, each representing a different outcome of the measurement. This interpretation can be challenging for many people for several reasons:
+
+1. **Unobservable Nature**: The many-worlds interpretation posits that parallel universes exist, but they are unobservable. This makes it difficult for some people to accept the idea that these universes are real and not just a theoretical construct.
+
+2. **Quantum Measurement Problem**: The interpretation hinges on the idea that every measurement of a quantum system leads to a branching of the universe. However, the exact mechanism of this branching is not clearly defined, which can be confusing and difficult to grasp.
+
+3. **Philosophical Implications**: The many-worlds interpretation challenges the traditional notion of a single, objective reality. It implies that every possible outcome of a quantum event occurs in some universe, which can lead to philosophical questions about free will, determinism, and the nature of reality itself.
+
+4. **Lack of Experimental Verification**: Unlike some other interpretations, the many-worlds interpretation has not been directly tested or verified through experiments. This makes it difficult for some people to accept it as a valid scientific theory.
+
+5. **Simplicity vs. Complexity**: Some people prefer simpler explanations for quantum phenomena. The many-worlds interpretation introduces a level of complexity that can be seen as unnecessary or overly complicated.
+
+6. **Interpretation of Schrödinger's Cat**: The Schrödinger's cat thought experiment, which is often used to illustrate the concept of superposition in quantum mechanics, can be interpreted differently under the many-worlds interpretation. Some find this interpretation of the experiment to be less intuitive and more confusing.
+
+Despite these challenges, many physicists find the many-worlds interpretation to be a coherent and elegant solution to the measurement problem in quantum mechanics. It avoids the need for concepts like wave function collapse and provides a consistent framework for understanding quantum mechanics. However, the interpretation remains a subject of debate and discussion within the scientific community.
+
+[ Prompt: 4.7 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : qwen2.5-3b-instruct-q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Certainly! Below is a Python script that calculates the derivative using the Average Rate of Change Formula \( A(x) = \frac{f(b) - f(a)}{b - a} \). The user will input the values of \( a \) and \( b \) to calculate the derivative at a specific point \( x \).
+
+```python
+def average_rate_of_change(a, b):
+    # Define the function f(x) that you want to find the derivative of
+    def f(x):
+        # Example function: f(x) = x^2
+        return x ** 2
+
+    # Calculate the derivative using the average rate of change formula
+    derivative = (f(b) - f(a)) / (b - a)
+    return derivative
+
+def main():
+    # User input for a and b
+    a = float(input("Enter the value of a: "))
+    b = float(input("Enter the value of b: "))
+    
+    # Calculate and print the derivative
+    derivative = average_rate_of_change(a, b)
+    print(f"The derivative at x = {a} is: {derivative}")
+
+if __name__ == "__main__":
+    main()
+```
+
+In this script, you can replace the function `f(x)` with any function you want to find the derivative of. The `main` function prompts the user to input values for \( a \) and \( b \), and then calculates and prints the derivative at \( x = a \) using the average rate of change formula.
+
+Feel free to modify the function `f(x)` to suit your needs!
+
+[ Prompt: 4.7 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : qwen2.5-3b-instruct-q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Certainly! Below is a table with some sub-niches related to merchant navy studies, along with a popularity score (ranging from 1 to 100) based on their relevance and current interest levels. Please note that popularity scores are subjective and can vary based on current trends and the specific audience of your website.
+
+| Sub-Niche | Popularity Score |
+|-----------|-----------------|
+| Merchant Navy Career Paths | 85              |
+| Merchant Navy Training Programs | 75             |
+| Merchant Navy Job Opportunities | 80             |
+| Merchant Navy Salary and Benefits | 70             |
+| Merchant Navy Certifications | 85             |
+| Merchant Navy Safety and Regulations | 75             |
+| Merchant Navy International Shipping | 80             |
+| Merchant Navy Maritime Law | 65             |
+| Merchant Navy Maritime Technology | 70             |
+| Merchant Navy Maritime History | 60             |
+| Merchant Navy Maritime Culture | 65             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology | 55             |
+| Merchant Navy Maritime Psychology |
+
+[ Prompt: 4.7 t/s | Generation: 1.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

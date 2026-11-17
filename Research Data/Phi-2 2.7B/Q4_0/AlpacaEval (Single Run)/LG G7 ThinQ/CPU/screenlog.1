@@ -1,0 +1,74 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 1 prompts...
+
+WARNING: Strict thermal controls engaged. 180s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/1 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : phi-2-instruct.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Sure! Here's a Python script that accomplishes the task:
+
+```python
+def derivative(x):
+    a = float(input("Enter the lower bound: "))
+    b = float(input("Enter the upper bound: "))
+    f_a = float(input("Enter the value of f(a):a "))
+    f_b = float(input("Enter the value of f(b): "))
+    return (f_b - f_a) / (b - a)
+
+x = float(input("Enter the value of x: "))
+print("The derivative of the function at x =", x, "is", derivative(x))
+```
+
+This script prompts the user to enter the lower bound (a), upper bound (b), and the values of f(a) and f(b). It then calculates the derivative using the Average Rate of Change Formula and outputs the result.
+
+To use this script, you need to run it in a Python environment. The script will prompt you to enter the values of a, b, and x. Once you have entered the values, it will calculate the derivative and display the result.
+
+[ Prompt: 6.1 t/s | Generation: 0.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m a[K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m a[K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m a[Kw[Kexir
+[?2004lNo command exir found, did you mean:
+ Command expr in package coreutils
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exir[Kt
+[?2004lexit

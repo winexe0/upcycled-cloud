@@ -1,0 +1,1299 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m sudo python run_mega.py 
+[?2004lLoading Mega dataset: mega.csv...
+Starting Mega benchmark on 50 randomized prompts...
+
+--- Processing Prompt 1/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+```bash
+#!/bin/bash
+SOURCE_DIR="/path/to/source"
+DEST_DIR="/path/to/backup"
+DATE=$(date +%Y-%m-%d)
+tar -czvf "$DEST_DIR/backup-$DATE.tar.gz" "$SOURCE_DIR"
+echo "Backup completed."
+```
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Here's a bash script that backs up a directory to a tar.gz file with today's date:
+
+```bash
+#!/bin/bash
+
+# Set the directory to backup and the backup file name
+BACKUP_DIR=/path/to/your/directory
+BACKUP_FILE=$(date +"%Y-%m-%d-%H-%M-%S").tar.gz
+
+# Create the backup directory if it doesn't exist
+mkdir -p /path/to/your/backup/directory
+
+# Backup the directory to the tar.gz file
+tar -czf "$BACKUP_FILE" "$BACKUP_DIR"
+
+# Print a success message
+echo "Backup completed successfully"
+```
+
+**How to use this script:**
+
+1. Replace `/path/to/your/directory` with the actual path to the directory you want to backup.
+2. Replace `/path/to/your/backup/directory` with the actual path to the directory where you want to store the backup files.
+3. Save this script to a file (e.g., `backup.sh`).
+4. Make the script executable by running `chmod +x backup.sh`.
+5. Run the script by executing `./backup.sh`.
+
+**Note:** This script assumes that the directory to be backed up is not empty. If the directory is empty, the script will still create the tar.gz file, but it will be empty.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (250). Resuming inference...
+
+--- Processing Prompt 2/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+```python
+import sympy as sp
+
+def main():
+    func_str = input("Enter a function of x (e.g., x**2): ")
+    a = float(input("Enter starting point a: "))
+    b = float(input("Enter ending point b: "))
+    
+    x = sp.Symbol('x')
+    f = sp.sympify(func_str)
+    
+    f_a = f.subs(x, a)
+    f_b = f.subs(x, b)
+    
+    arc = (f_b - f_a) / (b - a)
+    print(f"The average rate of change is: {arc}")
+
+if __name__ == "__main__":
+    main()
+```
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here's a Python script that takes user input for 'a' and 'b', calculates the derivative using the Average Rate of Change Formula, and then prints the result.
+
+```python
+def average_rate_of_change(a, b, f):
+    """
+    Calculate the derivative using the Average Rate of Change Formula.
+
+    Args:
+        a (float): The starting point.
+        b (float): The ending point.
+        f (function): The function for which the derivative is to be calculated.
+
+    Returns:
+        float: The derivative of the function at point x.
+    """
+    return (f(b) - f(a)) / (b - a)
+
+
+def main():
+    # Get user input for 'a' and 'b'
+    a = float(input("Enter the starting point (x=a): "))
+    b = float(input("Enter the ending point (x=b): "))
+
+    # Define a function for which the derivative is to be calculated
+    def f(x):
+        return x ** 2  # Example function: f(x) = x^2
+
+    # Calculate the derivative
+    derivative = average_rate_of_change(a, b, f)
+
+    # Print the result
+    print(f"The derivative of f(x) = {f.__name__} at x = {a} is {derivative}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+This script will prompt the user to enter the starting and ending points, calculate the derivative using the Average Rate of Change Formula, and then print the result. The example function used is f(x) = x^2, but you can replace it with any function you want to calculate the derivative for.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (270). Resuming inference...
+
+--- Processing Prompt 3/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Nina and Oscar agreed to get coffee tomorrow because Oscar is busy today.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Nina invites Oscar to grab coffee, but he declines due to being swamped. However, he agrees to reschedule for the next day, which Nina accepts.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (270). Resuming inference...
+
+--- Processing Prompt 4/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+The server is down and IT is investigating. Pat will update Chris when there is an ETA.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Chris reports that the server is down again. Pat confirms that IT is investigating the issue and will provide an update. The current ETA is unknown, and Pat will notify Chris when more information is available.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (280). Resuming inference...
+
+--- Processing Prompt 5/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Adriana is feeling sick, so she needs to give up her plans for today. Elisa went to the pool, she did 1 hour of swimming and 1 hour of sauna.
+
+MODEL GENERATED OUTPUT (SAMSum):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (280). Resuming inference...
+
+--- Processing Prompt 6/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+The theory of relativity.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (290). Resuming inference...
+
+--- Processing Prompt 7/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+TCP (Transmission Control Protocol) is connection-oriented, meaning it establishes a reliable connection and ensures all packets are delivered in order without errors. UDP (User Datagram Protocol) is connectionless; it sends packets without checking for successful delivery, making it faster but less reliable. TCP is used for web browsing and file transfers, while UDP is used for live streaming and gaming.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two fundamental protocols used for data communication over the internet. While both protocols are used for transferring data, they have distinct differences in terms of their approach, reliability, and performance.
+
+**TCP:**
+
+TCP is a connection-oriented protocol, which means that a connection is established between the sender and receiver before data is sent. This connection is maintained throughout the data transfer process. TCP ensures that data is delivered in the correct order and reassembles it at the receiving end.
+
+Key characteristics of TCP:
+
+* Connection-oriented
+* Reliable (guarantees delivery of data)
+* Ordered (data is delivered in the correct order)
+* Error-checked (errors are detected and corrected)
+* Flow-controlled (data is sent in manageable chunks)
+
+**UDP:**
+
+UDP is a connectionless protocol, which means that no connection is established before data is sent. UDP does not guarantee delivery of data, and it does not provide error-checking or reassembly of data at the receiving end.
+
+Key characteristics of UDP:
+
+* Connectionless
+* Unreliable (does not guarantee delivery of data)
+* Unordered (data is delivered in any order)
+* Error-tolerant (errors are not detected or corrected)
+* Best-effort delivery (data is delivered as best as possible)
+
+**Comparison:**
+
+|  | TCP | UDP |
+| --- | --- | --- |
+| Connection | Connection-oriented | Connectionless |
+| Reliability | Guaranteed | Unreliable |
+| Order | Ordered | Unordered |
+| Error-checking | Error-checked | Error-tolerant |
+| Flow control | Flow-controlled | Best-effort delivery |
+
+In summary, TCP is a reliable protocol that ensures data is delivered in the correct order, while UDP is a fast and efficient protocol that prioritizes speed over reliability. The choice between TCP and UDP depends on the specific application and requirements.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (290). Resuming inference...
+
+--- Processing Prompt 8/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Bob will print a copy of the meeting notes for Alice.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here is a summary of the conversation:
+
+Alice couldn't find her notes for a meeting. Bob offered to print a copy for her, which she gratefully accepted.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (300). Resuming inference...
+
+--- Processing Prompt 9/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+```sql
+SELECT MAX(Salary) AS SecondHighestSalary 
+FROM Employee 
+WHERE Salary < (SELECT MAX(Salary) FROM Employee);
+```
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ SELECT DISTINCT Salary FROM Employee ORDER BY Salary DESC LIMIT 1 OFFSET 1
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (300). Resuming inference...
+
+--- Processing Prompt 10/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Greg wished Helen a happy birthday. Helen is celebrating with a family dinner.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Greg wishes Helen a happy birthday and expresses his well-wishes. Helen responds that she's having dinner with her family tonight, and Greg offers his enjoyment.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (300). Resuming inference...
+
+--- Processing Prompt 11/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+Ingredients:
+- 1 cup flour
+- 1 cup sugar
+- 1/2 cup cocoa powder
+- 1 tsp baking powder
+- 1/2 cup milk
+- 1/2 cup vegetable oil
+- 2 eggs
+- 1 tsp vanilla extract
+
+Instructions:
+1. Preheat oven to 350°F (175°C).
+2. Mix dry ingredients in a bowl.
+3. Add wet ingredients and whisk until smooth.
+4. Pour batter into a greased pan.
+5. Bake for 30 minutes. Let cool before serving.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here's a recipe for a simple chocolate cake that serves 8-10 people:
+
+**Ingredients:**
+
+* 2 1/4 cups all-purpose flour
+* 1 1/2 cups granulated sugar
+* 2 teaspoons baking powder
+* 1 teaspoon salt
+* 1 cup unsweetened cocoa powder
+* 1 cup whole milk, at room temperature
+* 2 large eggs
+* 1 teaspoon vanilla extract
+
+**Instructions:**
+
+1. Preheat your oven to 350°F (180°C). Grease two 9-inch (23cm) round cake pans and line the bottoms with parchment paper.
+2. In a medium bowl, whisk together the flour, sugar, baking powder, and salt.
+3. In a large mixing bowl, combine the cocoa powder and milk. Stir until the cocoa powder is well combined with the milk.
+4. Add the eggs one at a time, stirring well after each addition. Stir in the vanilla extract.
+5. Gradually add the dry ingredients to the chocolate mixture, stirring until just combined.
+6. Divide the batter evenly between the prepared pans and smooth the tops.
+7. Bake for 30-35 minutes, or until a toothpick inserted into the center of each cake comes out clean.
+8. Remove the cakes from the oven and let them cool in the pans for 10 minutes.
+9. Transfer the cakes to a wire rack to cool completely.
+
+**Optional Frosting:**
+
+If you'd like to frost your cake, you can make a simple chocolate frosting by melting 1 cup of chocolate chips with 2 tablespoons of unsalted butter in a double boiler. Stir in 1 teaspoon of vanilla extract and 2 cups of powdered sugar. Spread or pipe the frosting onto the cooled cake.
+
+**Tips:**
+
+* To ensure the cake is moist, don't overmix the batter.
+* If you're not using the frosting, you can dust the cake with powdered sugar or serve it plain.
+* You can also add nuts, chocolate chips, or other mix-ins to the batter for added flavor and texture.
+
+Enjoy your delicious simple chocolate cake!
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (300). Resuming inference...
+
+--- Processing Prompt 12/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+Dear [Client Name],
+
+I am thrilled to submit my proposal on behalf of Skinny Brown Dog Media to serve as your ghostwriter for *Unbreakable Confidence*. Having a professional editor and publishing partner ensures your voice remains authentic while elevating the prose to industry standards. We will handle the heavy lifting of structure, pacing, and grammatical perfection, allowing you to focus on sharing your powerful message. Let's build your unbreakable confidence on the page together.
+
+Best,
+[Your Name]
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here's a persuasive proposal that highlights the benefits and value of having a ghostwriter for the book "Unbreakable Confidence":
+
+Dear [Client's Name],
+
+I am thrilled to submit a proposal for ghostwriting services to help bring your vision for "Unbreakable Confidence" to life. As a seasoned writer with a passion for storytelling, I am confident that I can help you create a compelling and engaging book that resonates with your target audience.
+
+About Me:
+With [number] years of experience in writing and editing, I possess a unique blend of creative flair and technical expertise. My writing style is engaging, informative, and accessible, making me an ideal partner for your project. I have a proven track record of producing high-quality content that meets and exceeds client expectations.
+
+Benefits of Working with Me:
+
+1. **Expertise in Content Creation**: As a ghostwriter, I will take the time to understand your vision, goals, and target audience, ensuring that your book is tailored to meet your needs.
+2. **High-Quality Writing**: I will craft engaging, well-structured chapters that capture the essence of your message, making your book a valuable resource for your readers.
+3. **Research and Fact-Checking**: I will conduct thorough research to ensure accuracy and credibility, saving you time and effort.
+4. **Editing and Revisions**: I will review and refine your manuscript to ensure it meets the highest standards of quality, clarity, and coherence.
+5. **Marketing and Promotion**: I will provide guidance on how to effectively market and promote your book, helping you reach a wider audience and achieve your goals.
+
+Value Proposition:
+By partnering with me, you can expect:
+
+* A well-researched, engaging, and informative book that resonates with your target audience
+* A high-quality manuscript that meets the highest standards of writing, editing, and fact-checking
+* A comprehensive marketing and promotion plan to help you reach a wider audience and achieve your goals
+* A dedicated and experienced ghostwriter who is committed to delivering exceptional results
+
+Deliverables:
+The following deliverables are included in this proposal:
+
+* A comprehensive outline and chapter-by-chapter breakdown
+* A first draft of the manuscript
+* A revised and edited manuscript
+* A marketing and promotion plan tailored to your needs
+* Ongoing support and revisions to ensure your satisfaction
+
+Timeline:
+I propose the following timeline for this project:
+
+* Research and outline development: [number] weeks
+* First draft completion: [number] weeks
+* Revisions and editing: [number] weeks
+* Marketing and promotion plan development: [number] weeks
+
+Pricing:
+My ghostwriting services are priced at [$X] per [number] words, with a minimum of [number] words. This price includes all research, writing, editing, and revisions.
+
+Conclusion:
+I am excited about the opportunity to work with you and bring your vision for "Unbreakable Confidence" to life. I am confident that my expertise, creativity, and dedication will result in a high-quality book that meets and exceeds your expectations. I look forward to the opportunity to discuss this proposal in further detail and answer any questions you may have.
+
+Thank you for considering my proposal.
+
+Best regards,
+
+[Your Name]
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 13/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Jenny and Mike will meet at 8 to buy popcorn before their 8:30 movie.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Jenny and Mike discussed the movie's start time, with Mike confirming it's 8:30. They agreed to meet at 8:00 to buy popcorn before the movie.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 14/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED OUTPUT (SAMSum):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 15/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+299,792,458 metres per second.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 16/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 17/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Emma is at the store and will buy milk, bread, and eggs.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Sam and Emma discuss their grocery needs. Emma is at the store and agrees to pick up milk, bread, and eggs for them.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 18/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+| Sub Niche | Popularity (1-100) |
+|---|---|
+| Deck Officer Cadet Training | 95 |
+| Marine Engineering Basics | 90 |
+| Maritime Law & Regulations | 75 |
+| Ship Navigation Techniques | 85 |
+| Merchant Navy Salary Guides | 98 |
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Based on the merchant navy studies niche, here are some subniches that you may want to consider tackling with your content, along with a popularity score out of 100:
+
+| Subniche | Popularity Score |
+| --- | --- |
+| 1. **Offshore Engineering** (40) | A subniche focused on the design, construction, and maintenance of offshore structures, such as oil rigs and wind farms. |
+| 2. **Marine Safety and Security** (35) | A subniche that covers the measures taken to prevent and respond to maritime accidents, as well as the security threats faced by the merchant navy. |
+| 3. **Ship Design and Operations** (30) | A subniche that delves into the design, construction, and operation of various types of ships, including cargo vessels, tankers, and passenger ships. |
+| 4. **Marine Environmental Protection** (25) | A subniche that focuses on the prevention of pollution and the protection of marine ecosystems, including the use of sustainable fuels and waste management practices. |
+| 5. **Merchant Navy Career Development** (20) | A subniche that provides guidance and resources for individuals looking to pursue a career in the merchant navy, including training, certification, and job search advice. |
+| 6. **Marine Technology and Innovation** (18) | A subniche that explores the latest technologies and innovations in the merchant navy industry, including autonomous vessels, digitalization, and sustainability. |
+| 7. **Shipping Law and Regulations** (15) | A subniche that covers the laws and regulations governing the shipping industry, including international conventions, customs, and trade laws. |
+| 8. **Marine Health and Wellness** (12) | A subniche that focuses on the physical and mental health of seafarers, including stress management, fatigue prevention, and access to healthcare services. |
+| 9. **Sustainable Shipping and Climate Change** (10) | A subniche that explores the impact of shipping on the environment and the efforts being made to reduce carbon emissions and promote sustainable shipping practices. |
+| 10. **Marine Education and Training** (8) | A subniche that provides resources and information on marine education and training programs, including online courses, workshops, and certification programs. |
+
+Note: The popularity scores are subjective and based on general research, but may vary depending on your specific audience and content strategy.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 19/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+Their martial spirit and Christian piety.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 20/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Jake forgot the keys. Noah will be back home at 4.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here is a summary of the conversation:
+
+Jake asks if he is at home, and the response is that he is not, but rather at 4. Jake responds with "ok", indicating acceptance of the situation.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 21/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Unanswerable
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 22/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Liam has paid the electric bill online.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Kelly reminds Liam to pay the electric bill. Liam confirms that he has already paid it online. Kelly is satisfied with the situation.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 23/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+Technical debt is like taking out a loan to buy a house. If you need a place to live immediately, you might take out a mortgage (a quick software fix or shortcut) rather than waiting years to save up the full cash amount (building the perfect, most robust software solution). While this gets you into the house faster, you now have to pay interest. In software, that 'interest' is the extra time and effort it takes to add new features or fix bugs later because the code is messy or poorly structured. If you don't periodically pay down the principal by refactoring and cleaning up the code, the interest becomes so overwhelming that development grinds to a halt, just like going bankrupt from too much financial debt.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Imagine you're a homeowner who's just finished renovating your house. You've spent a lot of money and time on the project, but now you're facing a few issues. The kitchen cabinets are outdated, the flooring is worn out, and the electrical system is outdated.
+
+In this scenario, the "renovation" represents a software development project. The "cabinets," "flooring," and "electrical system" represent different components of the software, such as user interfaces, data storage, and algorithms.
+
+Now, imagine that you've taken a shortcut to finish the renovation quickly, so you've used cheaper materials for the cabinets and flooring. You've also skipped updating the electrical system to make it more efficient. This might have saved you money upfront, but it will cost you more in the long run.
+
+In software engineering, "technical debt" refers to the shortcuts or workarounds that developers take to meet a deadline or complete a project quickly. These shortcuts might be cheap to implement upfront, but they can lead to problems down the line, such as:
+
+* Increased maintenance costs: The outdated materials and systems will need to be replaced or updated, which can be costly.
+* Reduced performance: The shortcuts can lead to slower performance, decreased efficiency, and a poorer user experience.
+* Security risks: Outdated systems can leave your software vulnerable to security threats.
+
+Just like the homeowner who needs to fix the outdated kitchen, the software developer needs to address the technical debt to ensure the software is stable, efficient, and secure. This might involve refactoring the code, updating the systems, and investing time and resources to fix the problems that were shortcuts taken to meet the initial deadline.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 24/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 25/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 26/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+Vaccines work by introducing a weakened or inactive part of a pathogen (like a virus or bacteria) into the body. This triggers the immune system to produce antibodies and memory cells without causing the disease. If the person is exposed to the actual pathogen later, their immune system recognizes it and fights it off quickly.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Vaccines work by introducing a small, harmless piece of a pathogen, such as a virus or bacteria, or a weakened or inactivated form of the pathogen, to the body. This triggers the immune system to recognize the pathogen and mount a response, producing antibodies and immune cells that can recognize and fight the pathogen if it enters the body in the future.
+
+The immune system then stores this information, allowing it to quickly respond if the pathogen enters the body again. This process is called immunization, and it provides long-term protection against future infections.
+
+There are several types of vaccines, including:
+
+1. Inactivated vaccines, which contain a killed or inactivated form of the pathogen.
+2. Live, attenuated vaccines, which contain a weakened form of the pathogen.
+3. Subunit vaccines, which contain only a small part of the pathogen, such as a protein or sugar.
+4. Conjugate vaccines, which combine a weakened pathogen with a carrier protein to enhance the immune response.
+
+Overall, vaccines work by helping the immune system learn to recognize and fight pathogens, providing protection against infection and disease.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (310). Resuming inference...
+
+--- Processing Prompt 27/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+The primary colors in the RGB color model are Red, Green, and Blue. These colors are added together in various ways to reproduce a broad array of colors on electronic displays.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The primary colors in the RGB (Red, Green, Blue) color model are Red, Green, and Blue.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (300). Resuming inference...
+
+--- Processing Prompt 28/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+```cpp
+#include <string>
+#include <regex>
+
+std::string markdownToHtml(const std::string& md) {
+    std::string html = md;
+    html = std::regex_replace(html, std::regex("\\*\\*(.*?)\\*\\*"), "<b>$1</b>");
+    html = std::regex_replace(html, std::regex("\\*(.*?)\\"), "<i>$1</i>");
+    html = std::regex_replace(html, std::regex("#(.*?)\\n"), "<h1>$1</h1>\n");
+    return html;
+}
+```
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Here's a C++ function that uses the markdown library to convert markdown text to HTML:
+
+```cpp
+#include <iostream
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (300). Resuming inference...
+
+--- Processing Prompt 29/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+Many physicists and philosophers criticize the Many-Worlds Interpretation (MWI) because it seems overly complex and unfalsifiable. Critics argue that postulating an infinite number of unobservable parallel universes violates Occam's Razor. Additionally, it struggles to satisfactorily explain the origin of the Born rule (quantum probabilities) within a deterministic multiverse framework.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The many-worlds interpretation (MWI) of quantum mechanics is a highly debated and contentious theory in the scientific community. While some physicists and philosophers find it intriguing, others have several concerns that contribute to the widespread criticism. Here are some reasons why people may not like the many-worlds interpretation:
+
+1. **Lack of empirical evidence**: Despite decades of research, there is currently no direct empirical evidence to support the MWI. Most experiments that test the theory have been inconclusive or have failed to replicate the predictions.
+2. **Mathematical complexity**: The MWI requires the use of advanced mathematical tools, such as infinite-dimensional Hilbert spaces and non-standard analysis. This complexity can make it difficult to understand and work with the theory.
+3. **Philosophical concerns**: The MWI implies that every time a quantum event occurs, the universe splits into multiple branches, resulting in an infinite number of parallel universes. This raises questions about the nature of reality, the concept of probability, and the role of observation in the measurement process.
+4. **Difficulty in making predictions**: The MWI predicts that every possible outcome of a quantum event will occur in a separate universe, making it challenging to make precise predictions or test the theory experimentally.
+5. **Lack of a clear explanation for quantum non-locality**: The MWI attempts to explain quantum non-locality, but it does so in a way that is not entirely satisfactory to some physicists, who argue that it relies on untested assumptions about the nature of reality.
+6. **Alternative explanations**: Some physicists argue that the MWI is unnecessary, as other interpretations, such as the Copenhagen interpretation or the pilot-wave theory, can explain the observed phenomena without resorting to the idea of an infinite number of parallel universes.
+
+While the many-worlds interpretation is an interesting and thought-provoking theory, these concerns and criticisms have contributed to its lack of widespread acceptance among physicists and philosophers.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 30/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+November 1799.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 31/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 32/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+UNANSWERABLE
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 33/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+1. Reduces stress and anxiety.
+2. Improves focus and concentration.
+3. Promotes emotional well-being and self-awareness.
+4. Can help lower blood pressure.
+5. Improves sleep quality.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here are 5 benefits of meditation:
+
+1. **Reduces Stress and Anxiety**: Meditation has been shown to decrease the production of stress hormones like cortisol, leading to a sense of calm and relaxation.
+
+2. **Improves Mental Clarity and Focus**: Regular meditation practice can improve attention, concentration, and mental clarity, helping individuals stay focused and productive.
+
+3. **Boosts Mood and Emotional Well-being**: Meditation can increase the production of neurotransmitters like serotonin, dopamine, and endorphins, which can help alleviate symptoms of depression and anxiety.
+
+4. **Enhances Self-Awareness and Emotional Regulation**: Through meditation, individuals can gain a deeper understanding of themselves, their thoughts, and their emotions, allowing for better emotional regulation and decision-making.
+
+5. **Supports Physical Health and Well-being**: Meditation has been linked to lower blood pressure, reduced chronic pain, and a stronger immune system, contributing to overall physical health and well-being.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 34/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+As protection against various nomadic groups from the Eurasian Steppe.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 35/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Leo is skipping the gym today because his back hurts.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here is a summary of the conversation:
+
+Sarah asks Leo if he is going to the gym, and he responds that he is taking a rest day due to back pain. Sarah offers her sympathy and wishes him a speedy recovery.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 36/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+England's national poet and the "Bard of Avon".
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 37/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+Cellular respiration.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (270). Resuming inference...
+
+--- Processing Prompt 38/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+James wants to watch a good horror movie. Nick and Ridley recommended watching Rec.
+
+MODEL GENERATED OUTPUT (SAMSum):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (270). Resuming inference...
+
+--- Processing Prompt 39/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+Dear [Name],
+
+Thank you for offering me the [Job Title] position. I greatly appreciate the opportunity. However, after careful consideration, I must decline the offer as the proposed salary does not align with my current financial requirements and market expectations. I wish you and the team the best.
+
+Sincerely,
+[Your Name]
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Dear [Hiring Manager's Name],
+
+I wanted to express my gratitude for extending the job offer to me for the [Job Title] position at [Company Name]. I was truly impressed by the company culture and the team's passion for their work, and I am honored to have been considered for this role.
+
+However, after careful consideration, I regret to inform you that I have decided to decline the offer. While I am excited about the opportunity to join the team, the salary offered is below my expectations, and I have decided to pursue other opportunities that better align with my compensation requirements.
+
+Please know that my decision is not a reflection on the company or the role, but rather a personal decision that aligns with my career goals and financial needs. I appreciate the time and effort you and your team invested in the hiring process, and I wish the company all the best in finding a suitable candidate for the position.
+
+Thank you again for the opportunity, and I wish you continued success in the future.
+
+Best regards,
+[Your Name]
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (270). Resuming inference...
+
+--- Processing Prompt 40/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+Agriculture for soy, logging, and infrastructure expansion.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (270). Resuming inference...
+
+--- Processing Prompt 41/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+David has bought a pair of sneakers because he wants to stay fit. He also bought a Ralph Lauren jacket as a present for Sandy.
+
+MODEL GENERATED OUTPUT (SAMSum):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (270). Resuming inference...
+
+--- Processing Prompt 42/50 [AlpacaEval] ---
+
+EXPECTED OUTPUT (AlpacaEval):
+Golden leaves begin to fall,
+Crisp winds echo through the hall.
+Harvest moons and amber skies,
+Summer whispers her goodbyes.
+
+MODEL GENERATED OUTPUT (AlpacaEval):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| As leaves begin to fall and fade,
+Golden hues and crimson shades,
+Autumn's chill begins to bite,
+A season of change, a wondrous sight.
+
+The air is crisp, the wind is cold,
+Nature's final dance, before winter's hold,
+The trees stand tall, their branches bare,
+A fleeting beauty, beyond compare.
+
+The scent of woodsmoke fills the air,
+As earthy smells and leaves are shared,
+A time for cozy nights by fire,
+And memories of summer's warm desire.
+
+So let us cherish this autumn's hue,
+A season of transition, pure and true,
+For in its fleeting beauty, we find,
+A sense of wonder, left behind.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (280). Resuming inference...
+
+--- Processing Prompt 43/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Afhaam is a little busy and will call Faheem soon.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Faheem greets Afhaam and asks how he's doing. Afhaam responds that he's a bit busy and will call Faheem soon. Faheem offers his regards to Afhaam's family.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (280). Resuming inference...
+
+--- Processing Prompt 44/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Jerry is finishing the report and will send it to Tom in 10 minutes.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Tom asked Jerry if he had sent the report. Jerry replied that he was working on it and would send it in 10 minutes. Tom thanked Jerry for his response.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (280). Resuming inference...
+
+--- Processing Prompt 45/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Chloe has Mia's blue jacket in her car and will bring it to her tomorrow.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Mia asks Chloe if she has seen her blue jacket. Chloe confirms that Mia left it in her car and offers to bring it to Mia the next day. Mia expresses gratitude for Chloe's help.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (280). Resuming inference...
+
+--- Processing Prompt 46/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Evan and Fiona rescheduled their meeting from 2 PM to 4 PM.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Evan requests to reschedule their meeting due to a conflict at 2 PM. Fiona offers an alternative time of 4 PM, which Evan accepts.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (280). Resuming inference...
+
+--- Processing Prompt 47/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Jane confirms that Ian's package has arrived and is on his desk.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Ian inquired about the arrival of a package, and Jane confirmed that it had been delivered to his desk. Ian expressed gratitude for the news, thanking Jane for the information.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (280). Resuming inference...
+
+--- Processing Prompt 48/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Sean moved out of town. He is satisfied with his new job.
+
+MODEL GENERATED OUTPUT (SAMSum):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 49/50 [SAMSum] ---
+
+EXPECTED OUTPUT (SAMSum):
+Lily and Mark are meeting for dinner at 7 PM at the Italian place.
+
+MODEL GENERATED OUTPUT (SAMSum):
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Lily and Mark confirm their dinner plans for 7 PM at an Italian restaurant downtown.
+==================================================
+
+[THERMAL CONTROL] Batch of 1 complete.
+Pausing until device temperature drops to 310...
+Target temperature reached (260). Resuming inference...
+
+--- Processing Prompt 50/50 [SQuAD_2.0] ---
+
+EXPECTED OUTPUT (SQuAD_2.0):
+Aerobic respiration.
+
+MODEL GENERATED OUTPUT (SQuAD_2.0):
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Llama-3.2-3B-Instruct-Q4_0.gguf
+modalities : text
+
+available commands:
+==================================================
+
+Mega Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m w[K[K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m sudo python run_mega.py 

@@ -1,0 +1,424 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_samsum.py 
+[?2004l
+Loading SAMSum dataset: train.csv...
+Starting staggered SAMSum benchmark on 7 prompts...
+
+--- Processing Prompt 1/7 ---
+
+Loading model... |-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Carolyn: hey!!
+Carolyn: I ran into your mum earlier today and she told me you'd moved out of town?? I had no idea!
+Sean: hi
+Sean: I guess we haven't talked in a while lol
+Sean: my fault too, sometimes I don't notice a month has passed
+Carolyn: I feel that
+Sean: so yeah, I have... I couldn't really find a new job and then bam! I found an interesting offer elsewhere
+Carolyn: ohhh
+Sean: at first I was reluctant but then I though ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Conversation:
+Carolyn: hey!!
+Carolyn: I ran into your muh earlier today and she told me you'd moved out of town?? I had no idea!
+Sean: hi!
+Sean: I guess we haven't talked in a while, lol. Sometimes I forget a month has passed.
+Carolyn: I feel that way too. I had no idea you found a new job and moved away.
+Sean: I did! It's been great so far. I've been working with a great team, and the company has been
+
+[ Prompt: 12.6 t/s | Generation: 7.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Sean moved out of town. He is satisfied with his new job.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 2/7 ---
+
+Loading model... |-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+James: good horror to watch?
+Kit: Japanese, US, Spain?
+James: Spanish could be cool. any good?
+Nick: I like Rec. not new thou. Seen it?
+James: no not yet. Really good?
+Ridley: I liked it too. Its more psycho than gore tho so depends what you into really
+James: psychological are cool so yeah, I'll watch that
+Nick: but makes sure it’s the first one not 2 or 0 or anything, they were realy shit
+Ridley: amen
+James: ok thx
+
+Summa ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Conversation:
+1. James: good horror to watch?
+2. Kit: Japanese, US, Spain?
+3. James: Spanish could be cool. Any good?
+4. Nick: I like Rec. not new thou. Seen it?
+5. James: no not yet. Really good?
+6. Ridley: I liked it too. Its more psychological than gooey horror so depends what you into really.
+7. James: psychological are cool so yeah, I'll watch that.
+8. Nick: but makes sure it's the first one
+
+[ Prompt: 12.5 t/s | Generation: 8.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+James wants to watch a good horror movie. Nick and Ridley recommended watching Rec.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 3/7 ---
+
+Loading model... |-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Jake: forgot keys. U home?
+Noah: nope. at 4. 
+Jake: ok
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Jake: forgot keys, at 4 pm
+Noah: nope, at 4 pm
+Jake: ok
+
+[ Prompt: 12.1 t/s | Generation: 9.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Jake forgot the keys. Noah will be back home at 4.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+[THERMAL CONTROL] Batch of 3 complete.
+Pausing for 60 seconds to allow passive heat dissipation...
+Resuming inference...
+
+--- Processing Prompt 4/7 ---
+
+Loading model... |-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on "how could I forget about Black Friday".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more exci ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: woah, thanks!
+Kim: I figured that you may forget.
+Frank: Ha, true, but I'm glad you're not forgetting about Cyber Monday!
+Kim: No worries, I'm excited about the Cyber Monday bundle releases from studios like BioWare and indie producers.
+Frank: Oh, that's cool! Are you on Steam?
+Kim: Yeah
+
+[ Prompt: 12.1 t/s | Generation: 7.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 5/7 ---
+
+Loading model... |-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Adriana: Sorry, I guess I can't make it. I'm feeling sick again.
+Adriana: I planned so many things for today...
+Adriana: Hate it.
+Elisa: What a pity...
+Elisa: Next time!
+Elisa: Hope you'll get better soon!
+Adriana: Hope so too.
+Adriana: How was at the pool?
+Elisa: The best ❤️
+Elisa: 1 hour of swimming and 1 hour of sauna
+Elisa: Love it!
+Adriana:❤️
+Adriana: I'm such a bad swimmer that you couldn't stand me xD
+Elisa: Ah ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- The following is a conversation between several people, including Adriana who is feeling sick again and Elisa who plans so many things for the day but can't make it. Elisa and Adriana discuss their plans for the pool and how they both love swimming, while Elisa admits to being a bad swimmer. They both joke about the annoying girl at the pool and how they both struggle to be good swimmers.
+
+[ Prompt: 13.7 t/s | Generation: 9.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Adriana is feeling sick, so she needs to give up her plans for today. Elisa went to the pool, she did 1 hour of swimming and 1 hour of sauna.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 6/7 ---
+
+Loading model... |-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+David: Hi Honey, did you have a good day?
+Sandy: Hi my love, oh ... i had meeting  all day. What about you? 
+David: great. . I went to Brooklyn and visit some really interesting museums
+Sandy: i'm sure you also had time for shopping?
+David: Yes of course.
+Sandy: what did you buy?
+David: a new pair of sneakers. Very nice, red and pink...
+Sandy: why did you buy them. You've got plenty of them!
+David: i need to keep fit during m ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- David and Sandy have a conversation about David's busy work schedule and Sandy's impressions of the city's parks. David mentions his visit to Brooklyn and the new pair of snakeskin shoes he bought, while Sandy suggests running in the park nearby. David expresses his desire to run with Sandy in the park, but Sandy reminds him that he's on a business trip for the week. David mentions his visit to the Raoul Laurence store and Sandy suggests they go there to find something for him. David agrees and they discuss the jacket he found for San
+
+[ Prompt: 11.7 t/s | Generation: 7.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+David has bought a pair of sneakers because he wants to stay fit. He also bought a Ralph Lauren jacket as a present for Sandy.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+[THERMAL CONTROL] Batch of 3 complete.
+Pausing for 60 seconds to allow passive heat dissipation...
+Resuming inference...
+
+--- Processing Prompt 7/7 ---
+
+Loading model... |-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Faheem : Hi Afhaam how are you?
+Afhaam : Hello Faheem i am a little bit busy i will call you soon.
+Faheem : OK ! Give my regards to family.
+Afhaam : Sure.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Conversation:
+Faheem: Hi Afhaam, how are you?
+Afhaam: Hi Faheem, I'm fine.
+Faheem: Great! Give my regards to family.
+Afhaam: Sure, I'll call you soon.
+
+Summary: Faheem and Afhaam are having a conversation.
+
+[ Prompt: 12.6 t/s | Generation: 9.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Afhaam is a little busy and will cal Faheem soon.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 
+[?2004l[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m ez[Kxir[Kt
+[?2004lexit

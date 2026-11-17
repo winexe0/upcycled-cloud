@@ -1,0 +1,403 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m pythi[Kon run_alpaca.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 300s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| ```cpp
+#include <iostream>
+#include <string>
+
+std::string markdown_to_html(const std::string& markdown_text) {
+    // Convert markdown text to html
+    std::string html_text = "<html><head><style>body { font-family: Arial, sans-serif; }</style></head><body>" + markdown_text + "</body></html>";
+
+    return html_text;
+}
+
+int main() {
+    std::string markdown_text = "# Heading\n## Subheading\nThis is a paragraph of text.";
+    std::cout << markdown_to_html(markdown_text) << std::endl;
+
+    return 0;
+}
+```
+
+In this code:
+
+- We define a function `markdown_to_html` that takes a `std::string` containing markdown formatted text and returns a `std::string` containing html formatted text.
+- We use the `std::string` class to create a new string that contains the html formatted text.
+- We use an `std::string` literal to create a new string that contains the markdown text.
+- In the `main` function, we create a `std::string` containing markdown formatted text and pass it to the `markdown_to_html` function to get the html formatted text.
+- We print the html formatted text to the console.
+
+[ Prompt: 12.7 t/s | Generation: 7.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ To craft a persuasive proposal for the new client, I've outlined a comprehensive plan that highlights the benefits and value of having a professional editor/publisher like skinny brown dog media for their book Unbreakable Confidence.
+
+**Proposal: Enhancing the Quality and Impact of Unbreakable Confidence**
+
+Dear [Client],
+
+As a seasoned ghostwriter with a proven track record of delivering high-quality content, I am excited to offer my services to help you refine and publish your book, Unbreakable Confidence. With my expertise in crafting compelling narratives, I am confident that I can elevate your manuscript to its full potential.
+
+**Benefits of Working with Me:**
+
+1. **Expert Guidance:** As a seasoned ghostwriter, I possess in-depth knowledge of the writing process, including editing, proofreading, and publishing. I will provide personalized guidance to ensure that your book meets the highest standards of quality and accuracy.
+2. **Time-Saving:** By outsourcing the editing and publishing process, you can focus on your core business, allowing me to take care of the administrative tasks, freeing up your time to focus on your brand and marketing efforts.
+3. **Enhanced Credibility:** A professionally edited and published book can significantly enhance your credibility as an author, establishing you as a thought leader in your industry.
+4. **Increased Sales:** A well-written and edited book can lead to increased sales, as readers are more likely to engage with a polished and error-free product.
+5. **Competitive Advantage:** By partnering with me, you can gain a competitive edge in the market, setting you apart from other authors and establishing your brand as a trusted and reliable source of high-quality content.
+
+**Value Proposition:**
+
+As your ghostwriter, I will:
+
+* Conduct thorough research and analysis to identify areas for improvement
+* Develop a customized editing plan tailored to your specific needs
+* Provide expert feedback and suggestions to enhance your writing
+* Collaborate with you to ensure that your book meets your vision and goals
+* Deliver a polished and error-free manuscript, ready for publication
+
+**Next Steps:**
+
+To move forward, I would like to schedule a meeting to discuss the details of our proposal. I am available to meet at your convenience, and I look forward to the opportunity to work with you.
+
+Please let me know if this proposal meets your expectations, and we can discuss the next steps.
+
+Best regards,
+
+[Your Name]
+Ghostwriter & Editor/Publisher
+[Contact Information]
+
+[ Prompt: 15.1 t/s | Generation: 7.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The many-worlds interpretation (MWI) of quantum mechanics, proposed by Hugh Everett in 1957, is a highly debated topic among physicists and philosophers. While it has garnered significant attention and support, it has also faced criticism and skepticism from many quarters.
+
+One of the primary concerns is the concept of "multiverses," where every possible outcome of every event creates a new universe. This raises questions about the nature of reality and the concept of probability. If every possibility exists in a separate universe, then the MWI seems to imply that every event has a parallel universe counterpart, leading to an infinite number of parallel universes.
+
+Another issue is the problem of "quantum indeterminacy," which suggests that the act of measurement itself can influence the outcome of a quantum event. The MWI attempts to resolve this issue by proposing that the universe splits into multiple branches upon measurement, effectively creating a new universe for each possible outcome.
+
+Despite these criticisms, the MWI remains a viable alternative to the standard Copenhagen interpretation of quantum mechanics. However, its acceptance is still met with significant resistance from the scientific community, and it remains a topic of ongoing debate.
+
+Some of the arguments against the MWI include:
+
+1. **Lack of empirical evidence:** There is currently no direct empirical evidence to support the MWI, and most experiments have failed to demonstrate its validity.
+2. **Mathematical inconsistencies:** The MWI has been criticized for its mathematical inconsistencies, particularly in the context of quantum field theory.
+3. **Philosophical concerns:** The MWI raises significant philosophical questions about the nature of reality, probability, and the concept of a single universe.
+
+In conclusion, while the many-worlds interpretation of quantum mechanics has garnered significant attention and support, it remains a topic of ongoing debate and criticism. Its acceptance is met with significant resistance from the scientific community, and it remains a subject of ongoing research and discussion.
+
+[ Prompt: 12.6 t/s | Generation: 6.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here's a Python script that fulfills the request:
+
+```python
+def calculate_derivative():
+    """
+    Calculate the derivative of a function using the Average Rate of Change Formula.
+    
+    Returns:
+        str: The derivative of the function as a string.
+    """
+
+    # Get user input for the function and its derivative
+    func_name = input("Enter the name of the function: ")
+    a = float(input("Enter the value of a: "))
+    b = float(input("Enter the value of b: "))
+
+    # Calculate the derivative using the Average Rate of Change Formula
+    derivative = f"{func_name}(x) = {func_name}(b) - {func_name}(a) / (b - a)"
+
+    # Print the result
+    print(f"The derivative of {func_name}(x) is: {derivative}")
+
+    return derivative
+
+# Call the function and print the result
+derivative = calculate_derivative()
+print(derivative)
+```
+
+This script defines a function `calculate_derivative()` that prompts the user for the name of the function and its derivative. It then calculates the derivative using the Average Rate of Change Formula and prints the result. The script uses f-strings to format the output string.
+
+[ Prompt: 11.8 t/s | Generation: 6.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Based on the instruction, I've identified some subniches related to merchant navy studies that could be explored in your content. Here's a table with the subniches, their popularity, and a brief description:
+
+| Subniche | Popularity (out of 100) |
+| --- | --- |
+| 1. Maritime Law and Regulations | 80 |
+    This subniche covers the laws and regulations governing the merchant navy, including international maritime law, flag state laws, and port state control.
+
+| 2. Ship Design and Construction | 70 |
+    This subniche delves into the design, construction, and maintenance of merchant navy ships, including ship types, materials, and technologies.
+
+| 3. Maritime Safety and Security | 60 |
+    This subniche focuses on maritime safety, security, and emergency response, including topics like life-saving appliances, fire safety, and piracy prevention.
+
+| 4. Shipping Industry Trends and Developments | 50 |
+    This subniche explores the latest trends, innovations, and challenges in the shipping industry, including sustainability, digitalization, and emerging technologies.
+
+| 5. Maritime Law and Litigation | 40 |
+    This subniche examines the application of maritime law in court, including cases, precedents, and the role of lawyers in maritime disputes.
+
+| 6. Maritime History and Heritage | 30 |
+    This subniche explores the history of the merchant navy, including its evolution, key milestones, and the preservation of maritime heritage.
+
+| 7. Maritime Education and Training | 20 |
+    This subniche focuses on the development of maritime education and training programs, including curriculum design, pedagogy, and industry partnerships.
+
+| 8. Maritime Technology and Innovation | 10 |
+    This subniche highlights the latest developments in maritime technology, including autonomous systems, robotics, and advanced materials.
+
+| 9. Maritime Ethics and Social Responsibility | 5 |
+    This subniche examines the social and ethical implications of the merchant navy, including issues like human rights, labor standards, and environmental impact.
+
+| 10. Maritime Business and Finance | 0 |
+    This subniche covers the financial aspects of the merchant navy, including ship financing, investment, and the role of financial institutions in the industry.
+
+Please note that the popularity of subniches can vary depending on the target audience and the specific content. These results are based on general trends and may need to be adjusted according to your specific content strategy.
+
+[ Prompt: 12.5 t/s | Generation: 6.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m eexit
+[?2004lNo command eexit found, did you mean:
+ Command gedit in package gedit from the x11-repo repository
+ Command next in package mailutils
+ Command edit in package msedit
+ Command next in package nmh
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit

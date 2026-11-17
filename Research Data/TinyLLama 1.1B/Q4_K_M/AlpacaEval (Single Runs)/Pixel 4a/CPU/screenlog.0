@@ -1,0 +1,122 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_q[Ksingle.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca_single.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 1 prompts...
+
+WARNING: Strict thermal controls engaged. 180s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/1 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\ Sure, here's a Python script that implements the A(x) = f(b) - f(a) / (b - a) formula for finding the derivative of a function using the Avrage Ratio of Change (ARC) formula:
+
+```python
+import math
+
+def f(x):
+    return math.pow(x, 2)
+
+def g(x):
+    return 2 * x
+
+def a(x):
+    return f(x) / g(x)
+
+def b(x):
+    return f(x)
+
+def c(x):
+    return g(x)
+
+def d(x):
+    return f(x) - g(x)
+
+def arc_diff(a, b, c, d):
+    return a(b) - b(a) / (b - a)
+
+def arc_deriv(a, b, c, d):
+    return d / (b - a)
+
+def arc_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv_of_deriv(a, b, c, d):
+    return arc_diff(a, b, c, d) / (b - a)
+
+def arc_deriv_of_deriv_of_deriv_of_deriv_of_deriv_
+
+[ Prompt: 42.8 t/s | Generation: 10.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

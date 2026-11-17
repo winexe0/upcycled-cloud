@@ -1,0 +1,374 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 180s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\| Sure, here's a simple C++ function that converts markdown formatted text to HTML formatted text. This function uses a basic conversion for bold and italic text, as well as headers. More complex markdown features can be added as needed.
+
+```cpp
+#include <string>
+#include <sstream>
+#include <map>
+
+std::string markdownToHtml(const std::string& markdown) {
+    std::string html;
+    std::map<std::string, std::string> replacements = {
+        {"**", "<strong>"},
+        {"*", "<em>"},
+        {"#", "##"},
+        {"##", "<h2>"},
+        {"###", "<h3>"},
+        {"####", "<h4>"},
+        {"#####", "<h5>"},
+        {"######", "<h6>"}
+    };
+
+    std::istringstream stream(markdown);
+    std::string line;
+
+    while (std::getline(stream, line)) {
+        for (const auto& pair : replacements) {
+            size_t pos = 0;
+            while ((pos = line.find(pair.first, pos)) != std::string::npos) {
+                line.replace(pos, pair.first.length(), pair.second);
+                pos += pair.second.length();
+            }
+        }
+        html += line + "\n";
+    }
+
+    return html;
+}
+```
+
+This function uses a simple string replacement to convert markdown to HTML. It currently supports bold (`**text**`), italic (`*text*`), and headers (`# Header`, `## Header`, etc.). More complex markdown features can be added as needed. Note that this function does not handle nested markdown or other markdown features like links, images, or lists.
+
+[ Prompt: 27.5 t/s | Generation: 7.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Subject: Transforming "Unbreakable Confidence" into a Bestseller with Expert Editing and Publishing
+
+Dear [Client's Name],
+
+I hope this message finds you well. I am excited to reach out to you with an opportunity that I believe will significantly elevate your upcoming book, "Unbreakable Confidence," to new heights. As a seasoned writer and editor with a proven track record in the publishing industry, I am confident that my expertise can bring unparalleled value to your project.
+
+**Why Partner with Me for Your Book's Success?**
+
+1. **Expert Editing and Refinement**: My editorial skills ensure that your manuscript is polished, engaging, and free of any grammatical errors or inconsistencies. I will meticulously review every chapter, enhancing clarity, coherence, and flow to captivate your readers from the very first page.
+
+2. **Professional Publishing Guidance**: With my extensive experience in the publishing world, I can guide you through the intricacies of publishing, from selecting the right publisher to navigating the submission process. My connections with top-tier publishers can significantly increase your chances of securing a lucrative publishing deal.
+
+3. **Marketing and Promotion Strategy**: I will develop a comprehensive marketing plan tailored to your book's unique strengths and target audience. This includes leveraging social media, book tours, author interviews, and other promotional activities to maximize visibility and sales.
+
+4. **Personalized Attention and Support**: I am committed to providing you with personalized support throughout the entire process. Whether you need feedback on your manuscript, assistance with editing, or guidance on publishing decisions, I am here to help every step of the way.
+
+5. **Maximizing Reach and Impact**: My expertise in editing and publishing ensures that your book reaches its full potential. By working with me, you can rest assured that your book will be presented in the best possible light, attracting a wide readership and achieving commercial success.
+
+**Why Choose Me?**
+
+- Over 15 years of experience in writing, editing, and publishing.
+- A proven track record of helping authors achieve bestseller status.
+- Strong relationships with top publishers and a deep understanding of the publishing landscape.
+- A passion for storytelling and a commitment to helping authors bring their visions to life.
+
+I am confident that my skills and experience can significantly contribute to the success of "Unbreakable Confidence." I would be delighted to discuss this opportunity further and answer any questions you may have.
+
+Thank you for considering me as your partner in this exciting journey. I look forward to the possibility of working together to make "Unbreakable Confidence" a resounding success.
+
+Warm regards,
+
+[Your Full Name]
+[Your Contact Information]
+[Your Website/Portfolio Link]
+
+[ Prompt: 27.2 t/s | Generation: 7.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\ People may have reservations about the many-worlds interpretation of quantum mechanics for several reasons. Firstly, it posits that every quantum event branches into a multitude of parallel universes, which can be difficult to reconcile with our everyday experiences and intuitions about reality. This leads to philosophical questions about the nature of existence and the concept of reality itself. Additionally, the interpretation lacks direct empirical evidence, making it a subject of debate and skepticism among physicists and philosophers alike. Some also find it challenging to apply the many-worlds interpretation to practical problems or to derive testable predictions that could confirm or refute its validity. Overall, the many-worlds interpretation remains a fascinating yet controversial idea within the realm of quantum mechanics.
+
+[ Prompt: 25.9 t/s | Generation: 7.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\| Sure, here's a simple Python script that calculates the derivative using the Average Rate of Change Formula:
+
+```python
+def average_rate_of_change(f, a, b):
+    return (f(b) - f(a)) / (b - a)
+
+def main():
+    # Define the function f(x)
+    f = lambda x: x**2  # Example function, you can change this to any function you want
+
+    # Get user input for a and b
+    a = float(input("Enter the value of a: "))
+    b = float(input("Enter the value of b: "))
+
+    # Calculate the average rate of change
+    derivative = average_rate_of_change(f, a, b)
+
+    # Output the result
+    print(f"The derivative of f(x) at x={a} is approximately {derivative}")
+
+if __name__ == "__main__":
+    main()
+```
+
+In this script, you can change the function `f` to any function you want to calculate the derivative for. The user will input the values for `a` and `b`, and the script will output the approximate derivative at `x=a`.
+
+[ Prompt: 27.0 t/s | Generation: 7.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\| | Sub-Niche | Popularity Score (1-100) |
+| --- | --- |
+| Maritime History | 85 |
+| Shipbuilding and Design | 80 |
+| Navigation and Charting | 75 |
+| Maritime Law and Regulations | 70 |
+| Maritime Safety and Security | 65 |
+| Maritime Environmental Issues | 60 |
+| Maritime Tourism | 55 |
+| Maritime Archaeology | 50 |
+| Maritime Education and Training | 45 |
+| Maritime Culture and Traditions | 40 |
+| Maritime Sports and Recreation | 35 |
+| Maritime Art and Literature | 30 |
+| Maritime Cuisine and Hospitality | 25 |
+| Maritime Economics and Trade | 20 |
+| Maritime Technology and Innovation | 15 |
+| Maritime Fiction and Literature | 10 |
+| Maritime Music and Entertainment | 5 |
+
+Note: The popularity scores are hypothetical and may vary depending on the specific interests and demographics of your audience. It's important to conduct market research and analyze your website's analytics to determine the actual popularity of each sub-niche among your target audience.
+
+[ Prompt: 26.5 t/s | Generation: 7.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit

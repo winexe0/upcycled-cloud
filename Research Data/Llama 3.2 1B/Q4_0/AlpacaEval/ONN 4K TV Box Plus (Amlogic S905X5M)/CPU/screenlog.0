@@ -1,0 +1,365 @@
+[?2004h[0;32m~/llama.cpp/build-android[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 300s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ ```cpp
+#include <iostream>
+#include <string>
+
+std::string markdown_to_html(const std::string& markdown_text) {
+    // Define the HTML tags and their corresponding markdown equivalents
+    std::string html_tags[] = {
+        "<b>", "</b>", "<i>", "</i>", "<strong>", "</strong>", "<em>", "</em>", "<u>", "</u>", "<font>", "</font>", "<center>", "</center>", "<p>", "</p>", "<h1>", "</h1>", "<h2>", "</h2>", "<h3>", "</h3>", "<h4>", "</h4>", "<h5>", "</h5>", "<h6>", "</h6>", "<h7>", "</h7>", "<h8>", "</h8>", "<h9>", "</h9>", "<h10>", "</h10>", "<h11>", "</h11>", "<h12>", "</h12>", "<h13>", "</h13>", "<h14>", "</h14>", "<h15>", "</h15>", "<h16>", "</h16>", "<h17>", "</h17>", "<h18>", "</h18>", "<h19>", "</h19>", "<h20>", "</h20>", "<h21>", "</h21>", "<h22>", "</h22>", "<h23>", "</h23>", "<h24>", "</h24>", "<h25>", "</h25>", "<h26>", "</h26>", "<h27>", "</h27>", "<h28>", "</h28>", "<h29>", "</h29>", "<h30>", "</h30>", "<h31>", "</h31>", "<h32>", "</h32>", "<h33>", "</h33>", "<h34>", "</h34>", "<h35>", "</h35>", "<h36>", "</h36>", "<h37>", "</h37>", "<h38>", "</h38>", "<h39>", "</h39>", "<h40>", "</h40>", "<h41>", "</h41>", "<h42>", "</h42>", "<h43>", "</h43>", "<h44>", "</h44>", "<h45>", "</h45>", "<h46>", "</h46>", "<h47>", "</h47>", "<h48>", "</h48>", "<h49>", "</h49>", "<h50>", "</h50>", "<h51>", "</h51>", "<h52>", "</h52>", "<h53>", "</h53>", "<h54>", "</h54>", "<h55>", "</h55>", "<h56>", "</h56>", "<h57>", "</h57>", "<h58>", "</h58>", "<h59>", "</h59>", "<h60>", "</h60>", "<h61>", "</h61>", "<h62>", "</h62>", "<h63>", "</h63>", "<h64>", "</h64>", "<h65>", "</h65>", "<h66>", "</h66>", "<h67>", "</h67>", "<h68>", "</h68>", "<h69>", "</h69>", "<h70>", "</h70>", "<h71>", "</h71>", "<h72>", "</h72>", "<h73>", "</h73>", "<h74>", "</h74>", "<h75>", "</h75>", "<h76>", "</h76>", "<h77>", "</h77>", "<h78>", "</h78>", "<h79>", "</h79>", "<h80>", "</h80>", "<h81>", "</h81>", "<h82>", "</h82>", "<h83>", "</h83>", "<h84>", "</h84>", "<h85>", "</h85>", "<h86>", "</h86>", "<h87>", "</h87>", "<h88>", "</h88>", "<h89>", "</h89>", "<h90>", "</h90>", "<h91>", "</h91>", "<h92>", "</h92>", "<h93>", "</h93>", "<h94>", "</h94>", "<h95>", "</h95>", "<h96>", "</h96>", "<h97>", "</h97>", "<h98>", "</h98>", "<h99>", "</h99>", "<h100>", "</h100>"};
+    
+    // Check if the input string is empty
+    if (markdown_text.empty()) {
+        return "";
+    }
+
+    // Find the index of the first '>' character, which marks the start of the HTML tags
+    size_t start_index = 0;
+    while (start_index < markdown_text.size() && markdown_text[start_index] != '>') {
+        start_index++;
+    }
+
+    // Extract the HTML tags from the input string
+    std::string html_text = markdown_text.substr(start_index);
+
+    // Iterate over the HTML tags and replace them with their corresponding markdown equivalents
+    for (size_t i = 
+
+[ Prompt: 5.8 t/s | Generation: 3.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ To craft a persuasive proposal for the new client, I've outlined a comprehensive plan that highlights the benefits and value of having a professional editor/publisher like Skinny Brown Dog Media for their book Unbreakable Confidence.
+
+**Proposal: Enhancing Unbreakable Confidence with Expert Editing and Publishing Services**
+
+Dear [Client],
+
+As a seasoned ghostwriter with a proven track record of delivering high-quality content, I am excited to offer my services as an editor/publisher for your book, Unbreakable Confidence. With my expertise in crafting compelling narratives and refining polished prose, I am confident that I can elevate your manuscript to its full potential.
+
+**Benefits of Working with Me:**
+
+1. **Expert Editing:** My extensive experience in editing has allowed me to develop a keen eye for detail, ensuring that your manuscript is error-free, engaging, and polished. I will work closely with you to refine your writing, strengthen your narrative, and enhance your overall storytelling.
+2. **Publishing Expertise:** As a seasoned ghostwriter, I have a deep understanding of the publishing industry, including the importance of formatting, cover design, and marketing strategies. I will guide you through the publishing process, ensuring that your book is prepared for print-on-demand and e-book distribution.
+3. **Time-Saving:** By outsourcing editing and publishing services, you can focus on what matters most – creating high-quality content that resonates with your target audience. I will take care of the heavy lifting, allowing you to concentrate on your writing and other important tasks.
+4. **Increased Credibility:** A professionally edited and published book can significantly enhance your credibility as an author, establishing you as a credible and skilled writer in your field.
+
+**Value Proposition:**
+
+By working with me, you can expect:
+
+* A thorough editing process that ensures your manuscript is error-free, engaging, and polished
+* A professionally designed cover that captures the essence of your book and appeals to your target audience
+* A marketing strategy that helps you reach your target audience and build a loyal following
+* A published book that can be showcased on your website, social media, and other online platforms
+
+**Next Steps:**
+
+If you're interested in moving forward with my proposal, I would be delighted to discuss the details further. Please let me know if you have any questions or would like to schedule a call to explore how I can help you achieve your writing goals.
+
+Thank you for considering my proposal. I look forward to the opportunity to work with you and help you achieve the success you deserve.
+
+Best regards,
+
+[Your Name]
+Ghostwriter & Editor/Publisher
+[Your Contact Information]
+
+[ Prompt: 7.5 t/s | Generation: 3.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The many-worlds interpretation (MWI) of quantum mechanics, proposed by Hugh Everett in 1957, is a highly debated topic in the scientific community. While it has garnered significant attention and support, it has also faced criticism and skepticism from many physicists.
+
+One of the primary concerns with the MWI is its apparent contradiction with the principles of quantum mechanics, particularly the concept of wave function collapse. In the MWI, every possible outcome of a quantum event occurs in a separate universe, resulting in an infinite number of parallel universes. This raises questions about the nature of reality and the concept of probability.
+
+Another issue with the MWI is its difficulty in explaining the concept of causality. If every possible outcome occurs in a separate universe, it becomes challenging to understand how causality works in the MWI. In this scenario, it is unclear how information or events can be transmitted between universes.
+
+Furthermore, the MWI has been criticized for its lack of empirical evidence and its reliance on untestable assumptions. Many physicists argue that the MWI is not a well-defined theory and that it lacks the necessary mathematical rigor to be considered a serious scientific theory.
+
+Despite these criticisms, the MWI remains a popular interpretation of quantum mechanics, and many physicists continue to explore its implications. However, its limitations and contradictions have led to ongoing debates and discussions within the scientific community.
+
+It's worth noting that the MWI is not a widely accepted theory within the scientific community, and its implications are still being explored and debated by physicists. While it has garnered significant attention, it remains a topic of ongoing discussion and research.
+
+[ Prompt: 7.7 t/s | Generation: 4.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here's a Python script that fulfills the request:
+
+```python
+def calculate_derivative():
+    # Get user input for the function value at x
+    x = float(input("Enter the value of x: "))
+
+    # Get user input for the function value at a
+    a = float(input("Enter the value of a: "))
+
+    # Get user input for the function value at b
+    b = float(input("Enter the value of b: "))
+
+    # Calculate the derivative using the Average Rate of Change Formula
+    derivative = (b - a) / (x - a)
+
+    # Print the result
+    print(f"The derivative of f(x) at x = {x} is {derivative}")
+
+# Call the function to start the process
+calculate_derivative()
+```
+
+This script prompts the user to input the values of `x`, `a`, and `b` at which to evaluate the function `f(x)`. It then calculates the derivative using the Average Rate of Change Formula and prints the result. The user can run the script multiple times to calculate the derivative at different points.
+
+[ Prompt: 7.6 t/s | Generation: 4.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : Llama-3.2-1B-Instruct-Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Based on the merchant navy studies website, here are some subniches that could be explored, along with their popularity ratings (out of 100):
+
+| Subniche | Popularity Rating |
+| --- | --- |
+| 1. Maritime Law | 85 |
+| 2. Shipbuilding | 75 |
+| 3. Maritime Safety Regulations | 65 |
+| 4. International Maritime Organization (IMO) Regulations | 55 |
+| 5. Maritime Security | 45 |
+| 6. Shipping Industry Trends | 35 |
+| 7. Maritime History | 25 |
+| 8. Maritime Education | 15 |
+| 9. Maritime Careers | 10 |
+| 10. Maritime Industry News | 5 |
+
+These subniches cater to a range of interests, from maritime law and shipbuilding to maritime safety and security. By focusing on these subniches, you can create a comprehensive content strategy that appeals to a broad audience and establishes your website as a go-to resource for merchant navy studies enthusiasts.
+
+[ Prompt: 7.7 t/s | Generation: 4.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-android[0m [0;97m$[0m e[Kexit
+[?2004lexit

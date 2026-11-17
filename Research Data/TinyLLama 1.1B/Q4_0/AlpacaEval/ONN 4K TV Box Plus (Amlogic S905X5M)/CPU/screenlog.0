@@ -1,0 +1,358 @@
+[?2004h[0;32m~/llama.cpp/build-android[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 300s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Sure, here's an example implementation of the desired function:
+
+```cpp
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+string markdownToHtml(string input) {
+    string output = "<|user|>";
+    // Replace all occurrences of `<|assistant|>` with your desired output
+    return input;
+}
+
+int main() {
+    string input = "<|user|>";
+    string output = markdownToHtml(input);
+    cout << output << endl;
+    return 0;
+}
+```
+
+This function takes a reference to a `std::string` containing markdown formatted text and returns a `std::string` containing html formatted text. The function uses a `string` to store the input string, and replaces all occurrences of `<|assistant|>` with the desired output. The function then returns the modified string.
+
+[ Prompt: 7.8 t/s | Generation: 5.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Dear [Client Name],
+
+I am writing to express my interest in becoming your ghostwriter for your book, "Unbreakable Confidence." As a skilled writer with a proven track record of producing high-quality content for clients in the health and wellness industry, I am confident that I can bring a unique perspective and expertise to your project.
+
+As a ghostwriter, I will work closely with you to develop a detailed outline and writing schedule that aligns with your project timeline. I will also provide regular updates and progress reports to ensure that your project is on track and that I am providing the highest level of service and support.
+
+One of the most significant benefits of working with a ghostwriter is the ability to focus on the content itself, rather than the day-to-day administrative tasks associated with a traditional publishing or marketing campaign. This allows me to provide you with the highest level of quality and professionalism, while also saving you time and resources.
+
+In addition to the benefits of working with a ghostwriter, I am confident that my expertise in the health and wellness industry will help to elevate your book to new heights. As a skilled writer with a deep understanding of the industry, I am well-equipped to provide insights and insights into the latest trends and best practices in the field.
+
+I am excited about the opportunity to work with you and to help you achieve your publishing goals. If you are interested in exploring this proposal further, please let me know. I would be happy to schedule a meeting to discuss your project in more detail and to answer any questions you may have.
+
+Thank you for considering my proposal. I look forward to hearing from you soon.
+
+Best regards,
+
+[Your Name]
+
+[ Prompt: 7.9 t/s | Generation: 5.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Response:
+The many-worlds interpretation of quantum mechanics is not popular among people because it contradicts the fundamental principles of quantum mechanics. The many-worlds interpretation proposes that every possible outcome of a quantum system can be realized, which is not consistent with the laws of quantum mechanics. This interpretation contradicts the principle of determinism, which states that the outcome of a physical system is determined by its initial state.
+
+The many-worlds interpretation also contradicts the principle of indeterminacy, which states that the state of a physical system is not determined by its initial state. This principle is based on the idea that the universe is a single, unified whole, and that all possible outcomes are equally possible.
+
+Furthermore, the many-worlds interpretation contradicts the principle of locality, which states that the behavior of a physical system is determined by its local environment. This principle is based on the idea that the behavior of a physical system is determined by the interactions between its constituent parts.
+
+In summary, the many-worlds interpretation contradicts the fundamental principles of quantum mechanics, which are determinism, indeterminacy, and locality. These principles are essential to the understanding and interpretation of quantum mechanics, and the many-worlds interpretation contradicts them.
+
+[ Prompt: 7.7 t/s | Generation: 5.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Sure, here's a Python script that implements the Average Rate of Change (ARC) formula to calculate the derivative of a function using the user input:
+
+```python
+import math
+
+def arc_derivative(x, a, b):
+    """
+    Calculates the derivative of a function using the Average Rate of Change (ARC) formula.
+    :param x: The value of the function at which the derivative is required.
+    :param a: The lower bound of the function's domain.
+    :param b: The upper bound of the function's domain.
+    :return: The derivative of the function at x.
+    """
+    if x < a or x > b:
+        raise ValueError("Input value is out of range.")
+    
+    # Calculate the derivative using the Average Rate of Change formula
+    delta = b - a
+    if delta == 0:
+        return 0
+    else:
+        return delta / (a - b)
+
+def main():
+    # Prompt user for input
+    print("Enter the value of the function at which the derivative is required:")
+    x = float(input())
+    
+    # Calculate derivative using the Average Rate of Change formula
+    derivative = arc_derivative(x, 0, 1)
+    
+    # Output result
+    print("The derivative of the function at x = %.2f is %.2f." % (x, derivative))
+
+if __name__ == "__main__":
+    main()
+```
+
+This script prompts the user to enter the value of the function at which the derivative is required, and then calculates and outputs the derivative using the Average Rate of Change (ARC) formula. The script also includes error handling to ensure that the user enters a valid input value.
+
+[ Prompt: 7.9 t/s | Generation: 5.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7981-98e57ca42
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Response:
+Sure, here's a table with the sub niches I should be tackling with my content:
+
+Sub Niche | Popularity (1-100)
+:---|:---
+Mercantile Navies | 10
+Maritime History | 9
+Maritime Culture | 8
+Maritime Art | 7
+Maritime Architecture | 6
+Maritime Technology | 5
+Maritime Transportation | 4
+Maritime Law | 3
+Maritime Economics | 2
+Maritime Education | 1
+
+I hope this helps! Let me know if you have any other questions.
+
+[ Prompt: 7.8 t/s | Generation: 5.6 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-android[0m [0;97m$[0m exit
+[?2004lexit

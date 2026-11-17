@@ -1,0 +1,688 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 0s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Certainly! Below is a C++ function that takes a reference to a `std::string` containing markdown formatted text and returns a `std::string` containing HTML formatted text. This function will use a simple markdown-to-HTML conversion, which is not a full-featured solution but can be a good starting point for more complex scenarios.
+
+```cpp
+#include <string>
+#include <iostream>
+
+// A simple markdown-to-HTML converter
+std::string markdownToHTML(const std::string& markdown) {
+    // Simple conversion rules (this is a very basic example)
+    std::string html = markdown;
+    html = html.replace("<", "&lt;"); // Replace '<' with '&lt;'
+    html = html.replace(">", "&gt;");  // Replace '>' with '&gt;'
+    html = html.replace("*", "&ast;");  // Replace '*' with '&ast;'
+    html = html.replace("_", "&lowbar;"); // Replace '_' with '&lowbar;'
+    html = html.replace("`", "&rsquo;");  // Replace '`' with '&rsquo;'
+    html = html.replace("!", "&excl;");  // Replace '!' with '&excl;'
+    html = html.replace("?", "&quest;");  // Replace '?' with '&quest;'
+    html = html.replace(".", "&period;"); // Replace '.' with '&period;'
+    html = html.replace(",", "&comma;");  // Replace ',' with '&comma;'
+    html = html.replace("(", "&lpar;");  // Replace '(' with '&lpar;'
+    html = html.replace(")", "&rpar;");  // Replace ')' with '&rpar;'
+    html = html.replace("{", "&lcub;");  // Replace '{' with '&lcub;'
+    html = html.replace("}", "&rcub;");  // Replace '}' with '&rcub;'
+    html = html.replace("[", "&llsqbrack;"); // Replace '[' with '&llsqbrack;'
+    html = html.replace("]", "&rsqbrack;"); // Replace ']' with '&rsqbrack;'
+    html = html.replace("|", "&vert;");  // Replace '|' with '&vert;'
+    html = html.replace(":", "&colon;");  // Replace ':' with '&colon;'
+    html = html.replace("-", "&ndash;");  // Replace '-' with '&ndash;'
+    html = html.replace("=", "&equals;"); // Replace '=' with '&equals;'
+    html = html.replace(">", "&gt;");     // Replace '>' with '&gt;'
+    html = html.replace("<", "&lt;");     // Replace '<' with '&lt;'
+    html = html.replace("&", "&amp;");    // Replace '&' with '&amp;'
+    html = html.replace("#", "&num;");    // Replace '#' with '&num;'
+    html = html.replace("$", "&dollar;"); // Replace '$' with '&dollar;'
+    html = html.replace("%", "&percnt;"); // Replace '%' with '&percnt;'
+    html = html.replace("^", "&uparrow;"); // Replace '^' with '&uparrow;'
+    html = html.replace("&", "&amp;");    // Replace '&' with '&amp;'
+    html = html.replace("!", "&excl;");   // Replace '!' with '&excl;'
+    html = html.replace("?", "&quest;");  // Replace '?' with '&quest;'
+    html = html.replace(".", "&period;"); // Replace '.' with '&period;'
+    html = html.replace(",", "&comma;");  // Replace ',' with '&comma;'
+    html = html.replace("(", "&lpar;");   // Replace '(' with '&lpar;'
+    html = html.replace(")", "&rpar;");   // Replace ')' with '&rpar;'
+    html = html.replace("{", "&lcub;");   // Replace '{' with '&lcub;'
+    html = html.replace("}", "&rcub;");   // Replace '}' with '&rcub;'
+    html = html.replace("[", "&llsqbrack;"); // Replace '[' with '&llsqbrack;'
+    html = html.replace("]", "&rsqbrack;"); // Replace ']' with '&rsqbrack;'
+    html = html.replace("|", "&vert;");   // Replace '|' with '&vert;'
+    html = html.replace(":", "&colon;");  // Replace ':' with '&colon;'
+    html = html.replace("-", "&ndash;");  // Replace '-' with '&ndash;'
+    html = html.replace("=", "&equals;"); // Replace '=' with '&equals;'
+    html = html.replace(">", "&gt;");     // Replace '>' with '&gt;'
+    html = html.replace("<", "&lt;");     // Replace '<' with '&lt;'
+    html = html.replace("&", "&amp;");    // Replace '&' with '&amp;'
+    html = html.replace("#", "&num;");   
+
+[ Prompt: 15.3 t/s | Generation: 4.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Certainly! Here’s a persuasive proposal that highlights the benefits and value of having an editor and publisher for your book, "Unbreakable Confidence":
+
+---
+
+**Proposal for "Unbreakable Confidence"**
+
+Dear [Client's Name],
+
+I am thrilled to submit this proposal for the book, "Unbreakable Confidence," which I understand you are seeking to publish. As a seasoned ghost writer and editor, I am confident that my expertise and experience will significantly enhance the quality and impact of your book.
+
+### **Why Choose Skinny Brown Dog Media?**
+
+**Expert Ghost Writing:**
+I have a proven track record of crafting compelling narratives that resonate with readers. My approach is to understand your vision and goals, then tailor the writing to ensure it is engaging, informative, and aligned with your brand. I can help you craft a compelling narrative that will captivate your audience and leave a lasting impression.
+
+**Professional Editing:**
+I am a meticulous editor with a keen eye for detail. I will ensure that your manuscript is polished, error-free, and ready for publication. My editing process includes thorough proofreading, structural and content revisions, and stylistic enhancements. I will work closely with you to make sure every chapter and every word is perfect.
+
+**Publisher Expertise:**
+I have extensive experience in the publishing industry, from securing book deals to managing post-publication marketing. I can help you navigate the complexities of the publishing process, ensuring that your book reaches the right audience and achieves its full potential. I will work with you to identify the best platforms for your book and help you create a marketing strategy that maximizes its impact.
+
+### **Benefits of Working with Skinny Brown Dog Media**
+
+**Enhanced Quality:**
+By working with me, you can be assured that your book will be of the highest quality. I will ensure that your manuscript is polished, error-free, and ready for publication. My editing process includes thorough proofreading, structural and content revisions, and stylistic enhancements.
+
+**Increased Visibility:**
+I will help you identify the best platforms for your book and create a marketing strategy that maximizes its impact. I will work with you to ensure that your book reaches the right audience and achieves its full potential.
+
+**Expert Guidance:**
+I will provide expert guidance throughout the entire publishing process, from manuscript preparation to post-publication marketing. I will be available to answer any questions you may have and provide support as needed.
+
+### **Conclusion**
+
+I am confident that working with Skinny Brown Dog Media will significantly enhance the quality and impact of your book, "Unbreakable Confidence." I am excited about the opportunity to collaborate with you and help you achieve your publishing goals. Please let me know if you would like to discuss this proposal further or if you have any questions.
+
+Thank you for considering my proposal. I look forward to working with you.
+
+Best regards,
+
+[Your Name]
+[Your Contact Information]
+[Your Bio]
+
+---
+
+Feel free to customize the proposal further to better fit your specific needs and the client's preferences.
+
+[ Prompt: 15.5 t/s | Generation: 4.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The many-worlds interpretation of quantum mechanics, proposed by physicist Hugh Everett in 1957, is indeed a controversial and challenging concept for many people. Here are some reasons why people might not like it:
+
+1. **Non-Intuitive Nature**: The many-worlds interpretation posits that every possible outcome of a quantum measurement occurs in a separate branch of the universe. This idea is difficult to grasp and visualize, making it hard for some people to accept.
+
+2. **Lack of Experimental Evidence**: Unlike other interpretations, such as the Copenhagen interpretation, the many-worlds interpretation does not offer any experimental predictions that can be tested and verified. This lack of experimental evidence can be a significant drawback for those who prefer interpretations that have observable consequences.
+
+3. **Inconsistency with Classical Physics**: The many-worlds interpretation introduces a level of complexity and non-locality that can be seen as inconsistent with classical physics. It suggests that the universe is fundamentally different from what we experience in everyday life, which can be unsettling for some.
+
+4. **Philosophical Implications**: The many-worlds interpretation raises philosophical questions about the nature of reality and the observer effect. It implies that our reality is not just a snapshot but a vast, interconnected web of possibilities, which can be difficult to reconcile with our intuitive understanding of the world.
+
+5. **Simplicity and Clarity**: Some people prefer simpler interpretations of quantum mechanics that do not introduce as many complex ideas. The many-worlds interpretation can be seen as adding unnecessary complexity to an already complex field.
+
+6. **Practical Applications**: The many-worlds interpretation does not provide clear guidance for practical applications in technology or everyday life, which can be a drawback for those who want to see the implications of quantum mechanics in the real world.
+
+These points highlight why the many-worlds interpretation might not be appealing to everyone, despite its theoretical elegance and the fact that it resolves certain paradoxes in quantum mechanics.
+
+[ Prompt: 11.5 t/s | Generation: 4.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Certainly! Below is a Python script that calculates the derivative using the Average Rate of Change Formula \( A(x) = \frac{f(b) - f(a)}{b - a} \) where \( x \) is the user input. The script assumes that the function \( f(x) \) is defined and that the user will input the values of \( a \) and \( b \) (where \( b > a \)).
+
+```python
+def f(x):
+    # Define your function f(x) here. For example, let's use f(x) = x^2
+    return x ** 2
+
+def average_rate_of_change(a, b):
+    # Calculate the average rate of change
+    return (f(b) - f(a)) / (b - a)
+
+def main():
+    # Get user input for a and b
+    a = float(input("Enter the value of a: "))
+    b = float(input("Enter the value of b (b > a): "))
+
+    # Ensure b is greater than a
+    if b <= a:
+        print("Error: b must be greater than a.")
+        return
+
+    # Calculate and print the derivative using the Average Rate of Change Formula
+    derivative = average_rate_of_change(a, b)
+    print(f"The derivative at x = {b} using the Average Rate of Change Formula is: {derivative}")
+
+if __name__ == "__main__":
+    main()
+```
+
+To use this script, you would run it in a Python environment. The script will prompt you to enter the values of \( a \) and \( b \), and it will then calculate and print the derivative using the Average Rate of Change Formula. Make sure to replace the function \( f(x) \) with the specific function you want to differentiate if it's different from \( f(x) = x^2 \).
+
+[ Prompt: 11.7 t/s | Generation: 4.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ I would be happy to help you with that! Based on the nature of your website about merchant navy studies, here are some sub-niches along with their popularity scores (1-100):
+
+| Sub-Niche | Popularity Score |
+|-----------|-----------------|
+| Merchant Navy History | 85 |
+| Maritime Law and Regulations | 75 |
+| Navigation and Charting Techniques | 70 |
+| Ship Maintenance and Repair | 65 |
+| Maritime Safety and Emergency Response | 60 |
+| Maritime Technology and Innovation | 55 |
+| Maritime Career Opportunities | 50 |
+| Maritime Environmental Issues | 45 |
+| Maritime Security and Cybersecurity | 40 |
+| Maritime Education and Training | 35 |
+| Maritime Economics and Finance | 30 |
+| Maritime Law and Contract Negotiation | 25 |
+| Maritime Communication and Navigation Systems | 20 |
+| Maritime Policy and Governance | 15 |
+| Maritime Culture and Traditions | 10 |
+| Maritime Tourism and Shipping Industry | 5 |
+| Maritime Law and International Regulations | 1 |
+
+Please note that these scores are hypothetical and based on the popularity of the topics within the merchant navy field. The scores are assigned based on the relative importance and interest of each sub-niche.
+
+[ Prompt: 11.6 t/s | Generation: 4.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exir
+[?2004lNo command exir found, did you mean:
+ Command expr in package coreutils
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exir[Kt
+[?2004lexit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m pytjon [K[K[K[Khon run_squad.py 
+[?2004lStarting SQuAD 2.0 Comprehension Benchmark on 5 prompts...
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Their martial spirit.
+
+[ Prompt: 15.2 t/s | Generation: 5.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated.
+
+QUESTION: What were the Normans famed for?
+EXPECTED: Their martial spirit and Christian piety.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+Pausing for 0 seconds...
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+In 1999, the BBC broadcast a six-part series documenting the Apollo missions. The series was highly acclaimed and won several documentary awards. Neil Armstrong and Buzz Aldrin were heavily featured in the archival footage.
+
+Question:
+What award did Neil Armstrong win in 1999? ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Unanswerable
+
+[ Prompt: 15.1 t/s | Generation: 5.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+In 1999, the BBC broadcast a six-part series documenting the Apollo missions. The series was highly acclaimed and won several documentary awards. Neil Armstrong and Buzz Aldrin were heavily featured in the archival footage.
+
+QUESTION: What award did Neil Armstrong win in 1999?
+EXPECTED: UNANSWERABLE
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+Pausing for 0 seconds...
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Amazon rainforest deforestation is primarily driven by cattle ranching, which accounts for up to 80% of current deforestation. Secondary causes include agriculture for soy, logging, and infrastructure expansion such as highways.
+
+Question:
+What is the secondary cause of defore ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Unanswerable
+
+[ Prompt: 15.3 t/s | Generation: 5.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+Amazon rainforest deforestation is primarily driven by cattle ranching, which accounts for up to 80% of current deforestation. Secondary causes include agriculture for soy, logging, and infrastructure expansion such as highways.
+
+QUESTION: What is the secondary cause of deforestation in the Amazon?
+EXPECTED: Agriculture for soy, logging, and infrastructure expansion.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+Pausing for 0 seconds...
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Nikola Tesla was an inventor, electrical engineer, and mechanical engineer best known for his contributions to the design of the modern alternating current (AC) electricity supply system. He was born in Smiljan, in the Austrian Empire.
+
+Question:
+What university did Nikola Tes ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Unanswerable
+
+[ Prompt: 15.2 t/s | Generation: 5.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+Nikola Tesla was an inventor, electrical engineer, and mechanical engineer best known for his contributions to the design of the modern alternating current (AC) electricity supply system. He was born in Smiljan, in the Austrian Empire.
+
+QUESTION: What university did Nikola Tesla graduate from?
+EXPECTED: UNANSWERABLE
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+Pausing for 0 seconds...
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The speed of light in vacuum, commonly denoted c, is a universal physical constant important in many areas of physics. Its exact value is defined as 299,792,458 metres per second (approximately 300,000 km/s, or 186,000 mi/s).
+
+Question:
+What is the exact defined value of the s ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 299,792,458 metres per second
+
+[ Prompt: 15.3 t/s | Generation: 5.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+The speed of light in vacuum, commonly denoted c, is a universal physical constant important in many areas of physics. Its exact value is defined as 299,792,458 metres per second (approximately 300,000 km/s, or 186,000 mi/s).
+
+QUESTION: What is the exact defined value of the speed of light in metres per second?
+EXPECTED: 299,792,458 metres per second.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+SQuAD Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

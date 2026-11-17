@@ -1,0 +1,578 @@
+task_type,formatted_prompt,expected_output
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a bash script to backup a directory to a tar.gz file with today's date.
+
+Response:
+","```bash
+#!/bin/bash
+SOURCE_DIR=""/path/to/source""
+DEST_DIR=""/path/to/backup""
+DATE=$(date +%Y-%m-%d)
+tar -czvf ""$DEST_DIR/backup-$DATE.tar.gz"" ""$SOURCE_DIR""
+echo ""Backup completed.""
+```"
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+","```python
+import sympy as sp
+
+def main():
+    func_str = input(""Enter a function of x (e.g., x**2): "")
+    a = float(input(""Enter starting point a: ""))
+    b = float(input(""Enter ending point b: ""))
+    
+    x = sp.Symbol('x')
+    f = sp.sympify(func_str)
+    
+    f_a = f.subs(x, a)
+    f_b = f.subs(x, b)
+    
+    arc = (f_b - f_a) / (b - a)
+    print(f""The average rate of change is: {arc}"")
+
+if __name__ == ""__main__"":
+    main()
+```"
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Nina: Want to grab coffee later?
+Oscar: I'm swamped today, maybe tomorrow?
+Nina: Tomorrow works!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Nina and Oscar agreed to get coffee tomorrow because Oscar is busy today.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Chris: The server is down again.
+Pat: I know, IT is looking into it.
+Chris: Any ETA?
+Pat: Not yet, I'll let you know.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",The server is down and IT is investigating. Pat will update Chris when there is an ETA.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Adriana: Sorry, I guess I can't make it. I'm feeling sick again.
+Adriana: I planned so many things for today...
+Adriana: Hate it.
+Elisa: What a pity...
+Elisa: Next time!
+Elisa: Hope you'll get better soon!
+Adriana: Hope so too.
+Adriana: How was at the pool?
+Elisa: The best ❤️
+Elisa: 1 hour of swimming and 1 hour of sauna
+Elisa: Love it!
+Adriana:❤️
+Adriana: I'm such a bad swimmer that you couldn't stand me xD
+Elisa: Ah come on! Next time we go together!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+","Adriana is feeling sick, so she needs to give up her plans for today. Elisa went to the pool, she did 1 hour of swimming and 1 hour of sauna."
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics.
+
+Question:
+What is Albert Einstein known for developing?
+
+Answer:
+",The theory of relativity.
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Explain the difference between TCP and UDP.
+
+Response:
+","TCP (Transmission Control Protocol) is connection-oriented, meaning it establishes a reliable connection and ensures all packets are delivered in order without errors. UDP (User Datagram Protocol) is connectionless; it sends packets without checking for successful delivery, making it faster but less reliable. TCP is used for web browsing and file transfers, while UDP is used for live streaming and gaming."
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Alice: I can't find my notes for the meeting.
+Bob: I have a copy, I'll print them for you.
+Alice: Lifesaver! Thanks.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Bob will print a copy of the meeting notes for Alice.
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a SQL query to find the second highest salary from an Employee table.
+
+Response:
+","```sql
+SELECT MAX(Salary) AS SecondHighestSalary 
+FROM Employee 
+WHERE Salary < (SELECT MAX(Salary) FROM Employee);
+```"
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Greg: Happy birthday! Have a great day.
+Helen: Thanks Greg! Having dinner with my family tonight.
+Greg: Enjoy!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Greg wished Helen a happy birthday. Helen is celebrating with a family dinner.
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Create a recipe for a simple chocolate cake.
+
+Response:
+","Ingredients:
+- 1 cup flour
+- 1 cup sugar
+- 1/2 cup cocoa powder
+- 1 tsp baking powder
+- 1/2 cup milk
+- 1/2 cup vegetable oil
+- 2 eggs
+- 1 tsp vanilla extract
+
+Instructions:
+1. Preheat oven to 350°F (175°C).
+2. Mix dry ingredients in a bowl.
+3. Add wet ingredients and whisk until smooth.
+4. Pour batter into a greased pan.
+5. Bake for 30 minutes. Let cool before serving."
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+","Dear [Client Name],
+
+I am thrilled to submit my proposal on behalf of Skinny Brown Dog Media to serve as your ghostwriter for *Unbreakable Confidence*. Having a professional editor and publishing partner ensures your voice remains authentic while elevating the prose to industry standards. We will handle the heavy lifting of structure, pacing, and grammatical perfection, allowing you to focus on sharing your powerful message. Let's build your unbreakable confidence on the page together.
+
+Best,
+[Your Name]"
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Jenny: Do you know what time the movie starts?
+Mike: I think 8:30.
+Jenny: Let's meet at 8 to buy popcorn.
+Mike: Sounds good.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Jenny and Mike will meet at 8 to buy popcorn before their 8:30 movie.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on ""how could I forget about Black Friday"".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more excited for Cyber Monday. I switched to Playstation and want to grab some bundles.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The speed of light in vacuum, commonly denoted c, is a universal physical constant important in many areas of physics. Its exact value is defined as 299,792,458 metres per second (approximately 300,000 km/s, or 186,000 mi/s).
+
+Question:
+What is the exact defined value of the speed of light in metres per second?
+
+Answer:
+","299,792,458 metres per second."
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Nikola Tesla was an inventor, electrical engineer, and mechanical engineer best known for his contributions to the design of the modern alternating current (AC) electricity supply system. He was born in Smiljan, in the Austrian Empire.
+
+Question:
+What university did Nikola Tesla graduate from?
+
+Answer:
+",UNANSWERABLE
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Sam: We need to buy milk and bread.
+Emma: I'm at the store right now, I'll grab them.
+Sam: Great, get some eggs too please.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+","Emma is at the store and will buy milk, bread, and eggs."
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+","| Sub Niche | Popularity (1-100) |
+|---|---|
+| Deck Officer Cadet Training | 95 |
+| Marine Engineering Basics | 90 |
+| Maritime Law & Regulations | 75 |
+| Ship Navigation Techniques | 85 |
+| Merchant Navy Salary Guides | 98 |"
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated.
+
+Question:
+What were the Normans famed for?
+
+Answer:
+",Their martial spirit and Christian piety.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Jake: forgot keys. U home?
+Noah: nope. at 4.
+Jake: ok
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Jake forgot the keys. Noah will be back home at 4.
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms.
+
+Question:
+What is the boiling point of water?
+
+Answer:
+",UNANSWERABLE
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Kelly: Don't forget to pay the electric bill!
+Liam: Just did it online.
+Kelly: Perfect.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Liam has paid the electric bill online.
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Explain the concept of 'technical debt' in software engineering to a non-technical stakeholder, using a relatable real-world analogy.
+
+Response:
+","Technical debt is like taking out a loan to buy a house. If you need a place to live immediately, you might take out a mortgage (a quick software fix or shortcut) rather than waiting years to save up the full cash amount (building the perfect, most robust software solution). While this gets you into the house faster, you now have to pay interest. In software, that 'interest' is the extra time and effort it takes to add new features or fix bugs later because the code is messy or poorly structured. If you don't periodically pay down the principal by refactoring and cleaning up the code, the interest becomes so overwhelming that development grinds to a halt, just like going bankrupt from too much financial debt."
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world.
+
+Question:
+Where is the Mona Lisa currently displayed?
+
+Answer:
+",UNANSWERABLE
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Marie Curie was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize, the first person to win a Nobel Prize twice, and the only person to win a Nobel Prize in two scientific fields.
+
+Question:
+What year did Marie Curie win her first Nobel Prize?
+
+Answer:
+",UNANSWERABLE
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+How do vaccines work?
+
+Response:
+","Vaccines work by introducing a weakened or inactive part of a pathogen (like a virus or bacteria) into the body. This triggers the immune system to produce antibodies and memory cells without causing the disease. If the person is exposed to the actual pathogen later, their immune system recognizes it and fights it off quickly."
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+What are the primary colors in the RGB color model?
+
+Response:
+","The primary colors in the RGB color model are Red, Green, and Blue. These colors are added together in various ways to reproduce a broad array of colors on electronic displays."
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+","```cpp
+#include <string>
+#include <regex>
+
+std::string markdownToHtml(const std::string& md) {
+    std::string html = md;
+    html = std::regex_replace(html, std::regex(""\\*\\*(.*?)\\*\\*""), ""<b>$1</b>"");
+    html = std::regex_replace(html, std::regex(""\\*(.*?)\\""), ""<i>$1</i>"");
+    html = std::regex_replace(html, std::regex(""#(.*?)\\n""), ""<h1>$1</h1>\n"");
+    return html;
+}
+```"
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+","Many physicists and philosophers criticize the Many-Worlds Interpretation (MWI) because it seems overly complex and unfalsifiable. Critics argue that postulating an infinite number of unobservable parallel universes violates Occam's Razor. Additionally, it struggles to satisfactorily explain the origin of the Born rule (quantum probabilities) within a deterministic multiverse framework."
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The French Revolution was a period of fundamental political and societal change in France that began with the Estates General of 1789 and ended in November 1799 with the formation of the French Consulate. Many of its ideas are considered fundamental principles of Western liberal democracy.
+
+Question:
+When did the French Revolution end?
+
+Answer:
+",November 1799.
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit point. Its elevation of 8,848.86 m was most recently established in 2020 by the Nepali and Chinese authorities.
+
+Question:
+Who was the first person to climb Mount Everest?
+
+Answer:
+",UNANSWERABLE
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+In 1999, the BBC broadcast a six-part series documenting the Apollo missions. The series was highly acclaimed and won several documentary awards. Neil Armstrong and Buzz Aldrin were heavily featured in the archival footage.
+
+Question:
+What award did Neil Armstrong win in 1999?
+
+Answer:
+",UNANSWERABLE
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+List 5 benefits of meditation.
+
+Response:
+","1. Reduces stress and anxiety.
+2. Improves focus and concentration.
+3. Promotes emotional well-being and self-awareness.
+4. Can help lower blood pressure.
+5. Improves sleep quality."
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.
+
+Question:
+Why was the Great Wall of China built?
+
+Answer:
+",As protection against various nomadic groups from the Eurasian Steppe.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Sarah: Are you going to the gym today?
+Leo: No, my back hurts. Taking a rest day.
+Sarah: Oh no! Rest up.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Leo is skipping the gym today because his back hurts.
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+William Shakespeare was an English playwright, poet, and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. He is often called England's national poet and the ""Bard of Avon"".
+
+Question:
+What is William Shakespeare often called?
+
+Answer:
+","England's national poet and the ""Bard of Avon""."
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that, through cellular respiration, can later be released to fuel the organism's activities.
+
+Question:
+What process releases the chemical energy created by photosynthesis?
+
+Answer:
+",Cellular respiration.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+James: good horror to watch?
+Kit: Japanese, US, Spain?
+James: Spanish could be cool. any good?
+Nick: I like Rec. not new thou. Seen it?
+James: no not yet. Really good?
+Ridley: I liked it too. Its more psycho than gore tho so depends what you into really
+James: psychological are cool so yeah, I'll watch that
+Nick: but makes sure it’s the first one not 2 or 0 or anything, they were realy shit
+Ridley: amen
+James: ok thx
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",James wants to watch a good horror movie. Nick and Ridley recommended watching Rec.
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Draft a polite email declining a job offer because the salary is too low.
+
+Response:
+","Dear [Name],
+
+Thank you for offering me the [Job Title] position. I greatly appreciate the opportunity. However, after careful consideration, I must decline the offer as the proposed salary does not align with my current financial requirements and market expectations. I wish you and the team the best.
+
+Sincerely,
+[Your Name]"
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+Amazon rainforest deforestation is primarily driven by cattle ranching, which accounts for up to 80% of current deforestation. Secondary causes include agriculture for soy, logging, and infrastructure expansion such as highways.
+
+Question:
+What is the secondary cause of deforestation in the Amazon?
+
+Answer:
+","Agriculture for soy, logging, and infrastructure expansion."
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+David: Hi Honey, did you have a good day?
+Sandy: Hi my love, oh ... i had meeting  all day. What about you? 
+David: great. . I went to Brooklyn and visit some really interesting museums
+Sandy: i'm sure you also had time for shopping?
+David: Yes of course.
+Sandy: what did you buy?
+David: a new pair of sneakers. Very nice, red and pink...
+Sandy: why did you buy them. You've got plenty of them!
+David: i need to keep fit during my trips. I want to run in Central Park.
+Sandy: You are on a business trip! 
+David: I know, but running is good for my health. Also I bought a Ralph Lauren jacket for you.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",David has bought a pair of sneakers because he wants to stay fit. He also bought a Ralph Lauren jacket as a present for Sandy.
+AlpacaEval,"Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a short poem about autumn.
+
+Response:
+","Golden leaves begin to fall,
+Crisp winds echo through the hall.
+Harvest moons and amber skies,
+Summer whispers her goodbyes."
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Faheem : Hi Afhaam how are you?
+Afhaam : Hello Faheem i am a little bit busy i will call you soon.
+Faheem : OK ! Give my regards to family.
+Afhaam : Sure.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Afhaam is a little busy and will call Faheem soon.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Tom: Did you send the report?
+Jerry: Working on it now, will send in 10 mins.
+Tom: Thanks!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Jerry is finishing the report and will send it to Tom in 10 minutes.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Mia: Have you seen my blue jacket?
+Chloe: You left it in my car yesterday. I'll bring it tomorrow.
+Mia: Thank you so much!
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Chloe has Mia's blue jacket in her car and will bring it to her tomorrow.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Evan: Can we reschedule our meeting? I have a conflict at 2 PM.
+Fiona: Sure, how about 4 PM?
+Evan: 4 works for me.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Evan and Fiona rescheduled their meeting from 2 PM to 4 PM.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Ian: Did the package arrive?
+Jane: Yes, it's on your desk.
+Ian: Awesome, thanks.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Jane confirms that Ian's package has arrived and is on his desk.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Carolyn: hey!!
+Carolyn: I ran into your mum earlier today and she told me you'd moved out of town?? I had no idea!
+Sean: hi
+Sean: I guess we haven't talked in a while lol
+Sean: my fault too, sometimes I don't notice a month has passed
+Carolyn: I feel that
+Sean: so yeah, I have... I couldn't really find a new job and then bam! I found an interesting offer elsewhere
+Carolyn: ohhh
+Sean: at first I was reluctant but then I thought, why not?
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Sean moved out of town. He is satisfied with his new job.
+SAMSum,"The following is a conversation between several people.
+
+Conversation:
+Lily: Are we still on for dinner tonight?
+Mark: Yes! 7 PM at the Italian place downtown?
+Lily: Perfect. See you then.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+",Lily and Mark are meeting for dinner at 7 PM at the Italian place.
+SQuAD_2.0,"You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The mitochondria is a double-membrane-bound organelle found in most eukaryotic organisms. Mitochondria use aerobic respiration to generate most of the cell's supply of adenosine triphosphate (ATP), which is subsequently used throughout the cell as a source of chemical energy.
+
+Question:
+What process do mitochondria use to generate ATP?
+
+Answer:
+",Aerobic respiration.

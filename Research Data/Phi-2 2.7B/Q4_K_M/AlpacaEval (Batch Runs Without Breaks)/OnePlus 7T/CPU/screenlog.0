@@ -1,0 +1,420 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m pythpn[K[Kp[Kon run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 0s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\ Here is a C++ function that accomplishes the task:
+
+```cpp
+#include <iostream>
+#include <string>
+#include <sstream>
+
+std::string convert_markdown_to_html(std::string& markdown) {
+    std::stringstream ss(markdown);
+    std::string html;
+    
+    // Read the markdown content
+    std::string line;
+    while (std::getline(ss, line)) {
+        // Replace markdown tags with corresponding HTML tags
+        if (line.find("<") != std::string::npos) {
+            // Replace <p> tag
+            if (line.find("<p>") != std::string::npos) {
+                html += "<p>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <br/> tag
+            if (line.find("<br/>") != std::string::npos) {
+                html += "<br/>";
+            }
+            // Replace <br> tag
+            if (line.find("<br>") != std::string::npos) {
+                html += "<br>";
+            }
+            // Replace <
+
+[ Prompt: 36.3 t/s | Generation: 7.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Certainly! Here's a persuasive proposal that highlights the benefits and value of having an editor/publisher for your book:
+
+Title: Unbreakable Confidence: A Book That Will Inspire and Empower
+
+Introduction:
+Introduce the book and its author, emphasizing the importance of confidence in today's world.
+
+Benefits of Hiring an Editor/Publisher:
+1. Professional Editing: An editor will ensure that your book is polished, error-free, and ready for publication.
+2. Expert Feedback: A publisher will provide valuable insights and suggestions to enhance the overall quality of your book.
+3. Marketing and Distribution: A publisher will handle the marketing and distribution of your book, reaching a wider audience and increasing its visibility.
+4. Author Support: A publisher will provide ongoing support to help you navigate the publishing industry and achieve your goals.
+
+Value of Working with Us:
+1. Experience: Our team of experienced editors and publishers has a proven track record of success in the industry.
+2. Collaboration: We value collaboration and will work closely with you to bring your vision to life.
+3. Flexibility: We offer flexible publishing options to suit your needs and budget.
+4. Quality: We prioritize quality and will ensure that your book is the best it can be.
+
+Conclusion:
+Summarize the benefits of hiring an editor/publisher and emphasize the value of working with us.
+
+We look forward to the opportunity to work with you and help you achieve your publishing goals.
+
+[ Prompt: 31.4 t/s | Generation: 8.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/ The many-worlds interpretation of quantum mechanics is often criticized for several reasons. One of the main criticisms is that it seems to contradict the principle of causality, which states that an event can only have one cause and one effect. In the many-worlds interpretation, every possible outcome of a quantum event occurs in a separate universe, which can lead to an infinite number of possible causes and effects. This can make it difficult to explain how the universe works and how events are related to each other. Additionally, the many-worlds interpretation has been criticized for being too complex and difficult to test, as it relies on the existence of parallel universes that cannot be observed directly. Despite these criticisms, the many-worlds interpretation remains a popular and influential theory in the field of quantum mechanics.
+
+[ Prompt: 30.7 t/s | Generation: 9.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/- Sure! Here's a Python script that accomplishes the task:
+
+```python
+def derivative(x):
+    # Define the function f(x)
+    def f(x):
+        return x**2
+    
+    # Calculate the derivative using the Average Rate of Change Formula
+    derivative = (f(x) - f(x-1)) / (x - x-1)
+    
+    return derivative
+
+# Get user input
+x = float(input("Enter a value for x: "))
+
+# Calculate and print the derivative
+derivative_value = derivative(x)
+print("The derivative of the function at x =", x, "is", derivative_value)
+```
+
+This script defines a function `f(x)` that returns the square of `x`. Then, it calculates the derivative using the Average Rate of Change Formula, which is `(f(x) - f(x-1)) / (x - x-1)`. The `derivative` function takes a value for `x` as input and returns the calculated derivative.
+
+To use this script, you can run it and enter a value for `x` when prompted. The script will then calculate and print the derivative of the function at the given value of `x`.
+
+[ Prompt: 30.4 t/s | Generation: 8.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\ Here are some subniches related to merchant navy studies that you can consider for your website:
+
+| Sub Niche | Popularity (1-100) |
+|-----------|---------------------|
+| Merchant Navy History | 75 |
+| Merchant Navy Ships | 60 |
+| Merchant Navy Crew | 55 |
+| Merchant Navy Culture | 50 |
+| Merchant Navy Training | 45 |
+| Merchant Navy Regulations | 40 |
+| Merchant Navy Technology | 35 |
+| Merchant Navy Economics | 30 |
+| Merchant Navy Environment | 25 |
+| Merchant Navy Politics | 20 |
+
+[ Prompt: 31.2 t/s | Generation: 9.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

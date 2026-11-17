@@ -1,0 +1,330 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 0s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : phi-2-instruct.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here is a C++ function that accomplishes the task:
+
+```cpp
+#include <iostream>
+#include <string>
+#include <sstream>
+
+std::string convert_markdown_to_html(std::string markdown_text) {
+    std::string html_text;
+    std::stringstream ss(markdown_text);
+    std::string line;
+
+    while (std::getline(ss, line)) {
+        if (line.find("<") != std::string::npos) {
+            html_text += line;
+        } else {
+            std::stringstream ss2(line);
+            std::string tag;
+            while (std::getline(ss2, tag, '>')) {
+                html_text += tag;
+            }
+        }
+    }
+
+    return html_text;
+}
+```
+
+This function takes a reference to a std::string containing markdown formatted text as input. It then iterates through each line of the markdown text and checks if it contains a `<` tag. If it does, the line is added to the `html_text` variable as is. If it doesn't, the function creates a new std::stringstream from the line and reads each tag until it encounters a `>` character. The tags are then added to the `html_text` variable. Finally, the function returns the `html_text` containing the converted HTML.
+
+[ Prompt: 5.4 t/s | Generation: 2.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : phi-2-instruct.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Dear [Client's Name],
+
+I am thrilled to have the opportunity to work with you on your book project, "Unbreakable Confidence." As a professional writer and editor, I understand the importance of having a skilled ghost writer who can bring your vision to life.
+
+In this proposal, I will outline the benefits and value of having a ghost writer like myself on your team. Firstly, my extensive experience in the publishing industry allows me to provide valuable insights and guidance throughout the writing process. I will work closely with you to ensure that your book reflects your unique voice and resonates with your target audience.
+
+Additionally, my expertise in editing and proofreading guarantees that your manuscript will be polished and error-free. This attention to detail will enhance the overall quality of your book, making it more appealing to readers and potential publishers.
+
+Furthermore, as a ghost writer, I can offer a fresh perspective and creative ideas that may not have been considered by the original author. This collaboration will result in a book that is both engaging and thought-provoking, capturing the attention of readers and leaving a lasting impression.
+
+In conclusion, having a skilled ghost writer like myself on your team will undoubtedly elevate the quality of your book and increase its chances of success. I am confident that together, we can create a compelling narrative that will inspire and empower readers.
+
+Thank you for considering my services, and I look forward to discussing this opportunity further.
+
+Sincerely,
+[Your Name]
+
+[ Prompt: 5.5 t/s | Generation: 2.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : phi-2-instruct.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- The many-worlds interpretation of quantum mechanics is a complex theory that suggests that every possible outcome of a quantum event actually occurs in a separate universe. This idea can be difficult for people to grasp, as it challenges the traditional understanding of cause and effect. Additionally, the many-worlds interpretation raises questions about free will and determinism, which can be unsettling for some. Overall, the many-worlds interpretation is not widely accepted due to its counterintuitive nature and the philosophical implications it raises.
+
+[ Prompt: 5.3 t/s | Generation: 2.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : phi-2-instruct.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Sure! Here's a Python script that accomplishes the task:
+
+```python
+def derivative(x):
+    a = float(input("Enter a: "))
+    b = float(input("Enter b: "))
+    f_a = float(input("Enter f(a): "))
+    f_b = float(input("Enter f(b): "))
+    A = (f_b - f_a) / (b - a)
+    return A
+
+x = float(input("Enter x: "))
+print("The derivative of the function at x =", x, "is", derivative(x))
+```
+
+This script prompts the user to enter the values of `a`, `b`, `f(a)`, and `f(b)`. It then calculates the derivative using the Average Rate of Change Formula and outputs the result.
+
+You can run this script by executing it in your Python environment. The script will prompt you to enter the values for `a`, `b`, `f(a)`, and `f(b)`. Once you've entered the values, it will calculate the derivative and print the result.
+
+[ Prompt: 5.5 t/s | Generation: 2.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : phi-2-instruct.Q4_0.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ To help you with your website about merchant navy studies, I would suggest focusing on the following subniches:
+
+| Sub Niche | Popularity |
+|------------|------------|
+| Maritime History | 75 |
+| Maritime Law | 60 |
+| Maritime Engineering | 50 |
+| Maritime Literature | 40 |
+| Maritime Archaeology | 30 |
+| Maritime Medicine | 20 |
+| Maritime Psychology | 10 |
+
+These subniches have been ranked based on their popularity among the general public and other relevant sources. By focusing on these subniches, you can provide valuable content that appeals to a wide range of readers and establish your website as a trusted source of information in the field of merchant navy studies.
+
+[ Prompt: 5.4 t/s | Generation: 2.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

@@ -1,0 +1,3978 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exity[2Psucd ~nano output[1Prm output nano command[2Prm[C[C[C[C[C[C[C[C./bin/llama-cli -m ../../Phi-4-mini-instruct-Q4_K_M.gguf -v -sys "You are a safe, literal, and non-judgmental conversational partner. RULES: 1. Validate the user's emotions in the first sentence. 2. Never use idioms, sarcasm, metaphors, or toxic positivity. 3. Provide advice as concrete, actionable choices. 4. Keep responses brief and format steps using bullet points." -p "I was talking about my favorite game for a while, and my friend suddenly looked at their phone and gave a really loud sigh. What does that mean, and what am I supposed to do now?" -n 512 -t 4 -c 2048MMMMMMMMMM[21Pnano output
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[KMMMMMMMMMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./bin/llama-cli -m ../../Phi-4-mini-instruct-Q4_K_M.gguf -v -sys "You are a safe, literal, and non-judgmental conversational partner. RULES: 1. Validate the user's emotions in the first sentence. 2. Never use idioms, sarcasm, metaphors, or toxic positivity. 3. Provide advice as concrete, actionable choices. 4. Keep responses brief and format steps using bullet points." -p "I was talking about my favorite game for a while, and my friend suddenly looked at their phone and gave a really loud sigh. What does that mean, and what am I supposed to do now?" -n 512 -t 4 -c 2048MMMMMMMMMMrm command[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[KMMMMMMMMMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@nano[C[C[C[C[C[C[C[C[2Prm output nano output[7Pcd ~[2Psuexiyt[Kpython ~/run_benchmark.py 
+[?2004lLoading local dataset: test-00000-of-00001.parquet...
+Starting offline benchmark on 20 questions...
+
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What is the significance of the 1:2:4 resonance in the Jupiter's moons system?
+
+Choices:
+A. It causes the three moons to always be in a straight line.
+B. It causes Io to rotate on its axis faster than it orbits Jupiter
+C. It creates a gap with no asteriods between the orbits.
+D. It results in the formation of a visible ring around Jupiter.
+E. It prevents the moons from colliding with each other.
+F. It causes a gravitational pull that affect ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| B.
+[35m
+[ Prompt: 26.8 t/s | Generation: 15.2 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q1: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: We were first able to accurately measure the diameter of Pluto from:
+
+Choices:
+A. Lunar-based observations made during NASA's Apollo missions
+B. The Voyager 2 spacecraft flyby in the 1980s
+C. Observations made by the Chandra X-ray Observatory
+D. brightness measurements made during mutual eclipses of Pluto and Charon
+E. The Mars Rover's telescope observations of Pluto
+F. radar observations made by the Arecibo telescope
+G. Observations made b ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| B.
+[35m
+[ Prompt: 25.8 t/s | Generation: 14.3 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q2: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What about asteroids makes them stand out in sky surveys searching for them?
+
+Choices:
+A. They reflect enough of the sun's light to make them brighter than most background stars
+B. Asteroids rotate at a high speed, making them stand out
+C. Asteroids are larger than most celestial bodies, hence easier to spot
+D. Asteroids have substantial motion relative to the background stars
+E. Asteroids have a distinct color that makes them stand out
+F.  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- D.
+[35m
+[ Prompt: 24.7 t/s | Generation: 13.6 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q3: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\^C|/-Traceback (most recent call last):
+  File [35m"/data/data/com.termux/files/home/run_benchmark.py"[0m, line [35m108[0m, in [35m<module>[0m
+    [31mmain[0m[1;31m()[0m
+    [31m~~~~[0m[1;31m^^[0m
+  File [35m"/data/data/com.termux/files/home/run_benchmark.py"[0m, line [35m69[0m, in [35mmain[0m
+    raw_output = run_llama_inference(prompt)
+  File [35m"/data/data/com.termux/files/home/run_benchmark.py"[0m, line [35m43[0m, in [35mrun_llama_inference[0m
+    [31msubprocess.run[0m[1;31m(command, stdout=f_out, stderr=sys.stderr, text=True, input="/exit\n")[0m
+    [31m~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/data/data/com.termux/files/usr/lib/python3.13/subprocess.py"[0m, line [35m556[0m, in [35mrun[0m
+    stdout, stderr = [31mprocess.communicate[0m[1;31m(input, timeout=timeout)[0m
+                     [31m~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/data/data/com.termux/files/usr/lib/python3.13/subprocess.py"[0m, line [35m1214[0m, in [35mcommunicate[0m
+    [31mself.wait[0m[1;31m()[0m
+    [31m~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"/data/data/com.termux/files/usr/lib/python3.13/subprocess.py"[0m, line [35m1280[0m, in [35mwait[0m
+    return [31mself._wait[0m[1;31m(timeout=timeout)[0m
+           [31m~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^[0m
+  File [35m"/data/data/com.termux/files/usr/lib/python3.13/subprocess.py"[0m, line [35m2083[0m, in [35m_wait[0m
+    (pid, sts) = [31mself._try_wait[0m[1;31m(0)[0m
+                 [31m~~~~~~~~~~~~~~[0m[1;31m^^^[0m
+  File [35m"/data/data/com.termux/files/usr/lib/python3.13/subprocess.py"[0m, line [35m2041[0m, in [35m_try_wait[0m
+    (pid, sts) = [31mos.waitpid[0m[1;31m(self.pid, wait_flags)[0m
+                 [31m~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^[0m
+[1;35mKeyboardInterrupt[0m
+
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m ^C[?2004l[?2004h[?2004l
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exitcat screenlog.0 ls[Kcd llama.cpp/build-cpu/su[Kcd ~exitpython ~/run_benchmark.py [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kpython ~/run_benchmark.py [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[K[K[K[Kezit
+[?2004lNo command ezit found, did you mean:
+ Command edit in package msedit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m ezit
+[?2004lNo command ezit found, did you mean:
+ Command edit in package msedit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m we[K[Ke,i[K[Kxit
+[?2004lexit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exitz[C[Cx[C[Ccat screenlog.0 ls[Kcd llama.cpp/build-cpu/ls[Kcat screenlog.0 exit[Kcat screenlog.0 exit[Kcat screenlog.0 ls[Kcd llama.cpp/build-cpu/ls[Kcat screenlog.0 exit[Kz[C[Cx[C[Cz[C[Cx[C[Ccat screenlog.0 ls[Kcd llama.cpp/build-cpu/su[Kcd ~exitpython ~/run_benchmark.py 
+[?2004lLoading local dataset: test-00000-of-00001.parquet...
+Starting offline benchmark on 20 questions...
+
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What is the significance of the 1:2:4 resonance in the Jupiter's moons system?
+
+Choices:
+A. It causes the three moons to always be in a straight line.
+B. It causes Io to rotate on its axis faster than it orbits Jupiter
+C. It creates a gap with no asteriods between the orbits.
+D. It results in the formation of a visible ring around Jupiter.
+E. It prevents the moons from colliding with each other.
+F. It causes a gravitational pull that affect ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ B.
+[35m
+[ Prompt: 27.4 t/s | Generation: 14.7 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q1: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: We were first able to accurately measure the diameter of Pluto from:
+
+Choices:
+A. Lunar-based observations made during NASA's Apollo missions
+B. The Voyager 2 spacecraft flyby in the 1980s
+C. Observations made by the Chandra X-ray Observatory
+D. brightness measurements made during mutual eclipses of Pluto and Charon
+E. The Mars Rover's telescope observations of Pluto
+F. radar observations made by the Arecibo telescope
+G. Observations made b ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ B.
+[35m
+[ Prompt: 26.2 t/s | Generation: 14.5 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q2: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What about asteroids makes them stand out in sky surveys searching for them?
+
+Choices:
+A. They reflect enough of the sun's light to make them brighter than most background stars
+B. Asteroids rotate at a high speed, making them stand out
+C. Asteroids are larger than most celestial bodies, hence easier to spot
+D. Asteroids have substantial motion relative to the background stars
+E. Asteroids have a distinct color that makes them stand out
+F.  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ D.
+[35m
+[ Prompt: 25.6 t/s | Generation: 14.7 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q3: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Approximately how far away is the Andromeda Galaxy?
+
+Choices:
+A. 5 million light years
+B. 2.5 million light years
+C. 2.1 million light years
+D. 1.9 million light years
+E. 3.2 million light years
+F. 4 million light years
+G. 1.7 million light years
+H. 3.5 million light years
+I. 1.2 million light years
+J. 2.8 million light years
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ C.
+[35m
+[ Prompt: 25.4 t/s | Generation: 15.1 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q4: Expected [B] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What is the source of the material that causes meteor showers?
+
+Choices:
+A. Large meteorites disintegrate in the Earth's atmosphere, creating smaller particles that cause a meteor shower.
+B. Near-Earth asteroids gradually disintegrate and spread out along their orbital paths. When the Earth passes through the orbit of an asteroid we are bombarded by sand-sized particles that cause a meteor shower.
+C. Asteroid impacts elsewhere in the solar  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- J.
+[35m
+[ Prompt: 24.8 t/s | Generation: 14.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q5: Expected [J] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: How does the greenhouse effect work?
+
+Choices:
+A. Ozone absorbs infrared light from the Sun and then re-emits it, heating the atmosphere and the surface.
+B. Greenhouse gases absorb ultraviolet light from the Sun which then heats the atmosphere and the surface.
+C. Ozone transmits visible light allowing it to heat the surface but then absorbs most of the infrared heat trapping the heat near the surface.
+D. Greenhouse gases absorb visible ligh ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ H.
+[35m
+[ Prompt: 24.7 t/s | Generation: 13.7 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q6: Expected [F] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is
+
+Choices:
+A. 750 nm
+B. 350 nm
+C. 450 nm
+D. 650 nm
+E. 550 nm
+F. 500 nm
+G. 600 nm
+H. 400 nm
+I. 700 nm
+J. 800 nm
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ A.
+[35m
+[ Prompt: 24.8 t/s | Generation: 14.8 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q7: Expected [G] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: The coefficient of static friction between a small coin and the surface of a turntable is 0.30. The turntable rotates at 33.3 revolutions per minute. What is the maximum distance from the center of the turntable at which the coin will not slide?
+
+Choices:
+A. 0.300 m
+B. 0.150 m
+C. 0.121 m
+D. 0.10 m
+E. 0.242 m
+F. 0.048 m
+G. 0.200 m
+H. 0.500 m
+I. 0.024 m
+J. 0.362 m
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| C.
+[35m
+[ Prompt: 24.8 t/s | Generation: 14.9 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q8: Expected [E] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A proton moves in the +z-direction after being accelerated from rest through a potential difference V. The proton then passes through a region with a uniform electric field E in the +x-direction and a uniform magnetic field B in the +y-direction, but the proton’s trajectory is not affected. If the experiment were repeated using a potential difference of 2V, the proton would then be
+
+Choices:
+A. deflected in the -y-direction
+B. deflected i ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- G.
+[35m
+[ Prompt: 13.4 t/s | Generation: 9.2 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q9: Expected [C] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Under certain conditions, a beam of electrons impinging on a crystal surface will diffract and a scattering pattern of the beam can be obtained. What is the approximate kinetic energy of the electrons needed in order to see the pattern? (Assume the lattice spacing of the crystal to be 0.4 nm.)
+
+Choices:
+A. 0.01 eV
+B. 5 eV
+C. 100 eV
+D. 0.1 eV
+E. 500 eV
+F. 1 eV
+G. 200 eV
+H. 50 eV
+I. 1000 eV
+J. 10 eV
+
+Answer with only a single letter (A-J).
+Th ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ C.
+[35m
+[ Prompt: 25.1 t/s | Generation: 14.4 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q10: Expected [J] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: An organ pipe, closed at one end and open at the other, is designed to have a fundamental frequency of C (131 Hz). What is the frequency of the next higher harmonic for this pipe?
+
+Choices:
+A. 196 Hz
+B. 525 Hz
+C. 147 Hz
+D. 327 Hz
+E. 524 Hz
+F. 656 Hz
+G. 262 Hz
+H. 393 Hz
+I. 44 Hz
+J. 786 Hz
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- B.
+[35m
+[ Prompt: 24.6 t/s | Generation: 14.9 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q11: Expected [H] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Two spaceships approach Earth with equal speeds, as measured by an observer on Earth, but from opposite directions. A meterstick on one spaceship is measured to be 60 cm long by an occupant of the other spaceship. What is the speed of each spaceship, as measured by the observer on Earth?
+
+Choices:
+A. 0.4c
+B. 0.1c
+C. 1.0c
+D. 0.9c
+E. 0.2c
+F. 0.5c
+G. 0.6c
+H. 0.3c
+I. 0.8c
+J. 0.7c
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ A.
+[35m
+[ Prompt: 24.4 t/s | Generation: 14.6 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q12: Expected [F] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: The emission spectrum of the doubly ionized lithium atom Li++ (Z = 3, A = 7) is identical to that of a hydrogen atom in which all the wavelengths are
+
+Choices:
+A. increased by a factor of 16
+B. increased by a factor of 25
+C. decreased by a factor of 16
+D. decreased by a factor of 25
+E. increased by a factor of 81
+F. decreased by a factor of 81
+G. increased by a factor of 49
+H. increased by a factor of 9
+I. decreased by a factor of 9
+J. decr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ G.
+[35m
+[ Prompt: 24.1 t/s | Generation: 14.7 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q13: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: You drive a beat-up pickup truck along a straight road for $8.4 \mathrm{~km}$ at $70 \mathrm{~km} / \mathrm{h}$, at which point the truck runs out of gasoline and stops. Over the next $30 \mathrm{~min}$, you walk another $2.0 \mathrm{~km}$ farther along the road to a gasoline station.
+What is your overall displacement from the beginning of your drive to your arrival at the station?
+
+Choices:
+A. 9.4 km
+B. 10.0 km
+C. 12.0 km
+D. 10.4 km
+E. 11. ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| A.
+[35m
+[ Prompt: 24.2 t/s | Generation: 14.4 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q14: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A cell is roughly spherical with a radius of $20.0 	imes 10^{-6} \mathrm{~m}$. Calculate the work required to expand the cell surface against the surface tension of the surroundings if the radius increases by a factor of three. Assume the cell is surrounded by pure water and that $T=298.15 \mathrm{~K}$.
+
+Choices:
+A. 1.12 $10^{-9} \mathrm{~J}$
+B. 2.23 $10^{-9} \mathrm{~J}$
+C. 3.14 $10^{-9} \mathrm{~J}$
+D. 5.00 $10^{-9} \mathrm{~J}$
+E. 2.89 $ ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ To calculate
+[35m
+[ Prompt: 23.9 t/s | Generation: 13.8 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q15: Expected [E] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A muscle fiber contracts by $3.5 \mathrm{~cm}$ and in doing so lifts a weight. Calculate the work performed by the fiber. Assume the muscle fiber obeys Hooke's law $F=-k x$ with a force constant $k$ of $750 . \mathrm{N} \mathrm{m}^{-1}$.
+
+Choices:
+A. 0.25 $\mathrm{~J}$
+B. 0.46$\mathrm{~J}$
+C. 0.85 J
+D. 0.52 J
+E. 1.00 J
+F. 0.30 J
+G. 0.75 $\mathrm{~J}$
+H. 0.90 J
+I. 0.60 $\mathrm{~J}$
+J. 0.65 J
+
+Answer with only a single letter (A-J).
+The corr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- To calculate
+[35m
+[ Prompt: 23.8 t/s | Generation: 14.6 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q16: Expected [B] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A system consisting of $82.5 \mathrm{~g}$ of liquid water at $300 . \mathrm{K}$ is heated using an immersion heater at a constant pressure of 1.00 bar. If a current of $1.75 \mathrm{~A}$ passes through the $25.0 \mathrm{ohm}$ resistor for 100 .s, what is the final temperature of the water?
+
+Choices:
+A. 322$\mathrm{~K}$
+B. 335$\mathrm{~K}$
+C. 340$\mathrm{~K}$
+D. 310$\mathrm{~K}$
+E. 345$\mathrm{~K}$
+F. 330$\mathrm{~K}$
+G. 300$\mathrm{~K}$
+H.  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ To determine
+[35m
+[ Prompt: 23.9 t/s | Generation: 14.3 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q17: Expected [A] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Consider the half-cell reaction $\operatorname{AgCl}(s)+\mathrm{e}^{-} ightarrow$ $\operatorname{Ag}(s)+\mathrm{Cl}^{-}(a q)$. If $\mu^{\circ}(\mathrm{AgCl}, s)=-109.71 \mathrm{~kJ} \mathrm{~mol}^{-1}$, and if $E^{\circ}=+0.222 \mathrm{~V}$ for this half-cell, calculate the standard Gibbs energy of formation of $\mathrm{Cl}^{-}(a q)$.
+
+Choices:
+A. -137.5 $\mathrm{~kJ} \mathrm{~mol}^{-1}$
+B. -140.9 kJ mol^{-1}
+C. -131.1 $\mathrm{~kJ} \mathr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ To solve
+[35m
+[ Prompt: 23.7 t/s | Generation: 13.6 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q18: Expected [C] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Determine the root-mean-square (rms) values of displacement, velocity, and acceleration for a damped forced harmonic oscillator operating at steady state.
+
+Choices:
+A. x_rms= (x_max/ \surd2), v_rms= (\omegax_max/ \surd2), a_rms= (\omega^2x_max / \surd2)
+B. x_rms= (\omega^2x_max / \surd2), v_rms= (\omegax_max/ \surd2), a_rms= (x_max/ \surd2)
+C. x_rms= (\omegax_max/ \surd2), v_rms= (x_max/ \surd2), a_rms= (x_max / \surd2)
+D. x_rms= (x_max / 3 ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ J.
+[35m
+[ Prompt: 23.2 t/s | Generation: 13.5 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q19: Expected [A] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A stone is dropped into a well and the splash is heard two seconds later. If sound travels 1100 ft/sec, what is the depth of the well?
+
+Choices:
+A. 50.6 ft
+B. 80.6 ft
+C. 30.6 ft
+D. 70.6 ft
+E. 90.6 ft
+F. 100.6 ft
+G. 110.6 ft
+H. 40.6 ft
+I. 120.6 ft
+J. 60.6 ft
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ B.
+[35m
+[ Prompt: 23.9 t/s | Generation: 14.6 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 3256 =  2341 +     512 +     402                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 2367 =  2367 +       0 +       0                |
+
+Q20: Expected [J] | Model Guessed [X] -> WRONG
+
+--- FINAL SCORE ---
+Accuracy: 0.0% (0/20)
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m ^C[?2004l[?2004h[?2004l
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m [3mpython ~/run_benchmark.py[23mpython ~/run_benchmark.py
+[?2004lLoading local dataset: test-00000-of-00001.parquet...
+Starting offline benchmark on 20 questions...
+
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What is the significance of the 1:2:4 resonance in the Jupiter's moons system?
+
+Choices:
+A. It causes the three moons to always be in a straight line.
+B. It causes Io to rotate on its axis faster than it orbits Jupiter
+C. It creates a gap with no asteriods between the orbits.
+D. It results in the formation of a visible ring around Jupiter.
+E. It prevents the moons from colliding with each other.
+F. It causes a gravitational pull that affect ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| B.
+[35m
+[ Prompt: 32.9 t/s | Generation: 18.1 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q1: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: We were first able to accurately measure the diameter of Pluto from:
+
+Choices:
+A. Lunar-based observations made during NASA's Apollo missions
+B. The Voyager 2 spacecraft flyby in the 1980s
+C. Observations made by the Chandra X-ray Observatory
+D. brightness measurements made during mutual eclipses of Pluto and Charon
+E. The Mars Rover's telescope observations of Pluto
+F. radar observations made by the Arecibo telescope
+G. Observations made b ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| H
+[35m
+[ Prompt: 32.2 t/s | Generation: 18.3 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q2: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What about asteroids makes them stand out in sky surveys searching for them?
+
+Choices:
+A. They reflect enough of the sun's light to make them brighter than most background stars
+B. Asteroids rotate at a high speed, making them stand out
+C. Asteroids are larger than most celestial bodies, hence easier to spot
+D. Asteroids have substantial motion relative to the background stars
+E. Asteroids have a distinct color that makes them stand out
+F.  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ A.
+[35m
+[ Prompt: 31.4 t/s | Generation: 18.2 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q3: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Approximately how far away is the Andromeda Galaxy?
+
+Choices:
+A. 5 million light years
+B. 2.5 million light years
+C. 2.1 million light years
+D. 1.9 million light years
+E. 3.2 million light years
+F. 4 million light years
+G. 1.7 million light years
+H. 3.5 million light years
+I. 1.2 million light years
+J. 2.8 million light years
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- J
+[35m
+[ Prompt: 31.4 t/s | Generation: 18.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q4: Expected [B] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What is the source of the material that causes meteor showers?
+
+Choices:
+A. Large meteorites disintegrate in the Earth's atmosphere, creating smaller particles that cause a meteor shower.
+B. Near-Earth asteroids gradually disintegrate and spread out along their orbital paths. When the Earth passes through the orbit of an asteroid we are bombarded by sand-sized particles that cause a meteor shower.
+C. Asteroid impacts elsewhere in the solar  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ C.
+[35m
+[ Prompt: 29.8 t/s | Generation: 17.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q5: Expected [J] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: How does the greenhouse effect work?
+
+Choices:
+A. Ozone absorbs infrared light from the Sun and then re-emits it, heating the atmosphere and the surface.
+B. Greenhouse gases absorb ultraviolet light from the Sun which then heats the atmosphere and the surface.
+C. Ozone transmits visible light allowing it to heat the surface but then absorbs most of the infrared heat trapping the heat near the surface.
+D. Greenhouse gases absorb visible ligh ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| A.
+[35m
+[ Prompt: 30.1 t/s | Generation: 17.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q6: Expected [F] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is
+
+Choices:
+A. 750 nm
+B. 350 nm
+C. 450 nm
+D. 650 nm
+E. 550 nm
+F. 500 nm
+G. 600 nm
+H. 400 nm
+I. 700 nm
+J. 800 nm
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| J.
+[35m
+[ Prompt: 30.5 t/s | Generation: 18.3 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q7: Expected [G] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: The coefficient of static friction between a small coin and the surface of a turntable is 0.30. The turntable rotates at 33.3 revolutions per minute. What is the maximum distance from the center of the turntable at which the coin will not slide?
+
+Choices:
+A. 0.300 m
+B. 0.150 m
+C. 0.121 m
+D. 0.10 m
+E. 0.242 m
+F. 0.048 m
+G. 0.200 m
+H. 0.500 m
+I. 0.024 m
+J. 0.362 m
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ To solve
+[35m
+[ Prompt: 30.3 t/s | Generation: 18.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q8: Expected [E] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A proton moves in the +z-direction after being accelerated from rest through a potential difference V. The proton then passes through a region with a uniform electric field E in the +x-direction and a uniform magnetic field B in the +y-direction, but the proton’s trajectory is not affected. If the experiment were repeated using a potential difference of 2V, the proton would then be
+
+Choices:
+A. deflected in the -y-direction
+B. deflected i ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ J
+[35m
+[ Prompt: 30.4 t/s | Generation: 17.6 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q9: Expected [C] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Under certain conditions, a beam of electrons impinging on a crystal surface will diffract and a scattering pattern of the beam can be obtained. What is the approximate kinetic energy of the electrons needed in order to see the pattern? (Assume the lattice spacing of the crystal to be 0.4 nm.)
+
+Choices:
+A. 0.01 eV
+B. 5 eV
+C. 100 eV
+D. 0.1 eV
+E. 500 eV
+F. 1 eV
+G. 200 eV
+H. 50 eV
+I. 1000 eV
+J. 10 eV
+
+Answer with only a single letter (A-J).
+Th ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- J.
+[35m
+[ Prompt: 30.4 t/s | Generation: 18.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q10: Expected [J] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: An organ pipe, closed at one end and open at the other, is designed to have a fundamental frequency of C (131 Hz). What is the frequency of the next higher harmonic for this pipe?
+
+Choices:
+A. 196 Hz
+B. 525 Hz
+C. 147 Hz
+D. 327 Hz
+E. 524 Hz
+F. 656 Hz
+G. 262 Hz
+H. 393 Hz
+I. 44 Hz
+J. 786 Hz
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- A
+
+
+[35m
+[ Prompt: 30.1 t/s | Generation: 18.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q11: Expected [H] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Two spaceships approach Earth with equal speeds, as measured by an observer on Earth, but from opposite directions. A meterstick on one spaceship is measured to be 60 cm long by an occupant of the other spaceship. What is the speed of each spaceship, as measured by the observer on Earth?
+
+Choices:
+A. 0.4c
+B. 0.1c
+C. 1.0c
+D. 0.9c
+E. 0.2c
+F. 0.5c
+G. 0.6c
+H. 0.3c
+I. 0.8c
+J. 0.7c
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ J
+[35m
+[ Prompt: 29.8 t/s | Generation: 17.5 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q12: Expected [F] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: The emission spectrum of the doubly ionized lithium atom Li++ (Z = 3, A = 7) is identical to that of a hydrogen atom in which all the wavelengths are
+
+Choices:
+A. increased by a factor of 16
+B. increased by a factor of 25
+C. decreased by a factor of 16
+D. decreased by a factor of 25
+E. increased by a factor of 81
+F. decreased by a factor of 81
+G. increased by a factor of 49
+H. increased by a factor of 9
+I. decreased by a factor of 9
+J. decr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ J
+[35m
+[ Prompt: 29.9 t/s | Generation: 17.8 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q13: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: You drive a beat-up pickup truck along a straight road for $8.4 \mathrm{~km}$ at $70 \mathrm{~km} / \mathrm{h}$, at which point the truck runs out of gasoline and stops. Over the next $30 \mathrm{~min}$, you walk another $2.0 \mathrm{~km}$ farther along the road to a gasoline station.
+What is your overall displacement from the beginning of your drive to your arrival at the station?
+
+Choices:
+A. 9.4 km
+B. 10.0 km
+C. 12.0 km
+D. 10.4 km
+E. 11. ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- To find
+[35m
+[ Prompt: 30.1 t/s | Generation: 17.8 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q14: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A cell is roughly spherical with a radius of $20.0 	imes 10^{-6} \mathrm{~m}$. Calculate the work required to expand the cell surface against the surface tension of the surroundings if the radius increases by a factor of three. Assume the cell is surrounded by pure water and that $T=298.15 \mathrm{~K}$.
+
+Choices:
+A. 1.12 $10^{-9} \mathrm{~J}$
+B. 2.23 $10^{-9} \mathrm{~J}$
+C. 3.14 $10^{-9} \mathrm{~J}$
+D. 5.00 $10^{-9} \mathrm{~J}$
+E. 2.89 $ ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- To calculate
+[35m
+[ Prompt: 29.2 t/s | Generation: 16.8 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q15: Expected [E] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A muscle fiber contracts by $3.5 \mathrm{~cm}$ and in doing so lifts a weight. Calculate the work performed by the fiber. Assume the muscle fiber obeys Hooke's law $F=-k x$ with a force constant $k$ of $750 . \mathrm{N} \mathrm{m}^{-1}$.
+
+Choices:
+A. 0.25 $\mathrm{~J}$
+B. 0.46$\mathrm{~J}$
+C. 0.85 J
+D. 0.52 J
+E. 1.00 J
+F. 0.30 J
+G. 0.75 $\mathrm{~J}$
+H. 0.90 J
+I. 0.60 $\mathrm{~J}$
+J. 0.65 J
+
+Answer with only a single letter (A-J).
+The corr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| To calculate
+[35m
+[ Prompt: 29.5 t/s | Generation: 17.8 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q16: Expected [B] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A system consisting of $82.5 \mathrm{~g}$ of liquid water at $300 . \mathrm{K}$ is heated using an immersion heater at a constant pressure of 1.00 bar. If a current of $1.75 \mathrm{~A}$ passes through the $25.0 \mathrm{ohm}$ resistor for 100 .s, what is the final temperature of the water?
+
+Choices:
+A. 322$\mathrm{~K}$
+B. 335$\mathrm{~K}$
+C. 340$\mathrm{~K}$
+D. 310$\mathrm{~K}$
+E. 345$\mathrm{~K}$
+F. 330$\mathrm{~K}$
+G. 300$\mathrm{~K}$
+H.  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ To solve
+[35m
+[ Prompt: 29.0 t/s | Generation: 17.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q17: Expected [A] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Consider the half-cell reaction $\operatorname{AgCl}(s)+\mathrm{e}^{-} ightarrow$ $\operatorname{Ag}(s)+\mathrm{Cl}^{-}(a q)$. If $\mu^{\circ}(\mathrm{AgCl}, s)=-109.71 \mathrm{~kJ} \mathrm{~mol}^{-1}$, and if $E^{\circ}=+0.222 \mathrm{~V}$ for this half-cell, calculate the standard Gibbs energy of formation of $\mathrm{Cl}^{-}(a q)$.
+
+Choices:
+A. -137.5 $\mathrm{~kJ} \mathrm{~mol}^{-1}$
+B. -140.9 kJ mol^{-1}
+C. -131.1 $\mathrm{~kJ} \mathr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| To calculate
+[35m
+[ Prompt: 28.6 t/s | Generation: 16.5 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q18: Expected [C] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Determine the root-mean-square (rms) values of displacement, velocity, and acceleration for a damped forced harmonic oscillator operating at steady state.
+
+Choices:
+A. x_rms= (x_max/ \surd2), v_rms= (\omegax_max/ \surd2), a_rms= (\omega^2x_max / \surd2)
+B. x_rms= (\omega^2x_max / \surd2), v_rms= (\omegax_max/ \surd2), a_rms= (x_max/ \surd2)
+C. x_rms= (\omegax_max/ \surd2), v_rms= (x_max/ \surd2), a_rms= (x_max / \surd2)
+D. x_rms= (x_max / 3 ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ J
+[35m
+[ Prompt: 28.3 t/s | Generation: 15.9 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q19: Expected [A] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Llama-3.2-3B-Instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A stone is dropped into a well and the splash is heard two seconds later. If sound travels 1100 ft/sec, what is the depth of the well?
+
+Choices:
+A. 50.6 ft
+B. 80.6 ft
+C. 30.6 ft
+D. 70.6 ft
+E. 90.6 ft
+F. 100.6 ft
+G. 110.6 ft
+H. 40.6 ft
+I. 120.6 ft
+J. 60.6 ft
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ To find
+[35m
+[ Prompt: 29.0 t/s | Generation: 17.9 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 2628 =  1918 +     448 +     262                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 1917 =  1917 +       0 +       0                |
+
+Q20: Expected [J] | Model Guessed [X] -> WRONG
+
+--- FINAL SCORE ---
+Accuracy: 0.0% (0/20)
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python ~/run_benchmark.py[Kpython ~/run_benchmark.pyexit[Kpython ~/run_benchmark.py[Kpython ~/run_benchmark.py[Kls ~
+[?2004lLlama-3.2-3B-Instruct-Q4_0_4_4.gguf
+Llama-3.2-3B-Instruct-Q4_K_M.gguf
+Llama-3.2-3B.Q4_K_M.gguf
+Meta-Llama-3.1-8B.Q4_K_M.gguf
+Phi-4-mini-instruct-Q4_K_M.gguf
+crash_log_backup.md
+[0m[01;32meco-logger.sh[0m
+energy_log_1773198695.csv
+energy_log_1773198725.csv
+energy_log_1773199011.csv
+energy_log_1773369460.csv
+energy_log_1773802705.csv
+energy_log_1773802748.csv
+energy_log_1773802907.csv
+energy_log_1773807908.csv
+energy_log_1774490659.csv
+energy_log_1774663831.csv
+energy_log_1775017478.csv
+energy_log_1775418661.csv
+energy_log_1775418667.csv
+energy_log_1775425267.csv
+energy_log_1775425299.csv
+energy_log_1775433165.csv
+error
+factsheet.txt
+[01;34mllama.cpp[0m
+mesa-vulkan-icd-wrapper-dbg_24.2.5-5_aarch64.deb
+run_benchmark.py
+tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m ls ~python ~/run_benchmark.py[K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python ~/run_benchmark.py[K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python ~/run_benchmark.py^C[?2004l[?2004h[?2004l
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m rx[K[Kexut[K[Kit
+[?2004lexit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exitls ~python ~/run_benchmark.py
+[?2004lLoading local dataset: test-00000-of-00001.parquet...
+Starting offline benchmark on 20 questions...
+
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q1: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q2: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q3: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q4: Expected [B] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q5: Expected [J] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q6: Expected [F] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0m llama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m[1m[31m
+Failed to load the model
+[0m
+Q7: Expected [G] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q8: Expected [E] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q9: Expected [C] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q10: Expected [J] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q11: Expected [H] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q12: Expected [F] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q13: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q14: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q15: Expected [E] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q16: Expected [B] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q17: Expected [A] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q18: Expected [C] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q19: Expected [A] | Model Guessed [X] -> WRONG
+
+Loading model... |gguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mllama_params_fit: encountered an error while trying to fit params to free device memory: failed to load model
+[0mgguf_init_from_file: failed to open GGUF file '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true' (No such file or directory)
+[0mllama_model_load: error loading model: llama_model_loader: failed to load model from ../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+[0mllama_model_load_from_file_impl: failed to load model
+[0mcommon_init_from_params: failed to load model '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0msrv    load_model: failed to load model, '../../Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true'
+[0m [1m[31m
+Failed to load the model
+[0m
+Q20: Expected [J] | Model Guessed [X] -> WRONG
+
+--- FINAL SCORE ---
+Accuracy: 0.0% (0/20)
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exitpython ~/run_benchmark.py
+[?2004lLoading local dataset: test-00000-of-00001.parquet...
+Starting offline benchmark on 20 questions...
+
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What is the significance of the 1:2:4 resonance in the Jupiter's moons system?
+
+Choices:
+A. It causes the three moons to always be in a straight line.
+B. It causes Io to rotate on its axis faster than it orbits Jupiter
+C. It creates a gap with no asteriods between the orbits.
+D. It results in the formation of a visible ring around Jupiter.
+E. It prevents the moons from colliding with each other.
+F. It causes a gravitational pull that affect ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ E.
+[35m
+[ Prompt: 12.3 t/s | Generation: 8.3 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q1: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: We were first able to accurately measure the diameter of Pluto from:
+
+Choices:
+A. Lunar-based observations made during NASA's Apollo missions
+B. The Voyager 2 spacecraft flyby in the 1980s
+C. Observations made by the Chandra X-ray Observatory
+D. brightness measurements made during mutual eclipses of Pluto and Charon
+E. The Mars Rover's telescope observations of Pluto
+F. radar observations made by the Arecibo telescope
+G. Observations made b ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ H.
+[35m
+[ Prompt: 11.7 t/s | Generation: 8.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q2: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What about asteroids makes them stand out in sky surveys searching for them?
+
+Choices:
+A. They reflect enough of the sun's light to make them brighter than most background stars
+B. Asteroids rotate at a high speed, making them stand out
+C. Asteroids are larger than most celestial bodies, hence easier to spot
+D. Asteroids have substantial motion relative to the background stars
+E. Asteroids have a distinct color that makes them stand out
+F.  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ D.
+[35m
+[ Prompt: 11.8 t/s | Generation: 8.2 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q3: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Approximately how far away is the Andromeda Galaxy?
+
+Choices:
+A. 5 million light years
+B. 2.5 million light years
+C. 2.1 million light years
+D. 1.9 million light years
+E. 3.2 million light years
+F. 4 million light years
+G. 1.7 million light years
+H. 3.5 million light years
+I. 1.2 million light years
+J. 2.8 million light years
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| C.
+[35m
+[ Prompt: 11.8 t/s | Generation: 8.3 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q4: Expected [B] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: What is the source of the material that causes meteor showers?
+
+Choices:
+A. Large meteorites disintegrate in the Earth's atmosphere, creating smaller particles that cause a meteor shower.
+B. Near-Earth asteroids gradually disintegrate and spread out along their orbital paths. When the Earth passes through the orbit of an asteroid we are bombarded by sand-sized particles that cause a meteor shower.
+C. Asteroid impacts elsewhere in the solar  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- F.
+[35m
+[ Prompt: 11.3 t/s | Generation: 7.5 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q5: Expected [J] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: How does the greenhouse effect work?
+
+Choices:
+A. Ozone absorbs infrared light from the Sun and then re-emits it, heating the atmosphere and the surface.
+B. Greenhouse gases absorb ultraviolet light from the Sun which then heats the atmosphere and the surface.
+C. Ozone transmits visible light allowing it to heat the surface but then absorbs most of the infrared heat trapping the heat near the surface.
+D. Greenhouse gases absorb visible ligh ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ F.
+[35m
+[ Prompt: 11.2 t/s | Generation: 7.8 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q6: Expected [F] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: White light is normally incident on a puddle of water (index of refraction 1.33). A thin (500 nm) layer of oil (index of refraction 1.5) floats on the surface of the puddle. Of the following, the most strongly reflected wavelength is
+
+Choices:
+A. 750 nm
+B. 350 nm
+C. 450 nm
+D. 650 nm
+E. 550 nm
+F. 500 nm
+G. 600 nm
+H. 400 nm
+I. 700 nm
+J. 800 nm
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| F.
+[35m
+[ Prompt: 11.4 t/s | Generation: 8.2 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q7: Expected [G] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: The coefficient of static friction between a small coin and the surface of a turntable is 0.30. The turntable rotates at 33.3 revolutions per minute. What is the maximum distance from the center of the turntable at which the coin will not slide?
+
+Choices:
+A. 0.300 m
+B. 0.150 m
+C. 0.121 m
+D. 0.10 m
+E. 0.242 m
+F. 0.048 m
+G. 0.200 m
+H. 0.500 m
+I. 0.024 m
+J. 0.362 m
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| To solve
+[35m
+[ Prompt: 11.2 t/s | Generation: 8.0 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q8: Expected [E] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A proton moves in the +z-direction after being accelerated from rest through a potential difference V. The proton then passes through a region with a uniform electric field E in the +x-direction and a uniform magnetic field B in the +y-direction, but the proton’s trajectory is not affected. If the experiment were repeated using a potential difference of 2V, the proton would then be
+
+Choices:
+A. deflected in the -y-direction
+B. deflected i ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ G
+
+
+[35m
+[ Prompt: 11.1 t/s | Generation: 7.8 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q9: Expected [C] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Under certain conditions, a beam of electrons impinging on a crystal surface will diffract and a scattering pattern of the beam can be obtained. What is the approximate kinetic energy of the electrons needed in order to see the pattern? (Assume the lattice spacing of the crystal to be 0.4 nm.)
+
+Choices:
+A. 0.01 eV
+B. 5 eV
+C. 100 eV
+D. 0.1 eV
+E. 500 eV
+F. 1 eV
+G. 200 eV
+H. 50 eV
+I. 1000 eV
+J. 10 eV
+
+Answer with only a single letter (A-J).
+Th ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ J
+
+
+[35m
+[ Prompt: 11.1 t/s | Generation: 7.9 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q10: Expected [J] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: An organ pipe, closed at one end and open at the other, is designed to have a fundamental frequency of C (131 Hz). What is the frequency of the next higher harmonic for this pipe?
+
+Choices:
+A. 196 Hz
+B. 525 Hz
+C. 147 Hz
+D. 327 Hz
+E. 524 Hz
+F. 656 Hz
+G. 262 Hz
+H. 393 Hz
+I. 44 Hz
+J. 786 Hz
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| C.
+[35m
+[ Prompt: 10.9 t/s | Generation: 8.1 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q11: Expected [H] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Two spaceships approach Earth with equal speeds, as measured by an observer on Earth, but from opposite directions. A meterstick on one spaceship is measured to be 60 cm long by an occupant of the other spaceship. What is the speed of each spaceship, as measured by the observer on Earth?
+
+Choices:
+A. 0.4c
+B. 0.1c
+C. 1.0c
+D. 0.9c
+E. 0.2c
+F. 0.5c
+G. 0.6c
+H. 0.3c
+I. 0.8c
+J. 0.7c
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ F.
+[35m
+[ Prompt: 11.0 t/s | Generation: 7.9 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q12: Expected [F] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: The emission spectrum of the doubly ionized lithium atom Li++ (Z = 3, A = 7) is identical to that of a hydrogen atom in which all the wavelengths are
+
+Choices:
+A. increased by a factor of 16
+B. increased by a factor of 25
+C. decreased by a factor of 16
+D. decreased by a factor of 25
+E. increased by a factor of 81
+F. decreased by a factor of 81
+G. increased by a factor of 49
+H. increased by a factor of 9
+I. decreased by a factor of 9
+J. decr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| H
+
+
+[35m
+[ Prompt: 10.9 t/s | Generation: 7.9 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q13: Expected [I] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: You drive a beat-up pickup truck along a straight road for $8.4 \mathrm{~km}$ at $70 \mathrm{~km} / \mathrm{h}$, at which point the truck runs out of gasoline and stops. Over the next $30 \mathrm{~min}$, you walk another $2.0 \mathrm{~km}$ farther along the road to a gasoline station.
+What is your overall displacement from the beginning of your drive to your arrival at the station?
+
+Choices:
+A. 9.4 km
+B. 10.0 km
+C. 12.0 km
+D. 10.4 km
+E. 11. ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- D.
+[35m
+[ Prompt: 10.8 t/s | Generation: 7.9 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q14: Expected [D] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A cell is roughly spherical with a radius of $20.0 	imes 10^{-6} \mathrm{~m}$. Calculate the work required to expand the cell surface against the surface tension of the surroundings if the radius increases by a factor of three. Assume the cell is surrounded by pure water and that $T=298.15 \mathrm{~K}$.
+
+Choices:
+A. 1.12 $10^{-9} \mathrm{~J}$
+B. 2.23 $10^{-9} \mathrm{~J}$
+C. 3.14 $10^{-9} \mathrm{~J}$
+D. 5.00 $10^{-9} \mathrm{~J}$
+E. 2.89 $ ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ To solve
+[35m
+[ Prompt: 10.6 t/s | Generation: 7.6 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q15: Expected [E] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A muscle fiber contracts by $3.5 \mathrm{~cm}$ and in doing so lifts a weight. Calculate the work performed by the fiber. Assume the muscle fiber obeys Hooke's law $F=-k x$ with a force constant $k$ of $750 . \mathrm{N} \mathrm{m}^{-1}$.
+
+Choices:
+A. 0.25 $\mathrm{~J}$
+B. 0.46$\mathrm{~J}$
+C. 0.85 J
+D. 0.52 J
+E. 1.00 J
+F. 0.30 J
+G. 0.75 $\mathrm{~J}$
+H. 0.90 J
+I. 0.60 $\mathrm{~J}$
+J. 0.65 J
+
+Answer with only a single letter (A-J).
+The corr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ To find
+[35m
+[ Prompt: 10.4 t/s | Generation: 7.7 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q16: Expected [B] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A system consisting of $82.5 \mathrm{~g}$ of liquid water at $300 . \mathrm{K}$ is heated using an immersion heater at a constant pressure of 1.00 bar. If a current of $1.75 \mathrm{~A}$ passes through the $25.0 \mathrm{ohm}$ resistor for 100 .s, what is the final temperature of the water?
+
+Choices:
+A. 322$\mathrm{~K}$
+B. 335$\mathrm{~K}$
+C. 340$\mathrm{~K}$
+D. 310$\mathrm{~K}$
+E. 345$\mathrm{~K}$
+F. 330$\mathrm{~K}$
+G. 300$\mathrm{~K}$
+H.  ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| To find
+[35m
+[ Prompt: 10.4 t/s | Generation: 7.5 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q17: Expected [A] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Consider the half-cell reaction $\operatorname{AgCl}(s)+\mathrm{e}^{-} ightarrow$ $\operatorname{Ag}(s)+\mathrm{Cl}^{-}(a q)$. If $\mu^{\circ}(\mathrm{AgCl}, s)=-109.71 \mathrm{~kJ} \mathrm{~mol}^{-1}$, and if $E^{\circ}=+0.222 \mathrm{~V}$ for this half-cell, calculate the standard Gibbs energy of formation of $\mathrm{Cl}^{-}(a q)$.
+
+Choices:
+A. -137.5 $\mathrm{~kJ} \mathrm{~mol}^{-1}$
+B. -140.9 kJ mol^{-1}
+C. -131.1 $\mathrm{~kJ} \mathr ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| To solve
+[35m
+[ Prompt: 10.2 t/s | Generation: 7.4 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q18: Expected [C] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: Determine the root-mean-square (rms) values of displacement, velocity, and acceleration for a damped forced harmonic oscillator operating at steady state.
+
+Choices:
+A. x_rms= (x_max/ \surd2), v_rms= (\omegax_max/ \surd2), a_rms= (\omega^2x_max / \surd2)
+B. x_rms= (\omega^2x_max / \surd2), v_rms= (\omegax_max/ \surd2), a_rms= (x_max/ \surd2)
+C. x_rms= (\omegax_max/ \surd2), v_rms= (x_max/ \surd2), a_rms= (x_max / \surd2)
+D. x_rms= (x_max / 3 ... (truncated)
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- The correct
+[35m
+[ Prompt: 10.1 t/s | Generation: 7.1 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q19: Expected [A] | Model Guessed [X] -> WRONG
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+[1m[32m
+> The following is a multiple-choice question.
+
+Question: A stone is dropped into a well and the splash is heard two seconds later. If sound travels 1100 ft/sec, what is the depth of the well?
+
+Choices:
+A. 50.6 ft
+B. 80.6 ft
+C. 30.6 ft
+D. 70.6 ft
+E. 90.6 ft
+F. 100.6 ft
+G. 110.6 ft
+H. 40.6 ft
+I. 120.6 ft
+J. 60.6 ft
+
+Answer with only a single letter (A-J).
+The correct choice is: 
+[0m
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- H.
+[35m
+[ Prompt: 10.3 t/s | Generation: 7.5 t/s ]
+[0m[1m[32m
+> ///exit
+[0m
+
+Exiting...
+llama_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+llama_memory_breakdown_print: |   - Host               |                 5463 =  4685 +     512 +     266                |
+llama_memory_breakdown_print: |   - CPU_REPACK         |                 4402 =  4402 +       0 +       0                |
+
+Q20: Expected [J] | Model Guessed [X] -> WRONG
+
+--- FINAL SCORE ---
+Accuracy: 0.0% (0/20)
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_samsum.py 
+[?2004lLoading SAMSum dataset: train.csv...
+Starting staggered SAMSum benchmark on 7 prompts...
+
+--- Processing Prompt 1/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Carolyn: hey!!
+Carolyn: I ran into your mum earlier today and she told me you'd moved out of town?? I had no idea!
+Sean: hi
+Sean: I guess we haven't talked in a while lol
+Sean: my fault too, sometimes I don't notice a month has passed
+Carolyn: I feel that
+Sean: so yeah, I have... I couldn't really find a new job and then bam! I found an interesting offer elsewhere
+Carolyn: ohhh
+Sean: at first I was reluctant but then I though ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Carolyn and Sean catch up after a long time apart. Carolyn learns from her mother that Sean moved out of town. Sean explains that he left his previous job because he couldn't find another one and accepted a new job offer elsewhere. He is happy with his new job and appreciates the supportive team.
+
+[ Prompt: 28.0 t/s | Generation: 7.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Sean moved out of town. He is satisfied with his new job.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 2/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+James: good horror to watch?
+Kit: Japanese, US, Spain?
+James: Spanish could be cool. any good?
+Nick: I like Rec. not new thou. Seen it?
+James: no not yet. Really good?
+Ridley: I liked it too. Its more psycho than gore tho so depends what you into really
+James: psychological are cool so yeah, I'll watch that
+Nick: but makes sure it’s the first one not 2 or 0 or anything, they were realy shit
+Ridley: amen
+James: ok thx
+
+Summa ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ James inquired about good horror movies, with Kit mentioning Japanese, US, and Spanish films. James showed interest in Spanish horror, specifically mentioning "Rec." Nick recommended watching the first installment of "Rec" and warned against the sequels. Ridley agreed, noting that "Rec" leans more towards psychological horror than gore. James decided to watch "Rec" after confirming it was the first one.
+
+[ Prompt: 26.1 t/s | Generation: 7.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+James wants to watch a good horror movie. Nick and Ridley recommended watching Rec.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 3/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Jake: forgot keys. U home?
+Noah: nope. at 4. 
+Jake: ok
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\ Jake forgot his keys and asked Noah if he was home. Noah replied he was at 4, and Jake acknowledged that.
+
+[ Prompt: 26.5 t/s | Generation: 7.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Jake forgot the keys. Noah will be back home at 4.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+[THERMAL CONTROL] Batch of 3 complete.
+Pausing for 60 seconds to allow passive heat dissipation...
+Resuming inference...
+
+--- Processing Prompt 4/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on "how could I forget about Black Friday".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more exci ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Kim and Frank discuss Black Friday, Cyber Monday, and their preferences for gaming platforms. Kim prefers PS4 for its comfort and enjoyment of plot and mechanics, while Frank is curious about the differences between PC and PS. Kim also mentions that Cyber Monday offers affordable bundles, and she enjoys gaming more than Frank, who is an occasional player.
+
+[ Prompt: 26.4 t/s | Generation: 7.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 5/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Adriana: Sorry, I guess I can't make it. I'm feeling sick again.
+Adriana: I planned so many things for today...
+Adriana: Hate it.
+Elisa: What a pity...
+Elisa: Next time!
+Elisa: Hope you'll get better soon!
+Adriana: Hope so too.
+Adriana: How was at the pool?
+Elisa: The best ❤️
+Elisa: 1 hour of swimming and 1 hour of sauna
+Elisa: Love it!
+Adriana:❤️
+Adriana: I'm such a bad swimmer that you couldn't stand me xD
+Elisa: Ah ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Adriana apologizes to Elisa for missing their plans due to feeling sick again. Elisa expresses her disappointment but hopes Adriana gets better soon. They reminisce about a recent trip to the pool where Elisa enjoyed swimming and sauna, while Adriana joked about being a bad swimmer. Elisa also mentioned encountering an annoying girl at the pool. Both Adriana and Elisa shared a light-hearted moment, laughing at their own jokes.
+
+[ Prompt: 25.7 t/s | Generation: 7.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Adriana is feeling sick, so she needs to give up her plans for today. Elisa went to the pool, she did 1 hour of swimming and 1 hour of sauna.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 6/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+David: Hi Honey, did you have a good day?
+Sandy: Hi my love, oh ... i had meeting  all day. What about you? 
+David: great. . I went to Brooklyn and visit some really interesting museums
+Sandy: i'm sure you also had time for shopping?
+David: Yes of course.
+Sandy: what did you buy?
+David: a new pair of sneakers. Very nice, red and pink...
+Sandy: why did you buy them. You've got plenty of them!
+David: i need to keep fit during m ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| David shares his day with Sandy, mentioning his visit to Brooklyn, museums, and shopping for new sneakers. He also bought a jacket for Sandy at Ralph Lauren. Sandy teases him about his purchases and reminds him he's on a business trip. They end the conversation with Sandy wishing him a good week and David saying goodbye.
+
+[ Prompt: 24.9 t/s | Generation: 7.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+David has bought a pair of sneakers because he wants to stay fit. He also bought a Ralph Lauren jacket as a present for Sandy.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+[THERMAL CONTROL] Batch of 3 complete.
+Pausing for 60 seconds to allow passive heat dissipation...
+Resuming inference...
+
+--- Processing Prompt 7/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Phi-4-mini-instruct-Q4_K_M.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Faheem : Hi Afhaam how are you?
+Afhaam : Hello Faheem i am a little bit busy i will call you soon.
+Faheem : OK ! Give my regards to family.
+Afhaam : Sure.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\| Faheem greeted Afhaam and asked about his well-being. Afhaam responded that he was busy and promised to call soon. Faheem wished Afhaam's family well and Afhaam assured him he would.
+
+[ Prompt: 26.6 t/s | Generation: 7.7 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Afhaam is a little busy and will cal Faheem soon.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m exit
+[?2004lexit

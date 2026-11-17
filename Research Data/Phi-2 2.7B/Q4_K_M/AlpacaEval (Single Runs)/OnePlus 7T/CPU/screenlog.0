@@ -1,0 +1,77 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m pytjo[K[Khon run_alpaca_single.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 1 prompts...
+
+WARNING: Strict thermal controls engaged. 180s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/1 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : phi-2-instruct.Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/- Sure! Here's a Python script that accomplishes the task:
+
+```python
+def derivative(x):
+    # Define the function f(x)
+    def f(x):
+        return x**2
+    
+    # Calculate the derivative using the Average Rate of Change Formula
+    derivative = (f(x) - f(0)) / (x - 0)
+    
+    return derivative
+
+# Get user input
+x = float(input("Enter a value for x: "))
+
+# Calculate and print the derivative
+derivative_value = derivative(x)
+print("The derivative of the function f(x) = x^2 at x =", x, "is", derivative_value)
+```
+
+This script defines a function `f(x)` that returns the square of `x`. Then, it calculates the derivative of `f(x)` using the Average Rate of Change Formula, which is `(f(x) - f(0)) / (x - 0)`. The `derivative` function takes a value for `x` as input and returns the calculated derivative.
+
+The script then prompts the user to enter a value for `x` and stores it in the `x` variable. It then calls the `derivative` function with the user input and stores the result in the `derivative_value` variable. Finally, it prints the derivative value along with the input value `x`.
+
+[ Prompt: 36.7 t/s | Generation: 8.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

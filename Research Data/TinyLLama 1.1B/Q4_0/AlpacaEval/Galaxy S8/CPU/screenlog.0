@@ -1,0 +1,406 @@
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py [K[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m python run_alpaca.py 
+[?2004lStarting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 300s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Sure, here's an example implementation of the desired function:
+
+```cpp
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+string markdownToHtml(string input) {
+    string output = input;
+    string html = "<|system|>";
+
+    // Replace all occurrences of `<|user|>` with the user's input
+    string::replace(output.begin(), output.end(), "<<user|>", input);
+
+    // Replace all occurrences of `>` with `>`
+    string::replace(output.begin(), output.end(), ">|assistant|>", ">");
+
+    // Remove any leading or trailing whitespace
+    output.erase(0, output.find_last_not_of(" \t\n") + 1);
+    output.erase(output.find_last_not_of(" \t\n") + 1, output.length());
+
+    // Trim any leading or trailing spaces
+    output.erase(0, output.find_first_not_of(" \t\n") + 1);
+    output.erase(output.find_first_not_of(" \t\n") + 1, output.length());
+
+    // Remove any leading or trailing newlines
+    output.erase(0, output.find_first_not_of("\n") + 1);
+    output.erase(output.find_first_not_of("\n") + 1, output.length());
+
+    // Return the modified output
+    return output;
+}
+
+int main() {
+    string input = "Hello, world!";
+    string output = markdownToHtml(input);
+    cout << output << endl;
+    return 0;
+}
+```
+
+This function takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text. It replaces all occurrences of `<|user|>` with the user's input, replaces all occurrences of `>` with `>` and removes any leading or trailing whitespace, leading or trailing spaces, and newlines. The function then returns the modified output.
+
+[ Prompt: 14.4 t/s | Generation: 6.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Dear [Client Name],
+
+I am excited to present to you our proposal for becoming your editor/publisher for your upcoming book, "Unbreakable Confidence." As a skilled writer with a proven track record in the industry, I am confident that my expertise and dedication will help elevate your book to new heights.
+
+Firstly, let me highlight the benefits and value of having a skilled editor/publisher on board. As a skilled writer, I am well-versed in the craft of writing and possess a deep understanding of the publishing industry. This knowledge and expertise will help me to provide you with valuable insights and guidance throughout the editing and publishing process.
+
+Here are some of the key benefits and value of having a skilled editor/publisher:
+
+1. Improved Quality: With a skilled editor/publisher, you can expect to receive a higher-quality product. This is because the editor/publisher will work closely with you to ensure that your book is written to the highest standards.
+
+2. Increased Sales: A skilled editor/publisher can help to increase the sales of your book. This is because they will work with you to identify the best marketing strategies and tactics to promote your book.
+
+3. Improved Reputation: A skilled editor/publisher can help to improve your reputation as a writer. This is because they will work with you to ensure that your book is well-researched, well-written, and reflects your unique voice and style.
+
+4. Increased Authority: A skilled editor/publisher can help to increase your authority as a writer. This is because they will work with you to ensure that your book is well-researched, well-written, and reflects your unique voice and style.
+
+In summary, having a skilled editor/publisher on board will help to elevate your book to new heights, improve its quality, increase its sales, improve its reputation, and increase its authority. I am confident that my expertise and dedication will help to achieve these goals for you.
+
+Thank you for considering my proposal. If you have any questions or would like to discuss this further, please do not hesitate to contact me.
+
+Best regards,
+
+[Your Name]
+
+[ Prompt: 14.2 t/s | Generation: 5.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Sure, here's a response that completes the request:
+
+Response:
+The Many-Worlds Interpretation of Quantum Mechanics (MWI) is a popular and widely accepted interpretation of quantum mechanics that proposes that the universe is made up of multiple parallel universes or "branches" of existence. While this interpretation has gained some traction in the scientific community, it has also faced criticism and skepticism from some scientists and philosophers.
+
+One of the main criticisms of the MWI is that it fails to account for the observed behavior of particles in the real world. The MWI assumes that particles are "entangled" with each other, meaning that their states are correlated with each other. This means that if a particle is in one state, it is also in another state, and vice versa. However, the observed behavior of particles in the real world contradicts this assumption.
+
+Another criticism of the MWI is that it fails to explain the origin of the universe. The MWI proposes that the universe is a result of a single "big bang" event, but this event is not explained by the MWI. Some scientists have proposed alternative interpretations of quantum mechanics, such as the "Copenhagen Interpretation" and the "Many-Faceted Interpretation," which attempt to explain the origin of the universe in a more comprehensive way.
+
+In summary, the Many-Worlds Interpretation of Quantum Mechanics has faced criticism and skepticism from some scientists and philosophers, but it has also gained some traction in the scientific community. While it does not fully explain the origin of the universe, it does provide a plausible explanation for some aspects of quantum mechanics.
+
+[ Prompt: 14.1 t/s | Generation: 5.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+^[[5~^[[5~^[[5~               Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Sure, here's a Python script that implements the Average Rate of Change (ARC) formula to calculate the derivative of a function using the user input:
+
+```python
+import math
+
+def arc_derivative(f, a, b):
+    """
+    Calculates the derivative of a function using the Average Rate of Change (ARC) formula.
+    :param f: function to be differentiated
+    :param a: lower bound of the interval
+    :param b: upper bound of the interval
+    :return: derivative of f at a
+    """
+    # Calculate the difference between the lower and upper bounds
+    delta = b - a
+
+    # Calculate the average rate of change
+    rate = delta / (b - a)
+
+    # Calculate the derivative of f at a
+    derivative = f(a) - f(a) * rate
+
+    return derivative
+
+def main():
+    # Prompt user for function and interval bounds
+    print("Enter the function to be differentiated:")
+    print("(f(x) = x^2 + 3x + 4)")
+    print("Enter the lower bound of the interval:")
+    print("(a) = 2")
+    print("Enter the upper bound of the interval:")
+    print("(b) = 5")
+
+    # Read user input
+    a = float(input("Lower bound: "))
+    b = float(input("Upper bound: "))
+
+    # Calculate derivative using ARC formula
+    derivative = arc_derivative(lambda x: x**2 + 3*x + 4, a, b)
+
+    # Print result
+    print("Derivative of f(x) = x^2 + 3x + 4 at (x = %.2f) is %.2f" % (a, derivative))
+
+if __name__ == "__main__":
+    main()
+```
+
+This script prompts the user to enter the function to be differentiated, the lower and upper bounds of the interval, and calculates the derivative using the Average Rate of Change (ARC) formula. The script then prints the result to the console.
+
+[ Prompt: 14.1 t/s | Generation: 5.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 300 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7902-3bc8d2cf2
+model      : tinyllama-1.1b-chat-v1.0.Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Response:
+
+Subniches:
+1. Mercantile History
+2. Mercantile Technology
+3. Mercantile Economics
+4. Mercantile Law
+5. Mercantile Geography
+6. Mercantile Geography
+7. Mercantile Geography
+8. Mercantile Geography
+9. Mercantile Geography
+10. Mercantile Geography
+
+Table:
+| Subniche | Popularity |
+| --------- | ---------- |
+| Mercantile History | 100 |
+| Mercantile Technology | 90 |
+| Mercantile Economics | 80 |
+| Mercantile Law | 70 |
+| Mercantile Geography | 60 |
+| Mercantile Geography | 50 |
+| Mercantile Geography | 40 |
+| Mercantile Geography | 30 |
+| Mercantile Geography | 20 |
+| Mercantile Geography | 10 |
+
+Note: The table above is a hypothetical representation of the subniches I could tackle with my content. The actual subniches may vary depending on the specific interests and needs of my audience.
+
+[ Prompt: 14.4 t/s | Generation: 6.1 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!
+[?2004h[0;32m~/llama.cpp/build-cpu[0m [0;97m$[0m 

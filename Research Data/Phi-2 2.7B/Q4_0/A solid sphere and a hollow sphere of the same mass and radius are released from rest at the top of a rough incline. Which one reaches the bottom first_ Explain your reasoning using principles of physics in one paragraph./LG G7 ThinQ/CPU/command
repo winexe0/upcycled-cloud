@@ -1,0 +1,1 @@
+./bin/llama-cli -m ~/phi-2-instruct.Q4_0.gguf -v -p "A solid sphere and a hollow sphere of the same mass and radius are released from rest at the top of a rough incline. Which one reaches the bottom first? Explain your reasoning using principles of physics in one paragraph." -n 512 -t 4 -c 2048
