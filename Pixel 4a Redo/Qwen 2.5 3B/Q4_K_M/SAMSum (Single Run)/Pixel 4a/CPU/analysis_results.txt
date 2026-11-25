@@ -1,0 +1,19 @@
+Run ID: samsum_7
+Screen Log: screenlog.samsum_7
+Energy Log: energy_log_1795493145.csv
+Folder Target: Qwen 2.5 3B / Q4_K_M / SAMSum (Single Run)
+Logged GGUF Model: qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+Prompts Completed: 1
+Avg Prompt Speed: 15.30 t/s
+Avg Generation Speed: 4.00 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 114
+idle_baseline_W: 0.92
+avg_active_power: 4.73
+peak_power: 7.51
+total_energy_J: 345.62
+total_energy_Wh: 0.0960
+start_temp: 28.00
+end_temp: 29.20
+max_temp: 29.80

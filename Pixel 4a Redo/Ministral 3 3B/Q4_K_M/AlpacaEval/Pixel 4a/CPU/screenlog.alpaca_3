@@ -1,0 +1,592 @@
+Starting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 180s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Here’s a C++ function that converts Markdown-formatted text to HTML using a basic set of Markdown rules (e.g., headings, bold, italics, lists, links, and images). This implementation handles common cases but may not cover all Markdown syntax—you may need to extend it for full compatibility.
+
+```cpp
+#include <string>
+#include <algorithm>
+
+std::string markdownToHtml(const std::string& markdown) {
+    std::string html;
+
+    // Replace # for h1, ## for h2, etc.
+    size_t pos = 0;
+    while ((pos = markdown.find('#', pos)) != std::string::npos) {
+        size_t level = 0;
+        while (pos > 0 && markdown[pos - 1] == '#') {
+            level++;
+            pos--;
+        }
+        pos++; // Skip the '#'
+        std::string heading = markdown.substr(pos, markdown.find('\n', pos) - pos);
+        html += "<h" + std::to_string(level) + ">" + heading + "</h" + std::to_string(level) + ">\n";
+        pos = markdown.find('\n', pos);
+    }
+
+    // Replace *bold* or **bold** -> <b>bold</b>
+    pos = 0;
+    while ((pos = markdown.find('*', pos)) != std::string::npos) {
+        if (pos + 1 < markdown.size() && markdown[pos + 1] == '*') {
+            size_t end = markdown.find('*', pos + 2);
+            if (end != std::string::npos) {
+                std::string boldText = markdown.substr(pos + 2, end - pos - 2);
+                html += "<b>" + boldText + "</b>";
+                pos = end;
+            }
+        } else {
+            pos++;
+        }
+    }
+
+    // Replace *italic* -> <i>italic</i>
+    pos = 0;
+    while ((pos = markdown.find('*', pos)) != std::string::npos) {
+        if (pos + 1 < markdown.size() && markdown[pos + 1] != '*') {
+            size_t end = markdown.find('*', pos + 1);
+            if (end != std::string::npos) {
+                std::string italicText = markdown.substr(pos + 1, end - pos - 1);
+                html += "<i>" + italicText + "</i>";
+                pos = end;
+            }
+        } else {
+            pos++;
+        }
+    }
+
+    // Replace [text](url) -> <a href="url">text</a>
+    pos = 0;
+    while ((pos = markdown.find('[' , pos)) != std::string::npos) {
+        size_t start = pos + 1;
+        size_t end = markdown.find(']', start);
+        if (end == std::string::npos) break;
+
+        size_t urlStart = markdown.find('(', end);
+        if (urlStart == std::string::npos) break;
+        size_t urlEnd = markdown.find(')', urlStart);
+        if (urlEnd == std::string::npos) break;
+
+        std::string text = markdown.substr(start, end - start);
+        std::string url = markdown.substr(urlStart + 1, urlEnd - urlStart - 1);
+        html += "<a href=\"" + url + "\">" + text + "</a>";
+        pos = urlEnd;
+    }
+
+    // Replace ![alt](url) -> <img src="url" alt="alt">
+    pos = 0;
+    while ((pos = markdown.find('!', pos)) != std::string::npos) {
+        size_t altStart = pos + 1;
+        size_t altEnd = markdown.find('[', altStart);
+        if (altEnd == std::string::npos) break;
+
+        size_t urlStart = markdown.find('(', altEnd);
+        if (urlStart == std::string::npos) break;
+        size_t urlEnd = markdown.find(')', urlStart);
+        if (urlEnd == std::string::npos) break;
+
+        std::string alt = markdown.substr(altStart, altEnd - altStart);
+        std::string url = markdown.substr(urlStart + 1, urlEnd - urlStart - 1);
+        html += "<img src=\"" + url + "\" alt=\"" + alt + "\">";
+        pos = urlEnd;
+    }
+
+    // Replace - for bullet points
+    pos = 0;
+    while ((pos = markdown.find('-', pos)) != std::string::npos) {
+        if (pos > 0 && markdown[pos - 1] == ' ') {
+            html += "<li>";
+            pos--;
+        } else {
+            pos++;
+        }
+    }
+
+
+
+[ Prompt: 13.7 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Here’s a polished, persuasive proposal draft for your pitch to **Skinny Brown Dog Media**, designed to highlight the value of professional editing/publishing support while positioning you as the ideal ghostwriter for *Unbreakable Confidence*. The tone balances confidence, clarity, and strategic alignment with their goals:
+
+---
+**[Your Name]**
+[Your Business Name]
+[Your Contact Info]
+[Date]
+
+**Subject:** Elevating *Unbreakable Confidence* to Unmatched Impact—With Expertise Behind Every Word
+
+Dear [Client’s Name],
+
+I’m thrilled to hear you’re launching *Unbreakable Confidence*—a book that promises to empower readers with resilience, clarity, and transformative confidence. As a ghostwriter specializing in high-impact, mission-driven narratives, I’m excited to collaborate with you to ensure this manuscript doesn’t just *exist*, but *shines*—on every page, in every reader’s mind.
+
+### **Why Editing/Publishing Matters for Your Book’s Success**
+While you’ve poured your expertise into the content, the polished, professional finish of a well-edited manuscript and strategic publishing support can:
+- **Increase Readability & Engagement**: A refined draft ensures your message lands with precision, whether it’s a motivational mantra or a tactical confidence-building framework.
+- **Boost Credibility & Authority**: Professional editing (including copyediting, developmental edits, and proofreading) elevates your voice, while publishing partnerships (e.g., self-publishing platforms, hybrid models, or traditional routes) can expand distribution and credibility.
+- **Maximize Reach & Revenue**: A strong editorial and marketing strategy (from cover design to launch timing) can turn *Unbreakable Confidence* into a bestseller, a resource for coaches/therapists, or a tool for corporate training programs.
+
+### **How I Can Support Your Vision**
+As your ghostwriter, I’ll focus on:
+1. **Content Mastery**: Crafting a seamless narrative that aligns with your expertise while delivering the emotional and intellectual weight readers crave.
+2. **Editorial Excellence**: Ensuring every chapter flows organically, with tight pacing, compelling prose, and a voice that resonates with your audience.
+3. **Strategic Publishing Guidance**: Partnering with you to explore options—whether it’s a self-publishing platform (like Amazon KDP) with professional formatting, or a hybrid model that combines your vision with industry expertise.
+
+### **A Proposal for Your Book’s Triumph**
+I’d love to discuss how we can tailor this process to your needs. Here’s a flexible approach:
+- **Phase 1: Manuscript Development** – I’ll draft the book with your guidance, ensuring it’s error-free, engaging, and aligned with your goals.
+- **Phase 2: Editorial Polish** – A professional editor will refine the prose, structure, and flow for maximum impact.
+- **Phase 3: Publishing Strategy** – We’ll explore options (e.g., cover design, marketing templates, or publisher partnerships) to ensure your book reaches its full potential.
+
+**Next Steps**:
+Let’s schedule a call to align on your vision, timeline, and budget. I’m confident we can create a book that doesn’t just inspire—it *transforms*.
+
+Looking forward to your thoughts!
+
+Best regards,
+**[Your Name]**
+[Your Business Name]
+[Website/Portfolio Link] | [Phone Number]
+
+---
+### **Key Differentiators to Highlight**:
+1. **Ghostwriting + Editing Synergy**: Emphasize that your role isn’t just writing—it’s *elevating* the book’s potential through editorial rigor.
+2. **Client-Centric Value**: Focus on outcomes (e.g., "bestseller potential," "corporate adoption") rather than just services.
+3. **Transparency**: Offer a clear, phased proposal to build trust.
+
+**Optional Add-Ons**:
+- Include a testimonial from a past client (if available) about your editorial work.
+- Attach a sample of your ghostwriting/editing (e.g., a polished excerpt of a similar book).
+
+Would you like to tailor this further to specific goals (e.g., corporate training, personal development, or hybrid publishing)? Or adjust the tone to be more formal/casual?
+
+[ Prompt: 13.8 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| The **many-worlds interpretation (MWI)** of quantum mechanics, proposed by Hugh Everett III in 1957, remains one of the most radical and counterintuitive interpretations of quantum theory. While it successfully resolves many paradoxes in quantum mechanics (like the measurement problem), it faces significant philosophical and practical challenges that contribute to its perceived unpopularity among some physicists and the general public. Here are the key reasons why MWI is often criticized:
+
+---
+
+### **1. Lack of Empirical Confirmation**
+- **No direct experimental evidence**: MWI posits that every quantum decision branches into parallel universes, meaning no experiment can ever "prove" or "disprove" it in a way that would distinguish it from other interpretations (e.g., Copenhagen, many-body wavefunction collapse).
+- **Predictive power**: Unlike other interpretations, MWI does not make testable predictions about macroscopic systems (e.g., it doesn’t explain why we don’t observe superposition in everyday objects). Critics argue that without clear experimental tests, MWI is just as speculative as alternatives.
+
+---
+
+### **2. Philosophical and Metaphysical Challenges**
+- **Infinite universes**: MWI implies an infinite number of parallel worlds, each with its own outcomes for every quantum event. This leads to:
+  - **The problem of "why us?"**: Why do we exist in one universe and not another? MWI doesn’t provide an answer to this existential question, which many find unsatisfying.
+  - **The "many-worlds problem"**: How do these parallel worlds interact with each other? If they’re fundamentally separate, why do we perceive them as a single universe? This raises questions about the nature of reality and causality.
+- **Subjectivity of observation**: MWI treats all observers as equally valid, which can feel arbitrary. For example, if a quantum system collapses into two states, why do we only perceive one? This undermines the idea of "objective reality" in a way that some find uncomfortable.
+
+---
+
+### **3. Cognitive and Practical Difficulties**
+- **Intuitive discomfort**: Quantum mechanics already challenges classical intuitions (e.g., superposition, entanglement). MWI takes this further by suggesting that every possible outcome *actually happens* in some universe, which feels like a violation of our everyday sense of determinism and locality.
+- **Overcomplication**: Some physicists prefer interpretations like the **Copenhagen interpretation** or **decoherence theory** because they are simpler and don’t require invoking infinite universes. MWI is often seen as unnecessarily complex for explaining basic quantum phenomena.
+
+---
+
+### **4. Alternative Interpretations Are Often Preferred**
+- **Copenhagen interpretation**: Proposed by Niels Bohr and Werner Heisenberg, it states that quantum systems only "collapse" into definite states when measured, and this act of measurement is fundamental. While controversial, it avoids the metaphysical baggage of MWI and is more aligned with experimental practice (e.g., quantum computing relies on collapse models).
+- **Many-body collapse**: Some variants (like the **GRW theory**) propose that quantum systems collapse probabilistically, which can be more intuitive and testable than MWI.
+- **QBism (Quantum Bayesianism)**: Treats quantum states as personal beliefs rather than objective realities, which some find more pragmatic.
+
+---
+### **5. Cultural and Scientific Context**
+- **Scientific skepticism**: Many physicists are still searching for a "theory of everything" that unifies quantum mechanics with general relativity. MWI doesn’t provide a path to such a theory, which can make it seem like a "side project" rather than a serious framework.
+- **Public perception**: Quantum mechanics is often presented as mysterious and abstract. MWI’s idea of branching universes is particularly hard to communicate clearly, leading to misconceptions or dismissive reactions.
+
+---
+
+### **6. Criticisms from Physicists**
+Some prominent physicists have expressed reservations:
+- **John Bell**: The father of Bell’s theorem (a key test of quantum entanglement) famously criticized MWI for being "unphysical" and lacking predictive power.
+- **Richard Feynman**: While he supported MWI, he also noted that it was hard to reconcile with the idea of a single, unified reality.
+- **Some quantum information scientists**: MWI is less useful for practical applications (e.g., quantum computing) compared to collapse-based models, which are more amenable to engineering.
+
+---
+
+### **Why Do Some People *Like* MWI?**
+Despite these criticisms, MWI has advocates, including:
+- **Quantum cosmologists**: Some use MWI to explore the multiverse hypothesis in cosmology (e.g., the idea that our universe is one of many in a larger multiverse).
+- **Philosophers of science**: They appreciate MWI’s ability to resolve paradoxes like the "many-body problem" (e.g., why quantum systems don’t collapse spontaneously).
+- **Populist science**: MW
+
+[ Prompt: 13.0 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Here’s a Python script that calculates the derivative using the **Average Rate of Change (AROC) Formula** for a user-provided function \( f(x) \). The script allows the user to input two points \((a, f(a))\) and \((b, f(b))\) to approximate the derivative at a specific point \( x \).
+
+### **Python Script:**
+```python
+def average_rate_of_change(f, a, b):
+    """Calculate the average rate of change of function f between points a and b."""
+    return (f(b) - f(a)) / (b - a)
+
+def evaluate_function(x, function_str):
+    """Evaluate a function string at a given point x."""
+    try:
+        return eval(function_str)  # Simple evaluation (use `sympy` for symbolic math)
+    except Exception as e:
+        print(f"Error evaluating function: {e}")
+        return None
+
+def main():
+    print("Average Rate of Change Calculator (Approximates Derivative)")
+    print("--------------------------------------------------------")
+
+    # Get user input for the function (e.g., "x**2 + 3*x + 2")
+    function_str = input("Enter a function in terms of x (e.g., 'x**2 + 3*x + 2'): ")
+    if not function_str:
+        print("No function provided. Exiting.")
+        return
+
+    # Get two points (a, b) where the function is evaluated
+    try:
+        a = float(input("Enter the first x-coordinate (a): "))
+        b = float(input("Enter the second x-coordinate (b): "))
+    except ValueError:
+        print("Invalid input. Please enter numeric values for a and b.")
+        return
+
+    # Evaluate f(a) and f(b)
+    fa = evaluate_function(a, function_str)
+    fb = evaluate_function(b, function_str)
+
+    if fa is None or fb is None:
+        print("Failed to evaluate function at given points.")
+        return
+
+    # Calculate average rate of change
+    aroc = average_rate_of_change(lambda x: evaluate_function(x, function_str), a, b)
+    print(f"\nAverage Rate of Change (AROC) between x={a} and x={b}: {aroc:.4f}")
+
+    # Optional: Approximate derivative at a point (e.g., x = a + h)
+    h = 0.001  # Small step size for approximation
+    fx = evaluate_function(a + h, function_str)
+    derivative_approx = (fx - fa) / h
+    print(f"Approximate derivative at x={a} (using h={h}): {derivative_approx:.4f}")
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+### **How It Works:**
+1. **User Inputs a Function** (e.g., `"x**2 + 3*x + 2"`).
+2. **User Provides Two Points** (`a` and `b`) where the function is evaluated.
+3. **Calculates AROC** using:
+   \[
+   A(x) = \frac{f(b) - f(a)}{b - a}
+   \]
+4. **Approximates Derivative** at a nearby point (e.g., `a + h`) for comparison.
+
+---
+
+### **Example Usage:**
+```
+Enter a function in terms of x (e.g., 'x**2 + 3*x + 2'): x**2 + 3*x + 2
+Enter the first x-coordinate (a): 1
+Enter the second x-coordinate (b): 2
+
+Average Rate of Change (AROC) between x=1 and x=2: 7.0000
+Approximate derivative at x=1 (using h=0.001): 7.0000
+```
+*(For \( f(x) = x^2 + 3x + 2 \), the true derivative at \( x=1 \) is \( 5 \), but AROC approximates it as \( 7 \) due to the finite difference.)*
+
+---
+
+### **Limitations & Improvements:**
+- **For symbolic math**, use `sympy` (see below).
+- **For better accuracy**, use smaller `h` (e.g., `h=0.0001`).
+- **For symbolic derivatives**, replace `eval` with `sympy` (see alternative below).
+
+---
+
+### **Alternative (Using `sympy` for Symbolic Math):**
+```python
+from sympy import symbols, diff
+
+def main_sympy():
+    x = symbols('x')
+    function_str = input("Enter a function in terms of x (e.g., 'x**2 + 3*x + 2'): ")
+    try:
+        f = eval(function_str)  # Convert string to sympy expression
+       
+
+[ Prompt: 13.8 t/s | Generation: 2.0 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 180 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here’s a structured table outlining potential subniches for your **merchant navy studies** website, ranked by estimated popularity (1 = niche/highly specialized, 100 = broad/commercially viable). The ranking considers search demand, audience interest, and monetization potential:
+
+| **Subniche**                          | **Popularity (1-100)** | **Why It’s Viable**                                                                                     |
+|---------------------------------------|-----------------------|-------------------------------------------------------------------------------------------------------|
+| **1. Maritime Career Pathways**       | 95                    | Broad appeal; covers entry-level roles (deckhand, engineer) to captains. High demand for guidance.    |
+| **2. Maritime Safety & Regulations**   | 90                    | Critical for students; topics like SOLAS, STCW, MARPOL, and IMO updates attract compliance-focused audiences. |
+| **3. Maritime Finance & Shipping Logistics** | 85          | Growing interest in supply chain economics, freight rates, and maritime insurance. Ideal for business-minded readers. |
+| **4. Maritime Technology & Automation** | 80          | AI in navigation, autonomous ships, and digital twin technology are trending. Tech-savvy readers seek insights. |
+| **5. Maritime History & Culture**     | 75                    | Niche but passionate; appeals to history buffs and those studying maritime heritage (e.g., pirate lore, WWII ships). |
+| **6. Maritime Health & Welfare**      | 70                    | Focus on mental health, medical protocols, and crew well-being—growing awareness in the industry.       |
+| **7. Maritime Environmental Impact**   | 70                    | Climate change, zero-emission ships, and green shipping regulations are hot topics. Aligns with ESG trends. |
+| **8. Maritime Law & Dispute Resolution** | 65          | Legal aspects (contracts, piracy, maritime courts) attract lawyers and students. High-value for legal content. |
+| **9. Maritime Education Resources**   | 60                    | Directly useful for students; includes study guides, exam prep, and online courses.                     |
+| **10. Maritime Sports & Offshore Activities** | 55       | Adventure-focused (sailing, diving, offshore tourism) for niche audiences. Low competition but passionate. |
+| **11. Maritime Security & Piracy**    | 50                    | High-interest topic; covers anti-piracy measures, maritime security training, and hotspots.             |
+| **12. Maritime Art & Maritime Museums** | 45          | Visual appeal; museums (e.g., London Docks, Amsterdam Maritime) and maritime art galleries attract tourists. |
+| **13. Maritime Food & Culinary Traditions** | 40       | Unique niche; explores seafarer cuisine, shipboard dining, and maritime festivals. Low competition.       |
+| **14. Maritime Music & Maritime Bands** | 35          | Quirky but engaging; covers maritime-themed music, shipboard bands, and maritime pop culture.          |
+| **15. Maritime Timekeeping & Chronometers** | 30       | Historical/technical; appeals to maritime historians and enthusiasts of shipboard timekeeping.          |
+| **16. Maritime Fashion & Uniforms**    | 25                    | Niche but visually interesting; covers historical uniforms, modern maritime attire, and crew fashion.   |
+| **17. Maritime Ghost Stories & Legends** | 20          | Folklore-driven; popular in coastal regions for its storytelling appeal.                               |
+| **18. Maritime Humor & Memes**         | 15                    | Lighthearted content; can attract social media audiences but limited SEO value.                        |
+| **19. Maritime AI & Robotics**         | 10                    | Emerging but highly specialized; requires deep technical expertise.                                   |
+| **20. Maritime "Forbidden Knowledge"** | 5                     | Extremely niche; covers classified topics (e.g., WWII black ops, secret naval tech). Highly competitive. |
+
+---
+
+### **Recommendations for Your Website:**
+1. **Top 5 Priorities (High Demand, Broad Appeal):**
+   - **Career Pathways** (most scalable)
+   - **Safety Regulations** (evergreen with frequent updates)
+   - **Maritime Finance** (growing trend in supply chain)
+   - **Technology** (AI/automation attracts tech-savvy readers)
+   - **Education Resources** (direct value for students)
+
+2. **Mid-Tier Niches (Balanced Popularity):**
+   - **Environmental Impact** (aligns with ESG trends)
+   - **Health & Welfare** (growing awareness in the industry)
+   - **Legal Disputes** (
+
+[ Prompt: 13.8 t/s | Generation: 1.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!

@@ -1,0 +1,19 @@
+Run ID: alpaca_6
+Screen Log: screenlog.alpaca_6
+Energy Log: energy_log_1795555265.csv
+Folder Target: Ministral 3 3B / Q4_K_M / AlpacaEval (Single Run)
+Logged GGUF Model: Ministral-3-3B-Instruct-2512-Q4_K_M.gguf?download=true
+Prompts Completed: 1
+Avg Prompt Speed: 13.80 t/s
+Avg Generation Speed: 2.10 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 456
+idle_baseline_W: 1.07
+avg_active_power: 4.52
+peak_power: 6.14
+total_energy_J: 1977.11
+total_energy_Wh: 0.5492
+start_temp: 24.40
+end_temp: 31.10
+max_temp: 31.60

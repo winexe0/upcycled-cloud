@@ -1,0 +1,19 @@
+Run ID: alpaca_1
+Screen Log: screenlog.alpaca_1
+Energy Log: energy_log_1795500434.csv
+Folder Target: Llama 3.2 3B / Q4_K_M / AlpacaEval (Batch Runs Without Breaks)
+Logged GGUF Model: Llama-3.2-3B-Instruct-Q4_K_M.gguf
+Prompts Completed: 5
+Avg Prompt Speed: 15.30 t/s
+Avg Generation Speed: 3.78 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 699
+idle_baseline_W: 0.74
+avg_active_power: 4.40
+peak_power: 7.01
+total_energy_J: 3002.88
+total_energy_Wh: 0.8341
+start_temp: 24.10
+end_temp: 33.30
+max_temp: 33.80
