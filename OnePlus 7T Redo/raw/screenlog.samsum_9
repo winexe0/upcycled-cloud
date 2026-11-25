@@ -1,0 +1,388 @@
+Loading SAMSum dataset: train.csv...
+Starting staggered SAMSum benchmark on 7 prompts...
+
+--- Processing Prompt 1/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Carolyn: hey!!
+Carolyn: I ran into your mum earlier today and she told me you'd moved out of town?? I had no idea!
+Sean: hi
+Sean: I guess we haven't talked in a while lol
+Sean: my fault too, sometimes I don't notice a month has passed
+Carolyn: I feel that
+Sean: so yeah, I have... I couldn't really find a new job and then bam! I found an interesting offer elsewhere
+Carolyn: ohhh
+Sean: at first I was reluctant but then I though ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Carolyn and Sean have reconnected after a while. Sean moved out of town and accepted a new job offer, which he found surprising since he hadn't heard from Carolyn in a while. He is now happy with his new job, appreciating the supportive team.
+
+[ Prompt: 34.2 t/s | Generation: 9.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Sean moved out of town. He is satisfied with his new job.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 2/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+James: good horror to watch?
+Kit: Japanese, US, Spain?
+James: Spanish could be cool. any good?
+Nick: I like Rec. not new thou. Seen it?
+James: no not yet. Really good?
+Ridley: I liked it too. Its more psycho than gore tho so depends what you into really
+James: psychological are cool so yeah, I'll watch that
+Nick: but makes sure it’s the first one not 2 or 0 or anything, they were realy shit
+Ridley: amen
+James: ok thx
+
+Summa ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ In the conversation, James asks for recommendations for a good horror movie. Kit suggests Spanish, US, and Japanese options. James decides on a Spanish horror film. Nick recommends "Rec," a Spanish horror film from 2002, which James hasn't seen. Ridley adds that "Rec" is more psychological than gory. Nick reminds James to watch the first "Rec" film, as the sequels are considered poor. Ridley agrees. James confirms he will watch "Rec."
+
+[ Prompt: 32.9 t/s | Generation: 9.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+James wants to watch a good horror movie. Nick and Ridley recommended watching Rec.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 3/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Jake: forgot keys. U home?
+Noah: nope. at 4. 
+Jake: ok
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\| Jake forgot his keys and asked Noah if he was home. Noah confirmed he was not home and would be back at 4 PM. Jake acknowledged the information.
+
+[ Prompt: 32.3 t/s | Generation: 10.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Jake forgot the keys. Noah will be back home at 4.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+[THERMAL CONTROL] Batch of 3 complete.
+Pausing for 180 seconds to allow passive heat dissipation...
+Resuming inference...
+
+--- Processing Prompt 4/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Kim: Knock knock!
+Frank: Hello :)
+Kim: Don't forget about Black Friday!
+Frank: wow, thanks!
+Kim: I figured that you may forget.
+Frank: Hahaha, true, thank you!
+Kim: No worries, I wanted to spare myself the week long whining on "how could I forget about Black Friday".
+Frank: Still not funny Kim :P
+Kim: This year set up a reminder or three ;)
+Frank: Is there anything in particular you're counting on?
+Kim: I'm actually more exci ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ The conversation between Kim and Frank revolves around their experiences with gaming platforms, particularly focusing on Kim's transition from PC to PlayStation (PS). Kim expresses excitement about Cyber Monday, mentioning upcoming releases from BioWare and indie developers. Frank asks about Kim's experience with PS, and Kim shares that while graphics might not be as impressive, the plot and mechanics are enjoyable. They also discuss the cost-effectiveness of PS compared to PC, especially during sales events like Cyber Monday. Frank mentions his preference for occasional gaming, while Kim finds PS more suitable for his Netflix-watching habits.
+
+[ Prompt: 33.0 t/s | Generation: 9.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Kim has reminded Frank about Black Friday. She has switched to using PlayStation.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 5/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Adriana: Sorry, I guess I can't make it. I'm feeling sick again.
+Adriana: I planned so many things for today...
+Adriana: Hate it.
+Elisa: What a pity...
+Elisa: Next time!
+Elisa: Hope you'll get better soon!
+Adriana: Hope so too.
+Adriana: How was at the pool?
+Elisa: The best ❤️
+Elisa: 1 hour of swimming and 1 hour of sauna
+Elisa: Love it!
+Adriana:❤️
+Adriana: I'm such a bad swimmer that you couldn't stand me xD
+Elisa: Ah ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ Adriana cancels plans due to feeling sick, but Elisa encourages her to get better. Elisa shares her enjoyable day at the pool, mentioning a particularly annoying person there. Adriana jokes that she's a bad swimmer and compares herself to the annoying person.
+
+[ Prompt: 31.5 t/s | Generation: 9.8 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Adriana is feeling sick, so she needs to give up her plans for today. Elisa went to the pool, she did 1 hour of swimming and 1 hour of sauna.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+--- Processing Prompt 6/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+David: Hi Honey, did you have a good day?
+Sandy: Hi my love, oh ... i had meeting  all day. What about you? 
+David: great. . I went to Brooklyn and visit some really interesting museums
+Sandy: i'm sure you also had time for shopping?
+David: Yes of course.
+Sandy: what did you buy?
+David: a new pair of sneakers. Very nice, red and pink...
+Sandy: why did you buy them. You've got plenty of them!
+David: i need to keep fit during m ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ In the conversation, David informs Sandy about his day, mentioning that he visited interesting museums in Brooklyn and went shopping for a new pair of sneakers to stay fit during his business trip. Sandy, however, points out that David is on a week-long business trip and suggests running in the nearby Central Park instead of Ralph Lauren. David, however, insists that Ralph Lauren was a pleasant surprise, as he found a nice jacket for Sandy. The conversation ends with David wishing Sandy a good week and looking forward to their next meeting.
+
+[ Prompt: 31.6 t/s | Generation: 9.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+David has bought a pair of sneakers because he wants to stay fit. He also bought a Ralph Lauren jacket as a present for Sandy.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+[THERMAL CONTROL] Batch of 3 complete.
+Pausing for 180 seconds to allow passive heat dissipation...
+Resuming inference...
+
+--- Processing Prompt 7/7 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8265-c96f608d9
+model      : qwen2.5-3b-instruct-q4_k_m.gguf?download=true
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> The following is a conversation between several people.
+
+Conversation:
+Faheem : Hi Afhaam how are you?
+Afhaam : Hello Faheem i am a little bit busy i will call you soon.
+Faheem : OK ! Give my regards to family.
+Afhaam : Sure.
+
+Summarize the conversation in a few concise sentences.
+Summary:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/- Faheem greeted Afhaam and inquired about his well-being. Afhaam mentioned he was busy and would call Faheem soon, to which Faheem responded positively and asked to convey his regards to Afhaam's family.
+
+[ Prompt: 34.4 t/s | Generation: 10.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+EXPECTED SUMMARY:
+Afhaam is a little busy and will cal Faheem soon.
+
+MODEL GENERATED SUMMARY:
+
+==================================================
+
+Benchmark complete!
