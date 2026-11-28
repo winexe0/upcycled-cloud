@@ -1,0 +1,19 @@
+Run ID: samsum_4
+Screen Log: screenlog.samsum_4
+Energy Log: energy_log_1795579812.csv
+Folder Target: Ministral 3 3B / Q4_0 / SAMSum (Batch Runs Without Breaks)
+Logged GGUF Model: Ministral-3-3B-Instruct-2512-Q4_0.gguf
+Prompts Completed: 7
+Avg Prompt Speed: 4.01 t/s
+Avg Generation Speed: 1.01 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 3086
+idle_baseline_W: 1.11
+avg_active_power: 3.98
+peak_power: 5.81
+total_energy_J: 7453.71
+total_energy_Wh: 2.0705
+start_temp: 27.30
+end_temp: 29.20
+max_temp: 42.00

@@ -1,0 +1,51 @@
+Starting SQuAD 2.0 Comprehension Benchmark on 1 prompts...
+
+--- Processing Prompt 1/1 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b8099-3bb2fcc85
+model      : qwen2.5-3b-instruct-q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> You are a strict reading comprehension AI. Answer the question using ONLY the provided context. If the context does not contain the answer, reply exactly with 'Unanswerable'. Do not provide conversational filler.
+
+Context:
+The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. ... (truncated)
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The Normans were famed for their martial spirit.
+
+[ Prompt: 5.0 t/s | Generation: 3.3 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+CONTEXT:
+The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East. The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated.
+
+QUESTION: What were the Normans famed for?
+EXPECTED: Their martial spirit and Christian piety.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+SQuAD Benchmark complete!
