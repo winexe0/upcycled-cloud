@@ -1,0 +1,19 @@
+Run ID: squad_9
+Screen Log: screenlog.squad_9
+Energy Log: energy_log_1795668713.csv
+Folder Target: Qwen 2.5 3B / Q4_0 / SQuAD 2.0
+Logged GGUF Model: qwen2.5-3b-instruct-q4_0.gguf
+Prompts Completed: 5
+Avg Prompt Speed: 3.84 t/s
+Avg Generation Speed: 2.84 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 482
+idle_baseline_W: 0.99
+avg_active_power: 2.64
+peak_power: 3.56
+total_energy_J: 568.21
+total_energy_Wh: 0.1578
+start_temp: 27.00
+end_temp: 28.00
+max_temp: 28.00

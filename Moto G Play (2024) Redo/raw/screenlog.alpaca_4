@@ -1,0 +1,564 @@
+Starting Single-Fire AlpacaEval benchmark on 5 prompts...
+
+WARNING: Strict thermal controls engaged. 0s cooldown after EVERY prompt.
+
+--- Processing Prompt 1/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Ministral-3-3B-Instruct-2512-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\| Here’s a C++ function that converts Markdown-formatted text to HTML. This implementation handles basic Markdown syntax (bold, italics, headings, lists, links, and images) and converts it to HTML:
+
+```cpp
+#include <string>
+#include <algorithm>
+
+std::string markdownToHtml(const std::string& markdown) {
+    std::string html;
+
+    // Process headings (e.g., # Heading -> <h1>Heading</h1>)
+    size_t pos = 0;
+    while ((pos = markdown.find("# ", pos)) != std::string::npos) {
+        size_t headingLevel = 0;
+        // Count the number of # signs
+        while (pos > 0 && markdown[pos - 1] == '#') {
+            headingLevel++;
+            pos--;
+        }
+        pos++; // Move past the '#'
+
+        std::string headingText = markdown.substr(pos, markdown.find(" ", pos) - pos);
+        html += "<h" + std::to_string(headingLevel) + ">" + headingText + "</h" + std::to_string(headingLevel) + ">";
+        pos += headingText.length() + 1; // Skip the space after heading
+    }
+
+    // Process bold (e.g., **bold** -> <strong>bold</strong>)
+    pos = 0;
+    while ((pos = markdown.find("**", pos)) != std::string::npos) {
+        size_t start = pos + 2;
+        size_t end = markdown.find("**", start);
+        if (end == std::string::npos) end = markdown.length();
+        std::string boldText = markdown.substr(start, end - start);
+        html += "<strong>" + boldText + "</strong>";
+        pos = end;
+    }
+
+    // Process italic (e.g., *italic* -> <em>italic</em>)
+    pos = 0;
+    while ((pos = markdown.find("*", pos)) != std::string::npos) {
+        size_t start = pos + 1;
+        size_t end = markdown.find("*", start);
+        if (end == std::string::npos) end = markdown.length();
+        std::string italicText = markdown.substr(start, end - start);
+        html += "<em>" + italicText + "</em>";
+        pos = end;
+    }
+
+    // Process links (e.g., [text](url) -> <a href="url">text</a>)
+    pos = 0;
+    while ((pos = markdown.find("[", pos)) != std::string::npos) {
+        size_t start = pos + 1;
+        size_t end = markdown.find("]", start);
+        if (end == std::string::npos) end = markdown.length();
+        std::string linkText = markdown.substr(start, end - start);
+        pos = end + 1; // Skip the ']'
+
+        size_t urlStart = markdown.find("(", pos);
+        if (urlStart == std::string::npos) {
+            pos = end + 1;
+            continue;
+        }
+        size_t urlEnd = markdown.find(")", urlStart);
+        if (urlEnd == std::string::npos) urlEnd = markdown.length();
+        std::string url = markdown.substr(urlStart + 1, urlEnd - urlStart - 1);
+        html += "<a href=\"" + url + "\">" + linkText + "</a>";
+        pos = urlEnd + 1;
+    }
+
+    // Process images (e.g., ![alt](url) -> <img src="url" alt="alt">)
+    pos = 0;
+    while ((pos = markdown.find("!", pos)) != std::string::npos) {
+        size_t start = pos + 1;
+        size_t end = markdown.find("]", start);
+        if (end == std::string::npos) end = markdown.length();
+        std::string alt = markdown.substr(start, end - start);
+        pos = end + 1; // Skip the ']'
+
+        size_t urlStart = markdown.find("(", pos);
+        if (urlStart == std::string::npos) {
+            pos = end + 1;
+            continue;
+        }
+        size_t urlEnd = markdown.find(")", urlStart);
+        if (urlEnd == std::string::npos) urlEnd = markdown.length();
+        std::string url = markdown.substr(urlStart + 1, urlEnd - urlStart - 1);
+        html += "<img src=\"" + url + "\" alt=\"" + alt + "\">";
+        pos = urlEnd + 1;
+    }
+
+    // Process lists (unordered and ordered)
+    // Unordered list (e.g., - item -> <li>item</li>)
+    pos = 0;
+    while ((pos = markdown.find
+
+[ Prompt: 4.9 t/s | Generation: 2.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Write a C++ function that takes a reference to a std::string containing markdown formatted text and returns a std::string containing html formatted text.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 1 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 2/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Ministral-3-3B-Instruct-2512-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here’s a polished, persuasive proposal draft for your pitch to **Skinny Brown Dog Media**—designed to position you as the ideal ghost writer while subtly addressing their need for a polished, professional editor/publisher. The tone balances confidence, collaboration, and strategic value:
+
+---
+
+**[Your Name]**
+[Your Writing Services Company Name]
+[Your Contact Information]
+[Date]
+
+**Subject:** Collaborating on *Unbreakable Confidence* – A Seamless, High-Impact Writing & Editing Partnership
+
+Dear [Client’s Name],
+
+I hope this message finds you well. As someone who’s spent years crafting books that resonate with readers—whether through ghostwriting, editing, or publishing—I’ve seen firsthand how a well-executed manuscript can transform a vision into a powerful, marketable work. That’s why I’m thrilled to propose a partnership to bring *Unbreakable Confidence* to life with the precision, polish, and strategic edge it deserves.
+
+### **Why This Collaboration Matters**
+Your book is more than a project; it’s a legacy. And while your expertise as a writer is unmatched, the final product’s success hinges on two critical pillars:
+1. **Clarity & Impact** – A polished manuscript ensures your voice shines, eliminating ambiguity and reinforcing your message’s power.
+2. **Marketability** – Professional editing and publishing support (e.g., cover design, proofreading, or even a light marketing strategy) can elevate your book’s appeal—whether for self-publishing or traditional routes.
+
+Here’s how we’ll make it happen:
+
+#### **1. Ghostwriting: Your Voice, Unfiltered**
+I’ll work closely with you to:
+- **Develop a compelling narrative** that aligns with your vision while ensuring readability and flow.
+- **Deep-dive into your expertise**—whether it’s confidence-building techniques, personal anecdotes, or research—to infuse authenticity into every chapter.
+- **Adapt to your tone**—whether bold, motivational, or conversational—so the book feels like *your* work, not just mine.
+
+*Example:* For a client’s memoir-turned-self-help book, I crafted a chapter on "Breaking Free from Self-Doubt" that blended their personal story with actionable insights—making it both relatable and transformative.
+
+#### **2. Editing & Polish: The Difference Between Good and Great**
+Even the best ideas need refinement. My editorial services include:
+- **Structural Editing** – Ensuring your book’s arc is tight, chapters flow logically, and pacing keeps readers engaged.
+- **Line Editing** – Sharpening prose for clarity, flow, and emotional resonance (e.g., tightening metaphors, eliminating filler).
+- **Proofreading** – A meticulous final pass to catch typos, inconsistencies, and stylistic quirks.
+- **Optional: Light Publishing Support** – If needed, I can connect you with vetted cover designers, formatting experts, or even a basic marketing strategy to amplify your book’s reach.
+
+*Why this matters:* A polished manuscript doesn’t just sell books—it builds trust with readers, who’ll remember the care you put into your work.
+
+#### **3. Strategic Value: Beyond the Pages**
+I understand your time is valuable. That’s why I’ll:
+- **Prioritize transparency**—providing clear timelines, deliverables, and a no-nonsense contract.
+- **Offer flexibility**—whether you need a full rewrite, a series of edits, or just a final polish.
+- **Keep the collaboration collaborative**—we’ll meet regularly to align on vision, feedback, and next steps.
+
+### **What’s in It for You?**
+By partnering with me, you’re not just hiring a writer—you’re gaining:
+✅ A manuscript that’s **market-ready**, whether for Amazon Kindle Direct Publishing, traditional publishers, or your own audience.
+✅ A **smoother process**—no last-minute rushes or awkward handoffs.
+✅ A **professional edge**—so your book stands out in a crowded market.
+
+### **Next Steps**
+I’d love to discuss how we can tailor this partnership to your needs. Here’s how we can proceed:
+1. **Schedule a 15-minute call** to explore your vision for *Unbreakable Confidence* and answer any questions.
+2. **Provide a proposal outline** with a sample chapter (if you’d like) or a breakdown of our services.
+3. **Start with a pilot project**—a chapter or section to showcase my work and your satisfaction.
+
+I’m confident we can deliver a book that doesn’t just inspire but also leaves a lasting impact. Let’s talk about how we can make that happen.
+
+Looking forward to your thoughts,
+**[Your Name]**
+[Your Writing Services Company Name]
+[Website/Portfolio Link] | [Phone Number] | [Email]
+
+---
+**P.S.**
+
+[ Prompt: 2.6 t/s | Generation: 0.9 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I am trying to win over a new client for my writing services and skinny brown dog media to as as a ghost writer for their book Unbreakable Confidence. Can you help me write a persuasive proposal that highlights the benefits and value of having a editor/publisher
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 2 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 3/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Ministral-3-3B-Instruct-2512-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ The **many-worlds interpretation (MWI)** of quantum mechanics, proposed by Hugh Everett III in 1957, is one of the most radical and counterintuitive interpretations of quantum theory. While it provides a mathematically consistent framework for quantum mechanics, it faces several challenges that make it less appealing to many physicists and the broader public. Here are some key reasons why people often dislike or reject MWI:
+
+---
+
+### **1. Lack of Empirical Confirmation**
+   - **No direct experimental evidence**: MWI predicts that quantum superpositions and entanglement exist in a branching universe, but no experiment has ever observed "parallel worlds" or confirmed the existence of multiple realities. Most quantum phenomena (e.g., interference patterns, Bell tests) align with other interpretations (e.g., Copenhagen, decoherence theory) without requiring branching universes.
+   - **No "proof" of branching**: Unlike some interpretations (e.g., pilot-wave theory), MWI doesn’t provide a mechanism for explaining classical reality or macroscopic observations, leaving many questions unanswered.
+
+---
+
+### **2. Philosophical and Conceptual Challenges**
+   - **Problem of "reality"**: MWI suggests that every quantum event spawns an infinite number of parallel universes, each with a copy of the observer experiencing the same outcome. This raises questions:
+     - *Why do we only perceive one reality?* (The "observer problem" is unresolved.)
+     - *How do we define "reality" if it’s split across infinite branches?*
+     - *Is this a viable alternative to the Copenhagen interpretation’s "collapse" of the wavefunction?*
+   - **Overcomplication**: Many physicists find MWI unnecessarily complex for explaining everyday quantum phenomena (e.g., electron spin, particle interactions). Other interpretations (e.g., decoherence theory) offer simpler explanations for why we don’t perceive superpositions.
+
+---
+
+### **3. Difficulty Explaining Classical Reality**
+   - **No explanation for macroscopic objects**: MWI struggles to explain why we don’t observe quantum superpositions in everyday life (e.g., a cat both alive and dead). Other interpretations (e.g., decoherence theory) argue that quantum effects are "wiped out" by environmental interactions, while MWI doesn’t provide a clear mechanism for this.
+   - **Problem of "collapse"**: MWI avoids the Copenhagen interpretation’s "collapse" of the wavefunction, but it doesn’t explain how or why the universe splits into branches. This is seen as a missing link.
+
+---
+
+### **4. Mathematical Complexity and Alternative Solutions**
+   - **Redundancy with decoherence theory**: Many quantum effects can be explained by **decoherence theory** (e.g., Zurek’s work), which doesn’t require branching universes. Decoherence explains why we don’t perceive superpositions by showing that environmental interactions "wipe out" quantum coherence, making classical reality emerge naturally.
+   - **Alternative interpretations**: Other interpretations (e.g., QBism, relational quantum mechanics) offer more intuitive or mathematically elegant alternatives to MWI, often without invoking infinite parallel universes.
+
+---
+
+### **5. Cultural and Intuitive Resistance**
+   - **Counterintuitive nature**: MWI’s idea of infinite branching realities clashes with our everyday experience of a single, unified universe. Many people find it hard to accept that every choice or quantum event spawns new universes.
+   - **Pop culture and media**: While MWI has gained some traction in science fiction (e.g., *The Matrix*, *Inception*), it remains niche in mainstream physics. Most physicists prefer interpretations that align with experimental data and classical intuition.
+
+---
+### **6. Lack of Unification with Other Theories**
+   - **No clear path to quantum gravity**: MWI doesn’t provide a natural framework for unifying quantum mechanics with general relativity (e.g., via string theory or loop quantum gravity). Other interpretations (e.g., pilot-wave theory) have been explored in this context, but MWI’s branching universes don’t immediately suggest a solution to black hole information paradoxes or spacetime structure.
+
+---
+### **7. The "Why Not?" Problem**
+   - Even if MWI is mathematically valid, it’s often dismissed because it doesn’t offer a **better** explanation than alternatives. For example:
+     - If decoherence theory explains why we don’t see superpositions, why introduce infinite parallel universes?
+     - If the Copenhagen interpretation’s "collapse" is just a mathematical convenience, why not accept that instead of branching realities?
+
+---
+### **When Does MWI Have Supporters?**
+Despite these criticisms, MWI has advocates, particularly in:
+   - **Quantum foundations research** (e.g., David Deutsch, who popularized MWI).
+   - **Philosophical debates** about the nature of reality (e.g., if quantum mechanics is fundamentally about many worlds, not just probabilities).
+   - **Theoretical physics** where MWI is used to explore limits of quantum mechanics (
+
+[ Prompt: 4.9 t/s | Generation: 2.4 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+Why don't people like the many-worlds interpretation of quantum mechanics?
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 3 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 4/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Ministral-3-3B-Instruct-2512-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here’s a Python script that calculates the **Average Rate of Change (ARC)** of a function \( f(x) \) using the formula:
+
+\[
+A(x) = \frac{f(b) - f(a)}{b - a}
+\]
+
+where \( a \) and \( b \) are user-provided input points, and \( f(x) \) is a user-defined function.
+
+### **Script:**
+```python
+def average_rate_of_change(a, b, f):
+    """
+    Calculate the average rate of change of a function f between points a and b.
+
+    Parameters:
+    a (float): First input point.
+    b (float): Second input point.
+    f (function): The function to evaluate.
+
+    Returns:
+    float: The average rate of change.
+    """
+    return (f(b) - f(a)) / (b - a)
+
+def get_user_function():
+    """
+    Prompts the user to define a function (e.g., "x^2" or "sin(x)").
+    Returns a lambda function representing the user's input.
+    """
+    while True:
+        user_input = input("Enter a function (e.g., 'lambda x: x**2' or 'lambda x: sin(x)'): ").strip()
+        try:
+            # Example: If user enters "x^2", it becomes `lambda x: x**2`
+            # If user enters "sin(x)", it becomes `lambda x: import math; math.sin(x)`
+            # This is a simplified approach; for full flexibility, use eval with caution.
+            # Here, we assume the user provides a valid lambda function.
+            f = eval(user_input)
+            return f
+        except:
+            print("Invalid function. Try again.")
+
+def main():
+    print("=== Average Rate of Change Calculator ===")
+    print("Enter two points (a and b) and a function.")
+
+    try:
+        a = float(input("Enter point a: "))
+        b = float(input("Enter point b: "))
+        f = get_user_function()
+
+        arc = average_rate_of_change(a, b, f)
+        print(f"\nAverage Rate of Change (ARC) = {arc:.4f}")
+    except ValueError:
+        print("Invalid input. Please enter numeric values.")
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+### **How to Use:**
+1. **Run the script** in a Python environment.
+2. **Enter two points** (`a` and `b`) where you want to compute the ARC.
+3. **Define the function** (e.g., `lambda x: x**2` for \( f(x) = x^2 \), or `lambda x: math.sin(x)` for \( f(x) = \sin(x) \)).
+4. The script will output the ARC.
+
+---
+
+### **Example:**
+If you input:
+- \( a = 1 \), \( b = 3 \),
+- Function: `lambda x: x**2` (i.e., \( f(x) = x^2 \)),
+then the output will be:
+```
+Average Rate of Change (ARC) = 2.0000
+```
+This matches the correct derivative of \( x^2 \) at \( x = 2 \) (midpoint).
+
+---
+
+### **Notes:**
+- For **polynomials**, this works perfectly.
+- For **trigonometric functions**, ensure `math` is imported (e.g., `lambda x: import math; math.sin(x)`).
+- For **custom functions**, modify the `get_user_function()` logic if needed.
+
+[ Prompt: 4.9 t/s | Generation: 2.5 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+can you please create a python script that outputs a derivative using The Average Rate of Change Formula A(x) = f(b)-f(a) /(b-a) when x is user input
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+[THERMAL CONTROL] Prompt 4 complete.
+Pausing for 0 seconds to prevent thermal runaway...
+Resuming inference...
+
+--- Processing Prompt 5/5 ---
+
+Loading model... |-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/- 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b7968-9a5f57795
+model      : Ministral-3-3B-Instruct-2512-Q4_0.gguf
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read               add a text file
+
+
+> Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Instruction:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+Response:
+
+|-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/ Here’s a structured table outlining **10 subniches** for your **merchant navy studies website**, ranked by estimated popularity (1 = niche, 100 = highly popular). These niches balance demand, depth of research, and potential for engagement:
+
+| **#** | **Subniche**                          | **Why It’s Valuable**                                                                                     | **Target Audience**                          | **Content Ideas**                                                                                     |
+|-------|---------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------|------------------------------------------------------------------------------------------------------|
+| **1** | **Career Paths & Job Roles**         | Broad appeal; helps students decide on specializations (e.g., Deck Officer, Engineer, Chief Mate).       | Fresh graduates, career changers, students.   | Comparison tables, salary trends, required certs (STCW, OOW, ETOW), job market outlook.           |
+| **2** | **Maritime Certifications & Training** | High demand; students need guidance on exams (e.g., GMDSS, RYA, USCG).                                | Aspiring officers, crew members.            | Certification roadmaps, study guides, cost comparisons, online vs. traditional training.            |
+| **3** | **Safety & Compliance Regulations**   | Critical for crew; covers STCW updates, ISM Code, SOLAS, and risk management.                           | Officers, superintendents, ship managers.    | Case studies, regulatory changes, safety drills (fire, abandon ship), OSH certification prep.       |
+| **4** | **Maritime Technology & Automation** | Future-proofing; covers AI in shipping, digital charts (ECDIS), remote operations, and cybersecurity.   | Tech-savvy students, engineers.              | Interviews with tech firms, comparisons (traditional vs. digital navigation), certs like **IAMI**.   |
+| **5** | **Environmental Impact & Sustainability** | Growing focus; ESG (Environmental, Social, Governance) in shipping, green shipping certs (e.g., **IMO 2020**). | Eco-conscious students, sustainability officers. | Carbon footprint calculators, alternative fuels (LNG, biofuels), regulatory changes (e.g., **IMO 2030**). |
+| **6** | **Maritime Law & Legal Issues**      | Practical for officers; covers contracts, liability, maritime courts, and labor laws.                   | Legal officers, superintendents.           | Sample contracts, case law summaries, labor rights (e.g., **MSC Convention**), insurance basics.    |
+| **7** | **Navigation & Pilotage**             | Core skill; covers AIS, radar, ECDIS, and pilotage procedures.                                         | Deck officers, pilots.                     | Hands-on tutorials, real-world scenarios (e.g., **Pilotage Rules**), collision avoidance drills.     |
+| **8** | **Engineering & Machinery Systems**  | High demand; covers diesel engines, propulsion, HVAC, and electrical systems.                          | Engineers, ETOW candidates.                 | Troubleshooting guides, maintenance schedules, certs like **ETOW (Engineer’s Watch Officer)**.      |
+| **9** | **Human Factors & Crew Management**  | Critical for safety; covers fatigue management, teamwork, and leadership in maritime settings.           | Superintendents, training officers.         | Fatigue risk management (FRM) tools, crew selection criteria, leadership case studies.              |
+| **10** | **Maritime History & Culture**       | Engaging for students; connects past to modern challenges (e.g., **Black Friday**, **Titanic**, **Pirates**). | History buffs, cultural studies students.    | Timeline of maritime milestones, cultural impact of seafarers, heritage ships.                     |
+| **11** | **Offshore & Remote Operations**     | Growing niche; covers deep-sea, polar, and offshore roles (e.g., **Polar Class**, **ROVs**).          | Offshore crew, polar expedition students.     | Safety protocols, certs like **Polar Class**, remote operation training.                           |
+| **12** | **Maritime Economics & Trade Routes**| Helps students understand global shipping (e.g., **Baltic Exchange**, **Singapore Port**).                 | Economists, logistics students.              | Trade route analysis, container shipping stats, cost of shipping per tonne.                        |
+| **13** | **Crew Welfare & Mental Health**     | Underrated but critical; covers seafarer mental health, isolation, and support networks.               | Crew welfare officers, HR in shipping.      | Resources (e.g., **IMO’s Seafarers’ Welfare**), case studies, online counseling services.           |
+| **
+
+[ Prompt: 4.9 t/s | Generation: 2.2 t/s ]
+
+> ///exit
+
+
+Exiting...
+
+INSTRUCTION:
+I run a website about merchant navy studies. What are some subniches I should be tackling with my content. Give me the results as a table with the sub niche a number between 1 and 100 to indicate the sub niche popularity.
+
+MODEL GENERATED RESPONSE:
+
+==================================================
+
+AlpacaEval Benchmark complete!

@@ -1,0 +1,19 @@
+Run ID: squad_6
+Screen Log: screenlog.squad_6
+Energy Log: energy_log_1795736948.csv
+Folder Target: Ministral 3 3B / Q4_0 / SQuAD 2.0 (Single Run)
+Logged GGUF Model: Ministral-3-3B-Instruct-2512-Q4_0.gguf
+Prompts Completed: 1
+Avg Prompt Speed: 4.80 t/s
+Avg Generation Speed: 3.30 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 159
+idle_baseline_W: 0.99
+avg_active_power: 3.67
+peak_power: 5.04
+total_energy_J: 511.88
+total_energy_Wh: 0.1422
+start_temp: 28.00
+end_temp: 29.00
+max_temp: 29.00
