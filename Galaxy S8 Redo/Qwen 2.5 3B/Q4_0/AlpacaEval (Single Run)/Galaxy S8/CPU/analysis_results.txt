@@ -1,0 +1,19 @@
+Run ID: alpaca_7
+Screen Log: screenlog.alpaca_7
+Energy Log: energy_log_1795669226.csv
+Folder Target: Qwen 2.5 3B / Q4_0 / AlpacaEval (Single Run)
+Logged GGUF Model: qwen2.5-3b-instruct-q4_0.gguf
+Prompts Completed: 1
+Avg Prompt Speed: 5.00 t/s
+Avg Generation Speed: 2.10 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 216
+idle_baseline_W: 0.83
+avg_active_power: 4.63
+peak_power: 5.87
+total_energy_J: 828.28
+total_energy_Wh: 0.2301
+start_temp: 27.60
+end_temp: 30.20
+max_temp: 30.20

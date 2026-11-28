@@ -1,0 +1,19 @@
+Run ID: samsum_1
+Screen Log: screenlog.samsum_1
+Energy Log: energy_log_1795571373.csv
+Folder Target: Llama 3.2 3B / Q4_0 / SAMSum (Batch Runs Without Breaks)
+Logged GGUF Model: Llama-3.2-3B-Instruct-Q4_0.gguf
+Prompts Completed: 7
+Avg Prompt Speed: 4.93 t/s
+Avg Generation Speed: 1.91 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 640
+idle_baseline_W: 1.03
+avg_active_power: 5.30
+peak_power: 6.95
+total_energy_J: 3162.57
+total_energy_Wh: 0.8785
+start_temp: 28.30
+end_temp: 36.60
+max_temp: 36.60

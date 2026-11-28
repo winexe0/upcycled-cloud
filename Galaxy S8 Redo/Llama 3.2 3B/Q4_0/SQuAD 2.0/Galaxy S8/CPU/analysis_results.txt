@@ -1,0 +1,19 @@
+Run ID: squad_2
+Screen Log: screenlog.squad_2
+Energy Log: energy_log_1795679070.csv
+Folder Target: Llama 3.2 3B / Q4_0 / SQuAD 2.0
+Logged GGUF Model: Llama-3.2-3B-Instruct-Q4_0.gguf
+Prompts Completed: 5
+Avg Prompt Speed: 5.00 t/s
+Avg Generation Speed: 2.34 t/s
+
+--- QUANTITATIVE STATS (energy_analysis_universal.py) ---
+duration: 440
+idle_baseline_W: 0.85
+avg_active_power: 5.23
+peak_power: 6.57
+total_energy_J: 932.19
+total_energy_Wh: 0.2589
+start_temp: 29.00
+end_temp: 30.70
+max_temp: 30.70
